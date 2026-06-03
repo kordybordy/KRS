@@ -1,6 +1,6 @@
 # KRS Monitor CGI
 
-Projekt automatycznie monitoruje zmiany w danych KRS dla dwóch spółek CGI. Raz w tygodniu pobiera pełny odpis KRS, zapisuje snapshot, porównuje go z poprzednią wersją i generuje raport zmian w Markdown oraz JSON.
+Projekt automatycznie monitoruje zmiany w danych KRS dla dwóch spółek CGI. Raz w tygodniu pobiera pełny odpis KRS, zapisuje snapshot, porównuje go z poprzednią wersją i generuje raport zmian w Markdown, JSON oraz CSV z pełną tabelą porównania wartości.
 
 Obecna wersja **nie wysyła e-maili** i nie zawiera modułów SMTP ani Microsoft Graph. Wyniki są zapisywane w repozytorium, commitowane przez GitHub Actions i publikowane jako artifacts.
 
@@ -64,7 +64,7 @@ Program wykonywany przez `python -m krs_monitor.main`:
 4. Normalizuje JSON przez rekurencyjne sortowanie kluczy, normalizację whitespace i usunięcie oczywistych metadanych technicznych.
 5. Porównuje aktualny snapshot z poprzednim plikiem `data/latest/<krs>.json`.
 6. Zapisuje nowy snapshot w `data/latest/` tylko po poprawnym pobraniu i normalizacji danych.
-7. Generuje `report.md`, `report.json` i `summary.txt`.
+7. Generuje `report.md`, `report.json`, `summary.txt` i `comparison.csv` z kolumnami starej wartości, nowej wartości oraz statusem `changed`/`no_change`/`added`/`removed`.
 8. Wypisuje krótkie podsumowanie do stdout.
 
 Jeżeli pobranie jednego podmiotu się nie powiedzie, program loguje błąd, oznacza go w raporcie i nadal próbuje przetworzyć pozostałe spółki. Uszkodzony lub niepobrany payload nie jest zapisywany jako nowy `latest` snapshot.
@@ -77,6 +77,7 @@ data/archive/<krs>/<timestamp>.json
 reports/YYYY-MM-DD/report.md
 reports/YYYY-MM-DD/report.json
 reports/YYYY-MM-DD/summary.txt
+reports/YYYY-MM-DD/comparison.csv
 ```
 
 Przykład:
@@ -87,6 +88,7 @@ data/latest/0000078664.json
 reports/2026-06-04/report.md
 reports/2026-06-04/report.json
 reports/2026-06-04/summary.txt
+reports/2026-06-04/comparison.csv
 ```
 
 ## GitHub Actions

@@ -28,3 +28,12 @@ def test_diff_no_changes() -> None:
     assert diff["changed"] is False
     assert diff["baseline"] is False
     assert diff["differences"] == []
+
+
+def test_diff_includes_comparison_rows_for_changed_and_unchanged_values() -> None:
+    diff = diff_json({"a": 1, "b": 2}, {"a": 1, "b": 3})
+
+    assert diff["comparison"] == [
+        {"path": "root.a", "status": "no_change", "before": 1, "after": 1},
+        {"path": "root.b", "status": "changed", "before": 2, "after": 3},
+    ]

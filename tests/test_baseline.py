@@ -7,7 +7,7 @@ from krs_monitor.reporting import generate_reports
 def test_baseline_diff_has_no_changes() -> None:
     diff = diff_json(None, {"dane": {"nazwa": "CGI"}})
 
-    assert diff == {"changed": False, "baseline": True, "differences": []}
+    assert diff == {"changed": False, "baseline": True, "differences": [], "comparison": []}
 
 
 def test_baseline_report_mentions_initialization(tmp_path) -> None:
