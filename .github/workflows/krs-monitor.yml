@@ -1,0 +1,89 @@
+name: KRS Monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * 4"
+    - cron: "17 7 * * 4"
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: src
+    steps:
+      - name: Guard scheduled runs for Europe/Warsaw Thursday 08:17
+        id: schedule_guard
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          local_dow="$(TZ=Europe/Warsaw date +%u)"
+          local_time="$(TZ=Europe/Warsaw date +%H:%M)"
+          if [ "$local_dow" = "4" ] && [ "$local_time" = "08:17" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Skipping: local Europe/Warsaw time is $(TZ=Europe/Warsaw date --iso-8601=seconds)."
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout repository
+        if: steps.schedule_guard.outputs.should_run == 'true'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        if: steps.schedule_guard.outputs.should_run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        if: steps.schedule_guard.outputs.should_run == 'true'
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests
+        if: steps.schedule_guard.outputs.should_run == 'true'
+        run: pytest
+
+      - name: Run KRS monitor
+        if: steps.schedule_guard.outputs.should_run == 'true'
+        run: python -m krs_monitor.main
+
+      - name: Add report summary to job summary
+        if: always() && steps.schedule_guard.outputs.should_run == 'true'
+        run: |
+          if compgen -G "reports/*/summary.txt" > /dev/null; then
+            cat reports/*/summary.txt >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "No summary report found." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload reports artifact
+        if: always() && steps.schedule_guard.outputs.should_run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: krs-report
+          path: reports/
+
+      - name: Commit monitoring outputs
+        if: steps.schedule_guard.outputs.should_run == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/latest data/archive reports
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            report_date="$(TZ=Europe/Warsaw date +%F)"
+            git commit -m "krs-monitor: weekly report ${report_date}"
+            git push
+          fi
