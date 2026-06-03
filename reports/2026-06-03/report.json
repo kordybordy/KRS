@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-03",
+  "results": [
+    {
+      "archive_path": "data/archive/0000078664/2026-06-03T17-16-08+02-00.json",
+      "diff": {
+        "baseline": true,
+        "changed": false,
+        "differences": []
+      },
+      "krs": "0000078664",
+      "latest_path": "data/latest/0000078664.json",
+      "name": "CGI Information Systems and Management Consultants (Polska) Sp. z o.o.",
+      "status": "ok"
+    },
+    {
+      "archive_path": "data/archive/0000307263/2026-06-03T17-16-08+02-00.json",
+      "diff": {
+        "baseline": true,
+        "changed": false,
+        "differences": []
+      },
+      "krs": "0000307263",
+      "latest_path": "data/latest/0000307263.json",
+      "name": "CGI Polska S.A.",
+      "status": "ok"
+    }
+  ]
+}
