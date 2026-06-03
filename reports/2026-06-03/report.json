@@ -2,7 +2,7 @@
   "date": "2026-06-03",
   "results": [
     {
-      "archive_path": "data/archive/0000078664/2026-06-03T18-40-37+02-00.json",
+      "archive_path": "data/archive/0000078664/2026-06-03T19-00-49+02-00.json",
       "diff": {
         "baseline": false,
         "changed": true,
@@ -4850,8 +4850,8 @@
             "status": "no_change"
           },
           {
-            "after": "03.06.2026 18:40:38",
-            "before": "03.06.2026 17:16:08",
+            "after": "03.06.2026 19:00:50",
+            "before": "03.06.2026 18:40:38",
             "path": "root.odpis.naglowekP.dataCzasOdpisu",
             "status": "changed"
           },
@@ -7138,8 +7138,8 @@
         ],
         "differences": [
           {
-            "after": "03.06.2026 18:40:38",
-            "before": "03.06.2026 17:16:08",
+            "after": "03.06.2026 19:00:50",
+            "before": "03.06.2026 18:40:38",
             "path": "root.odpis.naglowekP.dataCzasOdpisu",
             "type": "changed"
           }
@@ -7151,7 +7151,7 @@
       "status": "ok"
     },
     {
-      "archive_path": "data/archive/0000307263/2026-06-03T18-40-37+02-00.json",
+      "archive_path": "data/archive/0000307263/2026-06-03T19-00-49+02-00.json",
       "diff": {
         "baseline": false,
         "changed": true,
@@ -14837,8 +14837,8 @@
             "status": "no_change"
           },
           {
-            "after": "03.06.2026 18:40:39",
-            "before": "03.06.2026 17:16:10",
+            "after": "03.06.2026 19:00:51",
+            "before": "03.06.2026 18:40:39",
             "path": "root.odpis.naglowekP.dataCzasOdpisu",
             "status": "changed"
           },
@@ -16945,8 +16945,8 @@
         ],
         "differences": [
           {
-            "after": "03.06.2026 18:40:39",
-            "before": "03.06.2026 17:16:10",
+            "after": "03.06.2026 19:00:51",
+            "before": "03.06.2026 18:40:39",
             "path": "root.odpis.naglowekP.dataCzasOdpisu",
             "type": "changed"
           }
