@@ -30,7 +30,9 @@ def test_report_contains_yes_no_summary_and_details(tmp_path) -> None:
 
     assert "CGI Information Systems and Management Consultants (Polska) Sp. z o.o. - KRS: 0000078664 – zmiany: TAK: 1 różnica." in markdown
     assert "CGI Polska S.A. - KRS: 0000307263 – zmiany: NIE." in markdown
+    assert "## Zmienione wartości" in markdown
     assert "- root.foo.bar: zmieniono z `A` na `B`" in markdown
+    assert markdown.index("## Zmienione wartości") < markdown.index("## Szczegóły zmian")
     assert "Pełna tabela porównania wartości starego i nowego pliku znajduje się w `comparison.csv`." in markdown
 
 
@@ -63,13 +65,15 @@ def test_report_writes_comparison_csv(tmp_path) -> None:
         )
     ]
     results[0]["diff"]["comparison"] = [
-        {"path": "root.a", "status": "changed", "before": "old", "after": "new"},
         {"path": "root.b", "status": "no_change", "before": 2, "after": 2},
+        {"path": "root.a", "status": "changed", "before": "old", "after": "new"},
     ]
 
     paths = generate_reports(results, date(2026, 6, 4), tmp_path)
 
-    with paths["comparison_csv"].open(encoding="utf-8", newline="") as handle:
+    assert paths["comparison_csv"].read_bytes().startswith(b"\xef\xbb\xbf")
+
+    with paths["comparison_csv"].open(encoding="utf-8-sig", newline="") as handle:
         rows = list(csv.DictReader(handle))
 
     assert rows == [
