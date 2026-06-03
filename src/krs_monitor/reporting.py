@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import csv
 from datetime import date
 from pathlib import Path
 from typing import Any, TypedDict
@@ -24,10 +25,11 @@ class ReportPaths(TypedDict):
     markdown: Path
     json: Path
     summary: Path
+    comparison_csv: Path
 
 
 def generate_reports(results: list[EntityRunResult], report_date: date, reports_dir: Path) -> ReportPaths:
-    """Write report.md, report.json, and summary.txt for one monitoring run."""
+    """Write report.md, report.json, summary.txt, and comparison.csv for one monitoring run."""
 
     report_dir = reports_dir / report_date.isoformat()
     report_dir.mkdir(parents=True, exist_ok=True)
@@ -35,16 +37,51 @@ def generate_reports(results: list[EntityRunResult], report_date: date, reports_
     report_data = {"date": report_date.isoformat(), "results": results}
     markdown = _render_markdown(report_data)
     summary = _render_summary(results)
+    comparison_rows = _comparison_rows(results)
 
     markdown_path = report_dir / "report.md"
     json_path = report_dir / "report.json"
     summary_path = report_dir / "summary.txt"
+    comparison_csv_path = report_dir / "comparison.csv"
 
     markdown_path.write_text(markdown, encoding="utf-8")
     write_json(json_path, report_data)
     summary_path.write_text(summary, encoding="utf-8")
+    _write_comparison_csv(comparison_csv_path, comparison_rows)
 
-    return {"report_dir": report_dir, "markdown": markdown_path, "json": json_path, "summary": summary_path}
+    return {
+        "report_dir": report_dir,
+        "markdown": markdown_path,
+        "json": json_path,
+        "summary": summary_path,
+        "comparison_csv": comparison_csv_path,
+    }
+
+
+def _comparison_rows(results: list[EntityRunResult]) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for result in results:
+        diff = result.get("diff", {})
+        for comparison in diff.get("comparison", []):
+            rows.append(
+                {
+                    "entity_name": result["name"],
+                    "krs": result["krs"],
+                    "path": comparison.get("path", ""),
+                    "status": comparison.get("status", ""),
+                    "old_file_value": _format_value(comparison.get("before")),
+                    "new_file_value": _format_value(comparison.get("after")),
+                }
+            )
+    return rows
+
+
+def _write_comparison_csv(path: Path, rows: list[dict[str, Any]]) -> None:
+    fieldnames = ["entity_name", "krs", "path", "status", "old_file_value", "new_file_value"]
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
 
 
 def _render_markdown(report_data: dict[str, Any]) -> str:
@@ -52,6 +89,7 @@ def _render_markdown(report_data: dict[str, Any]) -> str:
     lines = [f"# Raport monitoringu KRS - {report_data['date']}", "", "## Podsumowanie", ""]
     lines.extend(_summary_line(result) for result in results)
     lines.extend(["", "## Szczegóły zmian", ""])
+    lines.extend(["Pełna tabela porównania wartości starego i nowego pliku znajduje się w `comparison.csv`.", ""])
 
     for result in results:
         lines.extend([f"### {result['name']} - KRS: {result['krs']}", ""])
