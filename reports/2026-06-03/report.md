@@ -2,15 +2,17 @@
 
 ## Podsumowanie
 
-CGI Information Systems and Management Consultants (Polska) Sp. z o.o. - KRS: 0000078664 – zmiany: NIE. Inicjalizacja baseline.
-CGI Polska S.A. - KRS: 0000307263 – zmiany: NIE. Inicjalizacja baseline.
+CGI Information Systems and Management Consultants (Polska) Sp. z o.o. - KRS: 0000078664 – zmiany: TAK: 1 różnica.
+CGI Polska S.A. - KRS: 0000307263 – zmiany: TAK: 1 różnica.
 
 ## Szczegóły zmian
 
+Pełna tabela porównania wartości starego i nowego pliku znajduje się w `comparison.csv`.
+
 ### CGI Information Systems and Management Consultants (Polska) Sp. z o.o. - KRS: 0000078664
 
-- Inicjalizacja baseline - zapisano pierwszy snapshot do porównań.
+- root.odpis.naglowekP.dataCzasOdpisu: zmieniono z `03.06.2026 17:16:08` na `03.06.2026 18:40:38`
 
 ### CGI Polska S.A. - KRS: 0000307263
 
-- Inicjalizacja baseline - zapisano pierwszy snapshot do porównań.
+- root.odpis.naglowekP.dataCzasOdpisu: zmieniono z `03.06.2026 17:16:10` na `03.06.2026 18:40:39`
