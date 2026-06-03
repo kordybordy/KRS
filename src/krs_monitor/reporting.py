@@ -73,13 +73,20 @@ def _comparison_rows(results: list[EntityRunResult]) -> list[dict[str, Any]]:
                     "new_file_value": _format_value(comparison.get("after")),
                 }
             )
+    rows.sort(key=_comparison_row_sort_key)
     return rows
+
+
+def _comparison_row_sort_key(row: dict[str, Any]) -> tuple[int, str, str, str]:
+    status = str(row.get("status", ""))
+    changed_rank = 1 if status == "no_change" else 0
+    return (changed_rank, str(row.get("entity_name", "")), str(row.get("krs", "")), str(row.get("path", "")))
 
 
 def _write_comparison_csv(path: Path, rows: list[dict[str, Any]]) -> None:
     fieldnames = ["entity_name", "krs", "path", "status", "old_file_value", "new_file_value"]
-    with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+    with path.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -88,6 +95,12 @@ def _render_markdown(report_data: dict[str, Any]) -> str:
     results: list[EntityRunResult] = report_data["results"]
     lines = [f"# Raport monitoringu KRS - {report_data['date']}", "", "## Podsumowanie", ""]
     lines.extend(_summary_line(result) for result in results)
+    lines.extend(["", "## Zmienione wartości", ""])
+    changed_lines = _changed_value_lines(results)
+    if changed_lines:
+        lines.extend(changed_lines)
+    else:
+        lines.append("- Brak zmian.")
     lines.extend(["", "## Szczegóły zmian", ""])
     lines.extend(["Pełna tabela porównania wartości starego i nowego pliku znajduje się w `comparison.csv`.", ""])
 
@@ -114,6 +127,27 @@ def _render_markdown(report_data: dict[str, Any]) -> str:
 
 def _render_summary(results: list[EntityRunResult]) -> str:
     return "\n".join(_summary_line(result) for result in results) + "\n"
+
+
+def _changed_value_lines(results: list[EntityRunResult]) -> list[str]:
+    lines: list[str] = []
+    for result in results:
+        if result.get("status") == "error":
+            continue
+
+        diff = result.get("diff", {})
+        differences = diff.get("differences", [])
+        if not differences:
+            continue
+
+        lines.append(f"### {result['name']} - KRS: {result['krs']}")
+        lines.append("")
+        lines.extend(_format_difference(difference) for difference in differences)
+        lines.append("")
+
+    if lines:
+        lines.pop()
+    return lines
 
 
 def _summary_line(result: EntityRunResult) -> str:
