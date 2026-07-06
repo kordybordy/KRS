@@ -2,10 +2,10 @@
   "date": "2026-07-06",
   "results": [
     {
-      "archive_path": "data/archive/0000078664/2026-07-06T21-46-20+02-00.json",
+      "archive_path": "data/archive/0000078664/2026-07-06T23-20-00+02-00.json",
       "diff": {
         "baseline": false,
-        "changed": true,
+        "changed": false,
         "comparison": [
           {
             "after": false,
@@ -4850,12 +4850,6 @@
             "status": "no_change"
           },
           {
-            "after": "06.07.2026 21:46:21",
-            "before": "25.06.2026 14:51:23",
-            "path": "root.odpis.naglowekP.dataCzasOdpisu",
-            "status": "changed"
-          },
-          {
             "after": "0000078664",
             "before": "0000078664",
             "path": "root.odpis.naglowekP.numerKRS",
@@ -7136,14 +7130,7 @@
             "status": "no_change"
           }
         ],
-        "differences": [
-          {
-            "after": "06.07.2026 21:46:21",
-            "before": "25.06.2026 14:51:23",
-            "path": "root.odpis.naglowekP.dataCzasOdpisu",
-            "type": "changed"
-          }
-        ]
+        "differences": []
       },
       "krs": "0000078664",
       "latest_path": "data/latest/0000078664.json",
@@ -7151,10 +7138,10 @@
       "status": "ok"
     },
     {
-      "archive_path": "data/archive/0000307263/2026-07-06T21-46-20+02-00.json",
+      "archive_path": "data/archive/0000307263/2026-07-06T23-20-00+02-00.json",
       "diff": {
         "baseline": false,
-        "changed": true,
+        "changed": false,
         "comparison": [
           {
             "after": false,
@@ -14837,12 +14824,6 @@
             "status": "no_change"
           },
           {
-            "after": "06.07.2026 21:46:22",
-            "before": "25.06.2026 14:51:24",
-            "path": "root.odpis.naglowekP.dataCzasOdpisu",
-            "status": "changed"
-          },
-          {
             "after": "0000307263",
             "before": "0000307263",
             "path": "root.odpis.naglowekP.numerKRS",
@@ -16943,14 +16924,7 @@
             "status": "no_change"
           }
         ],
-        "differences": [
-          {
-            "after": "06.07.2026 21:46:22",
-            "before": "25.06.2026 14:51:24",
-            "path": "root.odpis.naglowekP.dataCzasOdpisu",
-            "type": "changed"
-          }
-        ]
+        "differences": []
       },
       "krs": "0000307263",
       "latest_path": "data/latest/0000307263.json",

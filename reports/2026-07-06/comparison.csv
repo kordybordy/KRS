@@ -1,6 +1,4 @@
 ﻿entity_name,krs,path,status,old_file_value,new_file_value
-CGI Information Systems and Management Consultants (Polska) Sp. z o.o.,0000078664,root.odpis.naglowekP.dataCzasOdpisu,changed,25.06.2026 14:51:23,06.07.2026 21:46:21
-CGI Polska S.A.,0000307263,root.odpis.naglowekP.dataCzasOdpisu,changed,25.06.2026 14:51:24,06.07.2026 21:46:22
 CGI Information Systems and Management Consultants (Polska) Sp. z o.o.,0000078664,root.odpis.dane.dzial1.danePodmiotu.czyProwadziDzialalnoscZInnymiPodmiotami[0].czyProwadziDzialalnoscZInnymiPodmiotami,no_change,False,False
 CGI Information Systems and Management Consultants (Polska) Sp. z o.o.,0000078664,root.odpis.dane.dzial1.danePodmiotu.czyProwadziDzialalnoscZInnymiPodmiotami[0].nrWpisuWprow,no_change,1,1
 CGI Information Systems and Management Consultants (Polska) Sp. z o.o.,0000078664,root.odpis.dane.dzial1.danePodmiotu.daneOWczesniejszejRejestracji[0].nazwaPoprzedniegoRejestru,no_change,RHB,RHB
