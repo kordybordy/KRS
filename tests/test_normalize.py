@@ -10,9 +10,21 @@ def test_normalize_sorts_keys_and_whitespace() -> None:
 
 
 def test_normalize_removes_technical_metadata() -> None:
-    payload = {"requestId": "abc", "dane": {"timestamp": "now", "nazwa": " CGI "}}
+    payload = {
+        "requestId": "abc",
+        "odpis": {
+            "naglowekP": {
+                "dataCzasOdpisu": "06.07.2026 21:46:22",
+                "numerKRS": "0000307263",
+            }
+        },
+        "dane": {"timestamp": "now", "nazwa": " CGI "},
+    }
 
-    assert normalize_payload(payload) == {"dane": {"nazwa": "CGI"}}
+    assert normalize_payload(payload) == {
+        "dane": {"nazwa": "CGI"},
+        "odpis": {"naglowekP": {"numerKRS": "0000307263"}},
+    }
 
 
 def test_write_json_is_stable(tmp_path: Path) -> None:

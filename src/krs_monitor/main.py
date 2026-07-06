@@ -81,7 +81,7 @@ def _load_previous_snapshot(path: Path) -> dict | None:
     data = read_json(path)
     if not isinstance(data, dict):
         raise ValueError(f"Previous snapshot is not a JSON object: {path}")
-    return data
+    return normalize_payload(data)
 
 
 def _archive_path(krs: str, run_started_at: datetime) -> Path:

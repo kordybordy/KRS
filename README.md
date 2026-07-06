@@ -2,7 +2,7 @@
 
 Projekt automatycznie monitoruje zmiany w danych KRS dla dwóch spółek CGI. Raz w tygodniu pobiera pełny odpis KRS, zapisuje snapshot, porównuje go z poprzednią wersją i generuje raport zmian w Markdown, JSON oraz CSV z pełną tabelą porównania wartości.
 
-Obecna wersja **nie wysyła e-maili** i nie zawiera modułów SMTP ani Microsoft Graph. Wyniki są zapisywane w repozytorium, commitowane przez GitHub Actions i publikowane jako artifacts.
+Obecna wersja może opcjonalnie tworzyć issue na GitHubie z krótkim podsumowaniem zmian, bez używania osobnych danych logowania do poczty. Wyniki są też zapisywane w repozytorium, commitowane przez GitHub Actions i publikowane jako artifacts.
 
 ## Monitorowane spółki
 
@@ -61,7 +61,7 @@ Program wykonywany przez `python -m krs_monitor.main`:
 1. Wczytuje listę monitorowanych spółek z `src/krs_monitor/config.py`.
 2. Pobiera pełny odpis KRS dla każdego numeru KRS z oficjalnego PRS KRS OpenAPI.
 3. Zapisuje surowy payload w archiwum.
-4. Normalizuje JSON przez rekurencyjne sortowanie kluczy, normalizację whitespace i usunięcie oczywistych metadanych technicznych.
+4. Normalizuje JSON przez rekurencyjne sortowanie kluczy, normalizację whitespace i usunięcie oczywistych metadanych technicznych, w tym czasu wygenerowania odpisu (`dataCzasOdpisu`).
 5. Porównuje aktualny snapshot z poprzednim plikiem `data/latest/<krs>.json`.
 6. Zapisuje nowy snapshot w `data/latest/` tylko po poprawnym pobraniu i normalizacji danych.
 7. Generuje `report.md`, `report.json`, `summary.txt` i `comparison.csv` z kolumnami starej wartości, nowej wartości oraz statusem `changed`/`no_change`/`added`/`removed`.
@@ -98,9 +98,9 @@ Workflow znajduje się w `.github/workflows/krs-monitor.yml`.
 Dostępne triggery:
 
 - `workflow_dispatch` — ręczne uruchomienie.
-- `schedule` — dwa crony w UTC: `17 6 * * 4` i `17 7 * * 4`.
+- `schedule` — dwa crony w UTC: `0 7 * * 4` i `0 8 * * 4`.
 
-GitHub Actions używa czasu UTC, dlatego workflow stosuje guard w Bashu. Dla uruchomień planowanych właściwe monitorowanie przechodzi dalej tylko wtedy, gdy lokalny czas `Europe/Warsaw` to czwartek `08:17`. Obsługuje to różnicę między czasem letnim i zimowym. Uruchomienia ręczne nie są blokowane przez ten guard.
+GitHub Actions używa czasu UTC, dlatego workflow stosuje guard w Bashu. Dla uruchomień planowanych właściwe monitorowanie przechodzi dalej tylko wtedy, gdy lokalny czas `Europe/Warsaw` to czwartek między `09:00` a `09:59`. Obsługuje to różnicę między czasem letnim i zimowym oraz typowe opóźnienia schedulerów GitHub Actions. Uruchomienia ręczne nie są blokowane przez ten guard.
 
 Workflow:
 
@@ -109,9 +109,10 @@ Workflow:
 3. Instaluje zależności z `requirements.txt`.
 4. Uruchamia `pytest`.
 5. Uruchamia `python -m krs_monitor.main`.
-6. Dopisuje `reports/*/summary.txt` do GitHub Actions job summary.
+6. Dopisuje najnowsze `summary.txt` do GitHub Actions job summary.
 7. Uploaduje katalog `reports/` jako artifact `krs-report`.
 8. Commituje zmienione pliki `data/latest`, `data/archive` i `reports`.
+9. Jeżeli wykryto zmiany, tworzy GitHub issue z krótkim podsumowaniem raportu. GitHub wyśle e-mail osobom obserwującym repozytorium lub wymienionym przez GitHub username.
 
 Commit ma format:
 
@@ -141,11 +142,47 @@ if date.today().isocalendar().week % 2 != 0:
 
 W takim wariancie workflow uruchamia się co tydzień, ale właściwe monitorowanie działa tylko w wybrane tygodnie parzyste lub nieparzyste.
 
-## Brak modułu mailowego
+## Powiadomienia przez GitHub
 
-Zgodnie z założeniem aktualna wersja nie implementuje:
+Workflow może tworzyć GitHub issue tylko wtedy, gdy raport wykryje zmiany. Nie wymaga to sekretów SMTP ani hasła do poczty, bo używany jest wbudowany `GITHUB_TOKEN`.
 
-- SMTP,
-- Microsoft Graph,
-- wysyłki e-maili,
-- zmiennych środowiskowych z sekretami pocztowymi.
+Jeżeli chcesz, aby GitHub dodatkowo wysłał maila konkretnej osobie, ta osoba musi otrzymywać powiadomienia GitHub dla repozytorium albo trzeba ją wymienić po GitHub username. W repository variables można ustawić:
+
+```text
+KRS_GITHUB_NOTIFY_USERS
+KRS_GITHUB_MAX_DETAILS
+```
+
+`KRS_GITHUB_NOTIFY_USERS` może zawierać jeden username albo kilka username'ów oddzielonych przecinkami, np.:
+
+```text
+przemek-github, marcin-github
+```
+
+Adres e-mail nie wystarczy do wymuszenia powiadomienia przez GitHub issue. GitHub nie pozwala wysyłać maili do dowolnych adresów z `GITHUB_TOKEN`.
+
+## Powiadomienia SMTP
+
+Opcjonalny moduł SMTP nadal jest dostępny, jeżeli kiedyś będzie potrzebna bezpośrednia wysyłka e-maili. Wymaga jednak danych logowania lub tokenu dostawcy poczty. Jeżeli sekrety nie są ustawione, workflow nie używa SMTP.
+
+W GitHub repository settings dodaj sekrety:
+
+```text
+KRS_EMAIL_SMTP_HOST
+KRS_EMAIL_SMTP_PORT
+KRS_EMAIL_USERNAME
+KRS_EMAIL_PASSWORD
+KRS_EMAIL_FROM
+KRS_EMAIL_TO
+```
+
+`KRS_EMAIL_TO` może zawierać jeden adres albo kilka adresów oddzielonych przecinkami. Opcjonalne sekrety:
+
+```text
+KRS_EMAIL_USE_TLS
+KRS_EMAIL_USE_SSL
+KRS_EMAIL_SUBJECT_PREFIX
+KRS_EMAIL_MAX_DETAILS
+```
+
+Domyślnie używany jest port `587` i STARTTLS. Dla SMTP over SSL ustaw `KRS_EMAIL_USE_SSL=true` oraz `KRS_EMAIL_USE_TLS=false`.

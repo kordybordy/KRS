@@ -3,11 +3,12 @@ name: KRS Monitor
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 6 * * 4"
-    - cron: "17 7 * * 4"
+    - cron: "0 7 * * 4"
+    - cron: "0 8 * * 4"
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   monitor:
@@ -15,7 +16,7 @@ jobs:
     env:
       PYTHONPATH: src
     steps:
-      - name: Guard scheduled runs for Europe/Warsaw Thursday 08:17
+      - name: Guard scheduled runs for Europe/Warsaw Thursday 09:00
         id: schedule_guard
         run: |
           if [ "${{ github.event_name }}" != "schedule" ]; then
@@ -23,9 +24,21 @@ jobs:
             exit 0
           fi
 
+          schedule="${{ github.event.schedule }}"
           local_dow="$(TZ=Europe/Warsaw date +%u)"
-          local_time="$(TZ=Europe/Warsaw date +%H:%M)"
-          if [ "$local_dow" = "4" ] && [ "$local_time" = "08:17" ]; then
+          local_hour="$(TZ=Europe/Warsaw date +%H)"
+          local_offset="$(TZ=Europe/Warsaw date +%z)"
+          should_run=false
+
+          if [ "$local_dow" = "4" ] && [ "$local_hour" = "09" ]; then
+            if [ "$schedule" = "0 7 * * 4" ] && [ "$local_offset" = "+0200" ]; then
+              should_run=true
+            elif [ "$schedule" = "0 8 * * 4" ] && [ "$local_offset" = "+0100" ]; then
+              should_run=true
+            fi
+          fi
+
+          if [ "$should_run" = "true" ]; then
             echo "should_run=true" >> "$GITHUB_OUTPUT"
           else
             echo "Skipping: local Europe/Warsaw time is $(TZ=Europe/Warsaw date --iso-8601=seconds)."
@@ -61,9 +74,15 @@ jobs:
       - name: Add report summary to job summary
         if: always() && steps.schedule_guard.outputs.should_run == 'true'
         run: |
-          if compgen -G "reports/*/summary.txt" > /dev/null; then
-            cat reports/*/summary.txt >> "$GITHUB_STEP_SUMMARY"
+          latest_summary="$(find reports -mindepth 2 -maxdepth 2 -name summary.txt | sort | tail -n 1)"
+          if [ -n "$latest_summary" ]; then
+            {
+              echo "## KRS monitor result"
+              echo
+              cat "$latest_summary"
+            } >> "$GITHUB_STEP_SUMMARY"
           else
+            echo "## KRS monitor result" >> "$GITHUB_STEP_SUMMARY"
             echo "No summary report found." >> "$GITHUB_STEP_SUMMARY"
           fi
 
@@ -87,3 +106,19 @@ jobs:
             git commit -m "krs-monitor: weekly report ${report_date}"
             git push
           fi
+
+      - name: Prepare GitHub issue notification
+        if: steps.schedule_guard.outputs.should_run == 'true'
+        id: github_notification
+        env:
+          KRS_GITHUB_NOTIFY_USERS: ${{ vars.KRS_GITHUB_NOTIFY_USERS }}
+        run: python -m krs_monitor.github_notifications --body-file krs-github-issue-body.md
+
+      - name: Create GitHub issue notification
+        if: steps.schedule_guard.outputs.should_run == 'true' && steps.github_notification.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "${{ steps.github_notification.outputs.title }}" \
+            --body-file "${{ steps.github_notification.outputs.body_file }}"

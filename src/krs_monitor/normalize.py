@@ -18,6 +18,7 @@ TECHNICAL_METADATA_KEYS = {
     "generated_at",
     "downloadedAt",
     "downloaded_at",
+    "dataCzasOdpisu",
     "timestamp",
 }
 
