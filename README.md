@@ -98,9 +98,9 @@ Workflow znajduje się w `.github/workflows/krs-monitor.yml`.
 Dostępne triggery:
 
 - `workflow_dispatch` — ręczne uruchomienie.
-- `schedule` — dwa crony w UTC: `0 7 * * 4` i `0 8 * * 4`.
+- `schedule` — dwa crony w UTC dobrane do miesięcy czasu zimowego i letniego: `0 8 * 1,2,3,11,12 4` oraz `0 7 * 4,5,6,7,8,9,10 4`.
 
-GitHub Actions używa czasu UTC, dlatego workflow stosuje guard w Bashu. Dla uruchomień planowanych właściwe monitorowanie przechodzi dalej tylko wtedy, gdy lokalny czas `Europe/Warsaw` to czwartek między `09:00` a `09:59`. Obsługuje to różnicę między czasem letnim i zimowym oraz typowe opóźnienia schedulerów GitHub Actions. Uruchomienia ręczne nie są blokowane przez ten guard.
+GitHub Actions używa czasu UTC i nie obsługuje natywnie stref czasowych w cronach. Workflow nie używa już osobnego guardu, więc zaplanowany run nie kończy się pustym skipem. Harmonogram przybliża czwartek `09:00` czasu `Europe/Warsaw`; w tygodniach zmiany czasu run może wypaść godzinę wcześniej albo później.
 
 Workflow:
 

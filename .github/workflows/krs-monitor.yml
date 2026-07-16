@@ -3,8 +3,10 @@ name: KRS Monitor
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 7 * * 4"
-    - cron: "0 8 * * 4"
+    # GitHub cron uses UTC. These entries approximate Thursday 09:00 Europe/Warsaw
+    # without weekly skipped runs. DST transition weeks may run one hour off.
+    - cron: "0 8 * 1,2,3,11,12 4"
+    - cron: "0 7 * 4,5,6,7,8,9,10 4"
 
 permissions:
   contents: write
@@ -16,63 +18,29 @@ jobs:
     env:
       PYTHONPATH: src
     steps:
-      - name: Guard scheduled runs for Europe/Warsaw Thursday 09:00
-        id: schedule_guard
-        run: |
-          if [ "${{ github.event_name }}" != "schedule" ]; then
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          schedule="${{ github.event.schedule }}"
-          local_dow="$(TZ=Europe/Warsaw date +%u)"
-          local_hour="$(TZ=Europe/Warsaw date +%H)"
-          local_offset="$(TZ=Europe/Warsaw date +%z)"
-          should_run=false
-
-          if [ "$local_dow" = "4" ] && [ "$local_hour" = "09" ]; then
-            if [ "$schedule" = "0 7 * * 4" ] && [ "$local_offset" = "+0200" ]; then
-              should_run=true
-            elif [ "$schedule" = "0 8 * * 4" ] && [ "$local_offset" = "+0100" ]; then
-              should_run=true
-            fi
-          fi
-
-          if [ "$should_run" = "true" ]; then
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "Skipping: local Europe/Warsaw time is $(TZ=Europe/Warsaw date --iso-8601=seconds)."
-            echo "should_run=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Checkout repository
-        if: steps.schedule_guard.outputs.should_run == 'true'
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Set up Python
-        if: steps.schedule_guard.outputs.should_run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Install dependencies
-        if: steps.schedule_guard.outputs.should_run == 'true'
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Run tests
-        if: steps.schedule_guard.outputs.should_run == 'true'
         run: pytest
 
       - name: Run KRS monitor
-        if: steps.schedule_guard.outputs.should_run == 'true'
         run: python -m krs_monitor.main
 
       - name: Add report summary to job summary
-        if: always() && steps.schedule_guard.outputs.should_run == 'true'
+        if: always()
         run: |
           latest_summary="$(find reports -mindepth 2 -maxdepth 2 -name summary.txt | sort | tail -n 1)"
           if [ -n "$latest_summary" ]; then
@@ -87,14 +55,13 @@ jobs:
           fi
 
       - name: Upload reports artifact
-        if: always() && steps.schedule_guard.outputs.should_run == 'true'
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: krs-report
           path: reports/
 
       - name: Commit monitoring outputs
-        if: steps.schedule_guard.outputs.should_run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -108,14 +75,13 @@ jobs:
           fi
 
       - name: Prepare GitHub issue notification
-        if: steps.schedule_guard.outputs.should_run == 'true'
         id: github_notification
         env:
           KRS_GITHUB_NOTIFY_USERS: ${{ vars.KRS_GITHUB_NOTIFY_USERS }}
         run: python -m krs_monitor.github_notifications --body-file krs-github-issue-body.md
 
       - name: Create GitHub issue notification
-        if: steps.schedule_guard.outputs.should_run == 'true' && steps.github_notification.outputs.has_changes == 'true'
+        if: steps.github_notification.outputs.has_changes == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
