@@ -1,0 +1,3879 @@
+{
+  "odpis": {
+    "dane": {
+      "dzial1": {
+        "danePodmiotu": {
+          "czyPosiadaStatusOPP": [
+            {
+              "czyPosiadaStatusOPP": false,
+              "nrWpisuWprow": "1"
+            }
+          ],
+          "czyProwadziDzialalnoscZInnymiPodmiotami": [
+            {
+              "czyProwadziDzialalnoscZInnymiPodmiotami": false,
+              "nrWpisuWprow": "1"
+            }
+          ],
+          "formaPrawna": [
+            {
+              "formaPrawna": "SPÓŁKA AKCYJNA",
+              "nrWpisuWprow": "1"
+            }
+          ],
+          "identyfikatory": [
+            {
+              "identyfikatory": {
+                "nip": "6751387586",
+                "regon": "12070569600000"
+              },
+              "nrWpisuWprow": "2"
+            }
+          ],
+          "nazwa": [
+            {
+              "nazwa": "IFIN24 SPÓŁKA AKCYJNA",
+              "nrWpisuWprow": "1",
+              "nrWpisuWykr": "9"
+            },
+            {
+              "nazwa": "COMARCH POLSKA SPÓŁKA AKCYJNA",
+              "nrWpisuWprow": "9",
+              "nrWpisuWykr": "68"
+            },
+            {
+              "nazwa": "CGI POLSKA SPÓŁKA AKCYJNA",
+              "nrWpisuWprow": "68"
+            }
+          ]
+        },
+        "emisjeAkcji": [
+          {
+            "czyAkcjeUprzywilejowaneLiczbaAkcjiRodzajUprzywilejowania": [
+              {
+                "czyAkcjeUprzywilejowaneLiczbaAkcjiRodzajUprzywilejowania": "AKCJE NIE SĄ UPRZYWILEJOWANE",
+                "nrWpisuWprow": "1"
+              }
+            ],
+            "liczbaAkcjiWSerii": [
+              {
+                "liczbaAkcjiWSerii": "5000",
+                "nrWpisuWprow": "1"
+              }
+            ],
+            "nazwaSeriiAkcji": [
+              {
+                "nazwaSeriiAkcji": "SERIA A",
+                "nrWpisuWprow": "1"
+              }
+            ]
+          },
+          {
+            "czyAkcjeUprzywilejowaneLiczbaAkcjiRodzajUprzywilejowania": [
+              {
+                "czyAkcjeUprzywilejowaneLiczbaAkcjiRodzajUprzywilejowania": "AKCJE NIE SĄ UPRZYWILEJOWANE",
+                "nrWpisuWprow": "64"
+              }
+            ],
+            "liczbaAkcjiWSerii": [
+              {
+                "liczbaAkcjiWSerii": "1643",
+                "nrWpisuWprow": "64"
+              }
+            ],
+            "nazwaSeriiAkcji": [
+              {
+                "nazwaSeriiAkcji": "SERIA B",
+                "nrWpisuWprow": "64"
+              }
+            ]
+          }
+        ],
+        "jednostkiTerenoweOddzialy": [
+          {
+            "adres": [
+              {
+                "kodPocztowy": "91-463",
+                "kraj": "POLSKA",
+                "miejscowosc": "ŁÓDŹ",
+                "nrDomu": "54",
+                "nrLokalu": "56",
+                "nrWpisuWprow": "2",
+                "nrWpisuWykr": "5",
+                "poczta": "ŁÓDŹ",
+                "ulica": "ŁAGIEWNICKA"
+              },
+              {
+                "kodPocztowy": "90-251",
+                "kraj": "POLSKA",
+                "miejscowosc": "ŁÓDŹ",
+                "nrDomu": "74",
+                "nrWpisuWprow": "5",
+                "nrWpisuWykr": "10",
+                "poczta": "ŁÓDŹ",
+                "ulica": "JARACZA"
+              }
+            ],
+            "nazwa": [
+              {
+                "nazwa": "IFIN24 SPÓŁKA AKCYJNA ODDZIAŁ W ŁODZI",
+                "nrWpisuWprow": "2",
+                "nrWpisuWykr": "10"
+              }
+            ],
+            "siedziba": [
+              {
+                "gmina": "M. ŁÓDŹ",
+                "kraj": "POLSKA",
+                "miejscowosc": "ŁÓDŹ",
+                "nrWpisuWprow": "2",
+                "nrWpisuWykr": "10",
+                "powiat": "M. ŁÓDŹ",
+                "wojewodztwo": "ŁÓDZKIE"
+              }
+            ]
+          },
+          {
+            "adres": [
+              {
+                "kodPocztowy": "40-019",
+                "kraj": "POLSKA",
+                "miejscowosc": "KATOWICE",
+                "nrDomu": "29",
+                "nrWpisuWprow": "18",
+                "nrWpisuWykr": "68",
+                "poczta": "KATOWICE",
+                "ulica": "UL. ZYGMUNTA KRASIŃSKIEGO"
+              }
+            ],
+            "nazwa": [
+              {
+                "nazwa": "COMARCH POLSKA SPÓŁKA AKCYJNA ODDZIAŁ W KATOWICACH",
+                "nrWpisuWprow": "18",
+                "nrWpisuWykr": "68"
+              }
+            ],
+            "siedziba": [
+              {
+                "gmina": "KATOWICE",
+                "kraj": "POLSKA",
+                "miejscowosc": "KATOWICE",
+                "nrWpisuWprow": "18",
+                "nrWpisuWykr": "68",
+                "powiat": "KATOWICE",
+                "wojewodztwo": "ŚLĄSKIE"
+              }
+            ]
+          },
+          {
+            "adres": [
+              {
+                "kodPocztowy": "20-103",
+                "kraj": "POLSKA",
+                "miejscowosc": "LUBLIN",
+                "nrDomu": "17",
+                "nrWpisuWprow": "18",
+                "nrWpisuWykr": "68",
+                "poczta": "LUBLIN",
+                "ulica": "UL. RUSAŁKA"
+              }
+            ],
+            "nazwa": [
+              {
+                "nazwa": "COMARCH POLSKA SPÓŁKA AKCYJNA ODDZIAŁ W LUBLINIE",
+                "nrWpisuWprow": "18",
+                "nrWpisuWykr": "68"
+              }
+            ],
+            "siedziba": [
+              {
+                "gmina": "LUBLIN",
+                "kraj": "POLSKA",
+                "miejscowosc": "LUBLIN",
+                "nrWpisuWprow": "18",
+                "nrWpisuWykr": "68",
+                "powiat": "LUBLIN",
+                "wojewodztwo": "LUBELSKIE"
+              }
+            ]
+          },
+          {
+            "adres": [
+              {
+                "kodPocztowy": "90-251",
+                "kraj": "POLSKA",
+                "miejscowosc": "ŁÓDŹ",
+                "nrDomu": "74",
+                "nrWpisuWprow": "18",
+                "nrWpisuWykr": "68",
+                "poczta": "ŁÓDŹ",
+                "ulica": "UL. STEFANA JARACZA"
+              }
+            ],
+            "nazwa": [
+              {
+                "nazwa": "COMARCH POLSKA SPÓŁKA AKCYJNA ODDZIAŁ W ŁODZI",
+                "nrWpisuWprow": "18",
+                "nrWpisuWykr": "68"
+              }
+            ],
+            "siedziba": [
+              {
+                "gmina": "ŁÓDŹ",
+                "kraj": "POLSKA",
+                "miejscowosc": "ŁÓDŹ",
+                "nrWpisuWprow": "18",
+                "nrWpisuWykr": "68",
+                "powiat": "ŁÓDŹ",
+                "wojewodztwo": "ŁÓDZKIE"
+              }
+            ]
+          },
+          {
+            "adres": [
+              {
+                "kodPocztowy": "51-162",
+                "kraj": "POLSKA",
+                "miejscowosc": "WROCŁAW",
+                "nrDomu": "3-6",
+                "nrWpisuWprow": "18",
+                "nrWpisuWykr": "68",
+                "poczta": "WROCŁAW",
+                "ulica": "UL. JANA DŁUGOSZA"
+              }
+            ],
+            "nazwa": [
+              {
+                "nazwa": "COMARCH POLSKA SPÓŁKA AKCYJNA ODDZIAŁ WE WROCŁAWIU",
+                "nrWpisuWprow": "18",
+                "nrWpisuWykr": "68"
+              }
+            ],
+            "siedziba": [
+              {
+                "gmina": "WROCŁAW",
+                "kraj": "POLSKA",
+                "miejscowosc": "WROCŁAW",
+                "nrWpisuWprow": "18",
+                "nrWpisuWykr": "68",
+                "powiat": "WROCŁAW",
+                "wojewodztwo": "DOLNOŚLĄSKIE"
+              }
+            ]
+          }
+        ],
+        "jedynyAkcjonariusz": [
+          {
+            "czyPosiadaCaloscAkcji": [
+              {
+                "czyPosiadaCaloscAkcji": true,
+                "nrWpisuWprow": "1",
+                "nrWpisuWykr": "66"
+              }
+            ],
+            "identyfikator": [
+              {
+                "nrWpisuWprow": "1",
+                "nrWpisuWykr": "66",
+                "regon": "12057614100000"
+              }
+            ],
+            "nazwa": [
+              {
+                "nazwa": "COMARCH CORPARATE FINANCE FUNDUSZ INWESTYCYJNY ZAMKNIĘTY",
+                "nrWpisuWprow": "1",
+                "nrWpisuWykr": "16"
+              },
+              {
+                "nazwa": "COMARCH CORPORATE FINANCE FUNDUSZ INWESTYCYJNY ZAMKNIĘTY",
+                "nrWpisuWprow": "16",
+                "nrWpisuWykr": "66"
+              }
+            ]
+          },
+          {
+            "identyfikator": [
+              {
+                "nrWpisuWprow": "67",
+                "regon": "01274470200000"
+              }
+            ],
+            "krs": [
+              {
+                "krs": "0000078664",
+                "nrWpisuWprow": "67"
+              }
+            ],
+            "nazwa": [
+              {
+                "nazwa": "CGI INFORMATION SYSTEMS AND MANAGEMENT CONSULTANTS (POLSKA) SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+                "nrWpisuWprow": "67"
+              }
+            ]
+          }
+        ],
+        "kapital": {
+          "czescKapitaluWplaconegoPokrytego": [
+            {
+              "nrWpisuWprow": "1",
+              "nrWpisuWykr": "64",
+              "waluta": "PLN",
+              "wartosc": "500000,00"
+            },
+            {
+              "nrWpisuWprow": "64",
+              "waluta": "PLN",
+              "wartosc": "664300,00"
+            }
+          ],
+          "lacznaLiczbaAkcjiUdzialow": [
+            {
+              "lacznaLiczbaAkcjiUdzialow": "5000",
+              "nrWpisuWprow": "1",
+              "nrWpisuWykr": "64"
+            },
+            {
+              "lacznaLiczbaAkcjiUdzialow": "6643",
+              "nrWpisuWprow": "64"
+            }
+          ],
+          "wartoscJednejAkcji": [
+            {
+              "nrWpisuWprow": "1",
+              "waluta": "PLN",
+              "wartosc": "100,00"
+            }
+          ],
+          "wysokoscKapitaluDocelowegoZapasowego": [
+            {
+              "nrWpisuWprow": "1",
+              "waluta": "PLN",
+              "wartosc": "875000,00"
+            }
+          ],
+          "wysokoscKapitaluZakladowego": [
+            {
+              "nrWpisuWprow": "1",
+              "nrWpisuWykr": "64",
+              "waluta": "PLN",
+              "wartosc": "500000,00"
+            },
+            {
+              "nrWpisuWprow": "64",
+              "waluta": "PLN",
+              "wartosc": "664300,00"
+            }
+          ]
+        },
+        "pozostaleInformacje": {
+          "czyObligatoriuszeMajaPrawoDoUdzialuWZysku": [
+            {
+              "czyObligatoriuszeMajaPrawoDoUdzialuWZysku": false,
+              "nrWpisuWprow": "1"
+            }
+          ],
+          "czyUmowaStatutPrzyznajeUprawnieniaOsobiste": [
+            {
+              "czyUmowaStatutPrzyznajeUprawnieniaOsobiste": false,
+              "nrWpisuWprow": "1"
+            }
+          ],
+          "informacjaOCzasieNaJakiZostalUtworzonyPodmiot": [
+            {
+              "czasNaJakiUtworzonyZostalPodmiot": "NIEOZNACZONY",
+              "nrWpisuWprow": "1"
+            }
+          ],
+          "informacjaOPismieDoOgloszen": []
+        },
+        "siedzibaIAdres": {
+          "adres": [
+            {
+              "kodPocztowy": "31-864",
+              "kraj": "POLSKA",
+              "miejscowosc": "KRAKÓW",
+              "nrDomu": "39A",
+              "nrWpisuWprow": "1",
+              "nrWpisuWykr": "9",
+              "poczta": "KRAKÓW",
+              "ulica": "ALEJA JANA PAWŁA II"
+            },
+            {
+              "kodPocztowy": "31-864",
+              "kraj": "POLSKA",
+              "miejscowosc": "KRAKÓW",
+              "nrDomu": "41 G",
+              "nrWpisuWprow": "9",
+              "nrWpisuWykr": "12",
+              "poczta": "KRAKÓW",
+              "ulica": "ALEJA JANA PAWŁA II"
+            },
+            {
+              "kodPocztowy": "31-864",
+              "kraj": "POLSKA",
+              "miejscowosc": "KRAKÓW",
+              "nrDomu": "39A",
+              "nrWpisuWprow": "12",
+              "nrWpisuWykr": "58",
+              "poczta": "KRAKÓW",
+              "ulica": "ALEJA JANA PAWŁA II"
+            },
+            {
+              "kodPocztowy": "31-864",
+              "kraj": "POLSKA",
+              "miejscowosc": "KRAKÓW",
+              "nrDomu": "39A",
+              "nrWpisuWprow": "58",
+              "nrWpisuWykr": "67",
+              "poczta": "KRAKÓW",
+              "ulica": "ALEJA JANA PAWŁA II"
+            },
+            {
+              "kodPocztowy": "00-499",
+              "kraj": "POLSKA",
+              "miejscowosc": "WARSZAWA",
+              "nrDomu": "10",
+              "nrLokalu": "14",
+              "nrWpisuWprow": "67",
+              "nrWpisuWykr": "69",
+              "poczta": "WARSZAWA",
+              "ulica": "PLAC TRZECH KRZYŻY"
+            },
+            {
+              "kodPocztowy": "00-499",
+              "kraj": "POLSKA",
+              "miejscowosc": "WARSZAWA",
+              "nrDomu": "10/14",
+              "nrWpisuWprow": "69",
+              "poczta": "WARSZAWA",
+              "ulica": "PLAC TRZECH KRZYŻY"
+            }
+          ],
+          "adresDoDoreczenElektronicznychWpisanyDoBAE": [
+            {
+              "adresDoDoreczenElektronicznychWpisanyDoBAE": "AE:PL-85443-45708-VJBUF-18",
+              "nrWpisuWprow": "59"
+            }
+          ],
+          "adresPocztyElektronicznej": [],
+          "adresStronyInternetowej": [
+            {
+              "adresStronyInternetowej": "WWW.COMARCH.PL/O-FIRMIE/GRUPA-KAPITALOWA-I-SPOLKI-STOWARZYSZONE/COMARCH-POLSKA-SA/",
+              "nrWpisuWprow": "31",
+              "nrWpisuWykr": "68"
+            },
+            {
+              "adresStronyInternetowej": "WWW.CGI.COM/POLSKA/PL",
+              "nrWpisuWprow": "68"
+            }
+          ],
+          "siedziba": [
+            {
+              "gmina": "KRAKÓW",
+              "kraj": "POLSKA",
+              "miejscowosc": "KRAKÓW",
+              "nrWpisuWprow": "1",
+              "nrWpisuWykr": "58",
+              "powiat": "KRAKOWSKI",
+              "wojewodztwo": "MAŁOPOLSKIE"
+            },
+            {
+              "gmina": "KRAKÓW",
+              "kraj": "POLSKA",
+              "miejscowosc": "KRAKÓW",
+              "nrWpisuWprow": "58",
+              "nrWpisuWykr": "67",
+              "powiat": "KRAKÓW",
+              "wojewodztwo": "MAŁOPOLSKIE"
+            },
+            {
+              "gmina": "WARSZAWA",
+              "kraj": "POLSKA",
+              "miejscowosc": "WARSZAWA",
+              "nrWpisuWprow": "67",
+              "powiat": "WARSZAWA",
+              "wojewodztwo": "MAZOWIECKIE"
+            }
+          ]
+        },
+        "umowaStatut": {
+          "informacjaOZawarciuZmianieUmowyStatutu": [
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "1",
+                  "zawarcieZmianaUmowyStatutu": "5 MAJA 2008 ROK, ASESOR NOTARIALNY RADOSŁAW CHORABIK ZASTĘPCA NOTARIUSZA W KRAKOWIE DOROTY MIKI PROWADZĄCEJ KANCELARIĘ NOTARIALNĄ PRZY UL. LUBICZ NR 3; REPERTORIUM A NR 2544/2008"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "9",
+                  "zawarcieZmianaUmowyStatutu": "24.02.2012 R., REPERTORIUM A NR 885/2012, NOTARIUSZ W KRAKOWIE RADOSŁAW CHORABIK PROWADZĄCY KANCELARIĘ NOTARIALNĄ PRZY PLACU WOLNICA 11/1.\nZMIANIE ULEGŁY NASTĘPUJĄCE § STATUTU SPÓŁKI:\n§ 1 (UST.1 I UST.2), § 6 (POPRZEZ MIANĘ UST.1 PKT 1-19), § 18 (UST.1 ZDANIE DRUGIE), § 21 DO § 6 STATUTU SPÓŁKI UST.1 DODANE ZOSTAŁY PKT 20-41."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "14",
+                  "zawarcieZmianaUmowyStatutu": "07.10.2014R., REP.A NR 5046/2014, NOTARIUSZ RADOSŁAW CHORABIK, KANCELARIA W KRAKOWIE,DODANIE § 6 UST.1 PKT.42 ORAZ PKT.43."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "45",
+                  "zawarcieZmianaUmowyStatutu": "08.09.2022 R., REPERTORIUM A NR 6054/2022, NOTARIUSZ RADOSŁAW CHORABIK, NOTARIUSZ RADOSŁAW CHORABIK NOTARIUSZ MAGDALENA WAWRUCH KANCELARIA NOTARIALNA S.C. W KRAKOWIE, PL. WOLNICA 11/1\nDODANIE § 17(1) ORAZ § 21(1)"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "58",
+                  "zawarcieZmianaUmowyStatutu": "26.11.2024R., REPERTORIUM A NR 7417/2024, NOTARIUSZ RADOSŁAW CHORABIK, KANCELARIA NOTARIALNA W KRAKOWIE, ZMIENIONY: §21"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "64",
+                  "zawarcieZmianaUmowyStatutu": "14 LISTOPADA 2025 R., NR REPERTORIUM A 11708/2025, NOTARIUSZ MARCIN ŁASKI,   KANCELARIA NOTARIALNA W WARSZAWIE, ZMIENIONO § 7 UST. 1, § 7 UST. 2 ORAZ PRZYJĘTO TEKST JEDNOLITY STATUTU SPÓŁKI."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "67",
+                  "zawarcieZmianaUmowyStatutu": "18 GRUDNIA 2025 R., REP. A 13448/2025, NOTARIUSZ PAWEŁ ZBIGNIEW CUPRIAK, KANCELARIA NOTARIALNA W WARSZAWIE, ZMIENIONO § 2, § 11 UST. 4, § 18 UST. 1 ORAZ PRZYJĘTO NOWY TEKST JEDNOLITY STATUTU SPÓŁKI."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "68",
+                  "zawarcieZmianaUmowyStatutu": "19 STYCZNIA 2026 R., REP. A NR 742/2026, MICHAŁ CHOWANIEC, ZASTĘPCA NOTARIALNY NOTARIUSZA PAWŁA SAWICKIEGO, KANCELARIA NOTARIALNA W WARSZAWIE, ZMIENIONO § 1 UST. 1 I UST. 2 ORAZ PRZYJĘTO NOWY TEKST JEDNOLITY STATUTU SPÓŁKI."
+                }
+              ]
+            }
+          ]
+        },
+        "wzmiankaOUpowaznieniuDoEmisjiWarrantowSubskrypcyjnych": {
+          "czyZarzadJestUprawnionyDoEmisjiWarrantowSubskrypcyjnych": [
+            {
+              "czyZarzadJestUprawnionyDoEmisjiWarrantowSubskrypcyjnych": false,
+              "nrWpisuWprow": "1"
+            }
+          ]
+        }
+      },
+      "dzial2": {
+        "organNadzoru": [
+          {
+            "nazwa": [
+              {
+                "nazwa": "RADA NADZORCZA",
+                "nrWpisuWprow": "1"
+              }
+            ],
+            "sklad": [
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "9",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "J****"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "9"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "M****"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "9"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "9",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "M*****"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "9"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "W*****"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "9"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "6",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "A***"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "6"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "F*******"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "6"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "9",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "T*****"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "9"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "M******"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "9"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "7",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "P****"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "7"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "R*******"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "7"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "40",
+                    "pesel": "6**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "A********"
+                    },
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "40"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "G****"
+                    },
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "40"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "21",
+                    "pesel": "6**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "S*******"
+                    },
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "21"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "K*******"
+                    },
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "21"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "51",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "M****"
+                    },
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "51"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "Ł******"
+                    },
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "51"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "21",
+                    "nrWpisuWykr": "40",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "P*********"
+                    },
+                    "nrWpisuWprow": "21",
+                    "nrWpisuWykr": "40"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "A********"
+                    },
+                    "nrWpisuWprow": "21",
+                    "nrWpisuWykr": "40"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "40",
+                    "nrWpisuWykr": "65",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "G*******"
+                    },
+                    "nrWpisuWprow": "40",
+                    "nrWpisuWykr": "65"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "R*****"
+                    },
+                    "nrWpisuWprow": "40",
+                    "nrWpisuWykr": "65"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "40",
+                    "nrWpisuWykr": "45",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "B********"
+                    },
+                    "nrWpisuWprow": "40",
+                    "nrWpisuWykr": "45"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "G*********",
+                      "nazwiskoIICzlon": "W**"
+                    },
+                    "nrWpisuWprow": "40",
+                    "nrWpisuWykr": "45"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "45",
+                    "nrWpisuWykr": "52",
+                    "pesel": "5**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "J*****"
+                    },
+                    "nrWpisuWprow": "45",
+                    "nrWpisuWykr": "52"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "F*******"
+                    },
+                    "nrWpisuWprow": "45",
+                    "nrWpisuWykr": "52"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "51",
+                    "nrWpisuWykr": "65",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "W*******"
+                    },
+                    "nrWpisuWprow": "51",
+                    "nrWpisuWykr": "65"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "P*********"
+                    },
+                    "nrWpisuWprow": "51",
+                    "nrWpisuWykr": "65"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "52",
+                    "nrWpisuWykr": "57",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "A***"
+                    },
+                    "nrWpisuWprow": "52",
+                    "nrWpisuWykr": "57"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "P*****"
+                    },
+                    "nrWpisuWprow": "52",
+                    "nrWpisuWykr": "57"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "57",
+                    "nrWpisuWykr": "58",
+                    "pesel": "9**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "M****"
+                    },
+                    "nrWpisuWprow": "57",
+                    "nrWpisuWykr": "58"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "F*******"
+                    },
+                    "nrWpisuWprow": "57",
+                    "nrWpisuWykr": "58"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "58",
+                    "nrWpisuWykr": "65",
+                    "pesel": "8**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "M*****"
+                    },
+                    "nrWpisuWprow": "58",
+                    "nrWpisuWykr": "65"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "R*****"
+                    },
+                    "nrWpisuWprow": "58",
+                    "nrWpisuWykr": "65"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "65",
+                    "nrWpisuWykr": "67",
+                    "pesel": "6**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "A***"
+                    },
+                    "nrWpisuWprow": "65",
+                    "nrWpisuWykr": "67"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "K******"
+                    },
+                    "nrWpisuWprow": "65",
+                    "nrWpisuWykr": "67"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "65",
+                    "nrWpisuWykr": "67",
+                    "pesel": "8**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "J*****"
+                    },
+                    "nrWpisuWprow": "65",
+                    "nrWpisuWykr": "67"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "O*******"
+                    },
+                    "nrWpisuWprow": "65",
+                    "nrWpisuWykr": "67"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "65",
+                    "nrWpisuWykr": "67",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "P****"
+                    },
+                    "nrWpisuWprow": "65",
+                    "nrWpisuWykr": "67"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "K******"
+                    },
+                    "nrWpisuWprow": "65",
+                    "nrWpisuWykr": "67"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "dataUrodzenia": "07.09.1970",
+                    "nrWpisuWprow": "67"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "S****"
+                    },
+                    "nrWpisuWprow": "67"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "P*****"
+                    },
+                    "nrWpisuWprow": "67"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "dataUrodzenia": "16.10.1967",
+                    "nrWpisuWprow": "67"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "N****"
+                    },
+                    "nrWpisuWprow": "67"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "S***"
+                    },
+                    "nrWpisuWprow": "67"
+                  }
+                ]
+              },
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "67",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "A**"
+                    },
+                    "nrWpisuWprow": "67"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "J******"
+                    },
+                    "nrWpisuWprow": "67"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "prokurenci": [
+          {
+            "identyfikator": [
+              {
+                "nrWpisuWprow": "2",
+                "nrWpisuWykr": "7",
+                "pesel": "7**********"
+              }
+            ],
+            "imiona": [
+              {
+                "imiona": {
+                  "imie": "K********"
+                },
+                "nrWpisuWprow": "2",
+                "nrWpisuWykr": "7"
+              }
+            ],
+            "nazwisko": [
+              {
+                "nazwisko": {
+                  "nazwiskoICzlon": "M*****"
+                },
+                "nrWpisuWprow": "2",
+                "nrWpisuWykr": "7"
+              }
+            ],
+            "rodzajProkury": [
+              {
+                "nrWpisuWprow": "2",
+                "nrWpisuWykr": "7",
+                "rodzajProkury": "ŁĄCZNA, WYKONYWANA Z CZŁONKIEM ZARZĄDU"
+              }
+            ]
+          },
+          {
+            "identyfikator": [
+              {
+                "nrWpisuWprow": "8",
+                "nrWpisuWykr": "67",
+                "pesel": "7**********"
+              }
+            ],
+            "imiona": [
+              {
+                "imiona": {
+                  "imie": "M*****"
+                },
+                "nrWpisuWprow": "8",
+                "nrWpisuWykr": "67"
+              }
+            ],
+            "nazwisko": [
+              {
+                "nazwisko": {
+                  "nazwiskoICzlon": "B*****"
+                },
+                "nrWpisuWprow": "8",
+                "nrWpisuWykr": "67"
+              }
+            ],
+            "rodzajProkury": [
+              {
+                "nrWpisuWprow": "8",
+                "nrWpisuWykr": "17",
+                "rodzajProkury": "PROKURA ŁĄCZNA Z CZŁONKIEM ZARZĄDU"
+              },
+              {
+                "nrWpisuWprow": "17",
+                "nrWpisuWykr": "30",
+                "rodzajProkury": "PROKURA ŁĄCZNA Z INNYM PROKURENTEM"
+              },
+              {
+                "nrWpisuWprow": "30",
+                "nrWpisuWykr": "67",
+                "rodzajProkury": "PROKURA ŁĄCZNA Z CZŁONKIEM ZARZĄDU"
+              }
+            ]
+          },
+          {
+            "identyfikator": [
+              {
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "46",
+                "pesel": "7**********"
+              }
+            ],
+            "imiona": [
+              {
+                "imiona": {
+                  "imie": "T*****"
+                },
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "46"
+              }
+            ],
+            "nazwisko": [
+              {
+                "nazwisko": {
+                  "nazwiskoICzlon": "M******"
+                },
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "46"
+              }
+            ],
+            "rodzajProkury": [
+              {
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "17",
+                "rodzajProkury": "PROKURA ŁACZNA Z CZŁONKIEM ZARZĄDU."
+              },
+              {
+                "nrWpisuWprow": "17",
+                "nrWpisuWykr": "30",
+                "rodzajProkury": "PROKURA ŁĄCZNA Z INNYM PROKURENTEM"
+              },
+              {
+                "nrWpisuWprow": "30",
+                "nrWpisuWykr": "46",
+                "rodzajProkury": "PROKURA ŁĄCZNA Z CZŁONKIEM ZARZĄDU"
+              }
+            ]
+          },
+          {
+            "identyfikator": [
+              {
+                "nrWpisuWprow": "30",
+                "pesel": "6**********"
+              }
+            ],
+            "imiona": [
+              {
+                "imiona": {
+                  "imie": "S*******"
+                },
+                "nrWpisuWprow": "30"
+              }
+            ],
+            "nazwisko": [
+              {
+                "nazwisko": {
+                  "nazwiskoICzlon": "K*******"
+                },
+                "nrWpisuWprow": "30"
+              }
+            ],
+            "rodzajProkury": [
+              {
+                "nrWpisuWprow": "30",
+                "rodzajProkury": "PROKURA ŁĄCZNA Z CZŁONKIEM ZARZĄDU"
+              }
+            ]
+          }
+        ],
+        "reprezentacja": [
+          {
+            "nazwaOrganu": [
+              {
+                "nazwaOrganu": "ZARZĄD",
+                "nrWpisuWprow": "1"
+              }
+            ],
+            "sklad": [
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "65"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "3"
+                  },
+                  {
+                    "funkcjaWOrganie": "WICEPREZES ZARZĄDU",
+                    "nrWpisuWprow": "3",
+                    "nrWpisuWykr": "65"
+                  }
+                ],
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "65",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "K*****"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "65"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "T*******"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "65"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "7"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "PREZES ZARZĄDU",
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "7"
+                  }
+                ],
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "7",
+                    "pesel": "5**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "J*****"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "7"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "F*******"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "7"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "8"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "3"
+                  },
+                  {
+                    "funkcjaWOrganie": "WICEPREZES ZARZĄDU",
+                    "nrWpisuWprow": "3",
+                    "nrWpisuWykr": "8"
+                  }
+                ],
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "8",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "W*********"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "8"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "S********"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "8"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "9"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "PREZES",
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "9"
+                  }
+                ],
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "9",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "P****"
+                    },
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "9"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "R*******"
+                    },
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "9"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "45"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "PREZES ZARZĄDU",
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "45"
+                  }
+                ],
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "45",
+                    "pesel": "5**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "J*****"
+                    },
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "45"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "F*******"
+                    },
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "45"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "46"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "WICEPREZES ZARZĄDU",
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "45"
+                  },
+                  {
+                    "funkcjaWOrganie": "PREZES ZARZĄDU",
+                    "nrWpisuWprow": "45",
+                    "nrWpisuWykr": "46"
+                  }
+                ],
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "46",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "P****"
+                    },
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "46"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "P*****"
+                    },
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "46"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "30"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "WICEPREZES ZARZĄDU",
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "30"
+                  }
+                ],
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "30",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "D******"
+                    },
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "30"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "D******"
+                    },
+                    "nrWpisuWprow": "9",
+                    "nrWpisuWykr": "30"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "45"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "WICEPREZES ZARZĄDU",
+                    "nrWpisuWprow": "45"
+                  }
+                ],
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "45",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "I***"
+                    },
+                    "nrWpisuWprow": "45"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "B********"
+                    },
+                    "nrWpisuWprow": "45"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "46",
+                    "nrWpisuWykr": "67"
+                  },
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "67"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "PREZES ZARZĄDU",
+                    "nrWpisuWprow": "46",
+                    "nrWpisuWykr": "67"
+                  },
+                  {
+                    "funkcjaWOrganie": "WICEPREZES ZARZĄDU",
+                    "nrWpisuWprow": "67"
+                  }
+                ],
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "46",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "T*****"
+                    },
+                    "nrWpisuWprow": "46"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "M******"
+                    },
+                    "nrWpisuWprow": "46"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "65"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "WICEPREZES ZARZĄDU",
+                    "nrWpisuWprow": "65"
+                  }
+                ],
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "65",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "R*******"
+                    },
+                    "nrWpisuWprow": "65"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "K********"
+                    },
+                    "nrWpisuWprow": "65"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "65"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "WICEPREZES ZARZĄDU",
+                    "nrWpisuWprow": "65"
+                  }
+                ],
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "65",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "W*****"
+                    },
+                    "nrWpisuWprow": "65"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "W******"
+                    },
+                    "nrWpisuWprow": "65"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "65"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "WICEPREZES ZARZĄDU",
+                    "nrWpisuWprow": "65"
+                  }
+                ],
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "65",
+                    "pesel": "8**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "R****"
+                    },
+                    "nrWpisuWprow": "65"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "K******"
+                    },
+                    "nrWpisuWprow": "65"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "67"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "PREZES ZARZĄDU",
+                    "nrWpisuWprow": "67"
+                  }
+                ],
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "67",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "B*********"
+                    },
+                    "nrWpisuWprow": "67"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "N************"
+                    },
+                    "nrWpisuWprow": "67"
+                  }
+                ]
+              }
+            ],
+            "sposobReprezentacji": [
+              {
+                "nrWpisuWprow": "1",
+                "nrWpisuWykr": "9",
+                "sposobReprezentacji": "DO SKŁADANIA OŚWIADCZEŃ ZA SPÓŁKĘ I REPREZENTOWANIA SPÓŁKI WYMAGANE JEST WSPÓŁDZIAŁANIE 2 (DWÓCH) CZŁONKÓW ZARZĄDU LUB 1 (JEDNEGO) CZŁONKA ZARZĄDU ŁĄCZNIE Z PROKURENTEM. W PRZYPADKU ZARZĄDU JEDNOOSOBOWEGO, CZŁONEK ZARZĄDU REPREZENTUJE SPÓŁKĘ SAMODZIELNIE."
+              },
+              {
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "58",
+                "sposobReprezentacji": "DO SKŁADANIA OŚWIADCZEŃ ZA SPÓŁKĘ I REPREZENTOWANIA SPÓŁKI WYMAGANE JEST:\n1. SAMODZIELNE DZIAŁANIE PREZESA ZARZĄDU;\n2. WSPÓŁDZIAŁANIE DWÓCH CZŁONKÓW ZARZĄDU LUB JEDNEGO CZŁONKA ZARZĄDU ŁĄCZNIE Z PROKURENTEM, \nPRZY CZYM W PRZYPADKU ZARZĄDU JEDNOOSOBOWEGO, CZŁONEK ZARZĄDU REPREZENTUJE SPÓŁKĘ SAMODZIELNIE."
+              },
+              {
+                "nrWpisuWprow": "58",
+                "sposobReprezentacji": "DO SKŁADANIA OŚWIADCZEŃ ZA SPÓŁKĘ I REPREZENTOWANIA SPÓŁKI WYMAGANE JEST WSPÓŁDZIAŁANIE 2 (DWÓCH) CZŁONKÓW ZARZĄDU LUB (1) JEDNEGO CZŁONKA ZARZĄDU ŁĄCZNIE Z PROKURENTEM. W PRZYPADKU ZARZĄDU JEDNOOSOBOWEGO, CZŁONEK ZARZĄDU REPREZENTUJE SPÓŁKĘ SAMODZIELNIE."
+              }
+            ]
+          }
+        ]
+      },
+      "dzial3": {
+        "informacjaODniuKonczacymRokObrotowy": {
+          "dzienKonczacyPierwszyRokObrotowy": [
+            {
+              "dzienKonczacyPierwszyRokObrotowy": "31.12.2008",
+              "nrWpisuWprow": "20"
+            }
+          ]
+        },
+        "przedmiotDzialalnosci": {
+          "przedmiotPozostalejDzialalnosci": [
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "62",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "DZIAŁALNOŚĆ ZWIĄZANA Z OPROGRAMOWANIEM I DORADZTWEM W ZAKRESIE INFORMATYKI ORAZ DZIAŁALNOŚĆ POWIĄZANA"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "58",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "DZIAŁALNOŚĆ WYDAWNICZA"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "61",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "TELEKOMUNIKACJA"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "63",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "DZIAŁALNOŚĆ USŁUGOWA W ZAKRESIE INFORMACJI"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "66",
+                  "kodKlasa": "19",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "POZOSTAŁA FINANSOWA DZIAŁALNOŚĆ USŁUGOWA Z WYŁĄCZENIEM UBEZPIECZEŃ I FUNDUSZÓW EMERYTALNYCH."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "68",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "DZIAŁALNOŚĆ ZWIĄZANA Z OBSŁUGĄ RYNKU NIERUCHOMOŚCI"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "72",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "BADANIA NAUKOWE I PRACE ROZWOJOWE"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "85",
+                  "kodKlasa": "5",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "POZASZKOLNE FORMY EDUKACJI"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "85",
+                  "kodKlasa": "60",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "DZIAŁALNOŚĆ WSPOMAGAJĄCA EDUKACJĘ"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "95",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "NAPRAWA I KONSERWACJA KOMPUTERÓW I ARTYKUŁÓW UŻYTKU OSOBISTEGO I DOMOWEGO"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "49",
+                  "kodKlasa": "41",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "TRANSPORT DROGOWY TOWARÓW"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "47",
+                  "kodKlasa": "91",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "SPRZEDAŻ DETALICZNA PROWADZONA PRZEZ DOMY SPRZEDAŻY WYSYŁKOWEJ LUB INTERNET"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "47",
+                  "kodKlasa": "41",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "SPRZEDAŻ DETALICZNA KOMPUTERÓW, URZĄDZEŃ PERYFERYJNYCH I OPROGRAMOWANIA PROWADZONA W WYSPECJALIZOWANYCH SKLEPACH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "46",
+                  "kodKlasa": "5",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "SPRZEDAŻ HURTOWA NARZĘDZI TECHNOLOGII INFORMACYJNEJ I KOMUNIKACYJNEJ"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "46",
+                  "kodKlasa": "6",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "SPRZEDAŻ HURTOWA MASZYN URZĄDZEŃ I DODATKOWEGO WYPOSAŻENIA."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "66",
+                  "kodKlasa": "22",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "DZIAŁALNOŚĆ AGENTÓW I BROKERÓW UBEZPIECZENIOWYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "66",
+                  "kodKlasa": "19",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "9",
+                  "opis": "POZOSTAŁA DZIAŁALNOŚĆ WSPOMAGAJĄCA USŁUGI FINANSOWE, Z WYŁĄCZENIEM UBEZPIECZEŃ I FUNDUSZÓW EMERYTALNYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "62",
+                  "kodKlasa": "01",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "DZIAŁALNOŚĆ ZWIĄZANA Z OPROGRAMOWANIEM"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "62",
+                  "kodKlasa": "02",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "DZIAŁALNOŚĆ ZWIĄZANA Z DORADZTWEM W ZAKRESIE INFORMATYKI"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "62",
+                  "kodKlasa": "03",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "DZIAŁALNOŚĆ ZWIĄZANA Z ZARZĄDZANIEM URZĄDZENIAMI INFORMATYCZNYMI"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "62",
+                  "kodKlasa": "09",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "POZOSTAŁA DZIAŁALNOŚĆ USŁUGOWA W ZAKRESIE TECHNOLOGII INFORMATYCZNYCH I KOMPUTEROWYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "63",
+                  "kodKlasa": "11",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "PRZETWARZANIE DANYCH; ZARZĄDZANIE STRONAMI INTERNETOWYMI (HOSTING) I PODOBNA DZIAŁALNOŚĆ"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "63",
+                  "kodKlasa": "12",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "DZIAŁALNOŚĆ PORTALI INTERNETOWYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "63",
+                  "kodKlasa": "99",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "POZOSTAŁA DZIAŁALNOŚĆ USŁUGOWA W ZAKRESIE INFORMACJI, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "58",
+                  "kodKlasa": "29",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "DZIAŁALNOŚĆ WYDAWNICZA W ZAKRESIE POZOSTAŁEGO OPROGRAMOWANIA"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "58",
+                  "kodKlasa": "21",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "DZIAŁALNOŚĆ WYDAWNICZA W ZAKRESIE GIER KOMPUTEROWYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "58",
+                  "kodKlasa": "19",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "POZOSTAŁA DZIAŁALNOŚĆ WYDAWNICZA"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "95",
+                  "kodKlasa": "11",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "NAPRAWA I KONSERWACJA KOMPUTERÓW I URZĄDZEŃ PERYFERYJNYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "95",
+                  "kodKlasa": "12",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "NAPRAWA I KONSERWACJA SPRZĘTU (TELE)KOMUNIKACYJNEGO"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "18",
+                  "kodKlasa": "20",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "REPRODUKCJA ZAPISANYCH NOŚNIKÓW INFORMACJI"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "61",
+                  "kodKlasa": "10",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "DZIAŁALNOŚĆ W ZAKRESIE TELEKOMUNIKACJI PRZEWODOWEJ"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "61",
+                  "kodKlasa": "20",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "DZIAŁALNOŚĆ W ZAKRESIE TELEKOMUNIKACJI BEZPRZEWODOWEJ, Z WYŁĄCZENIEM TELEKOMUNIKACJI SATELITARNEJ"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "61",
+                  "kodKlasa": "30",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "DZIAŁALNOŚĆ W ZAKRESIE TELEKOMUNIKACJI SATELITARNEJ"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "61",
+                  "kodKlasa": "90",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "DZIAŁALNOŚĆ W ZAKRESIE POZOSTAŁEJ TELEKOMUNIKACJI"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "72",
+                  "kodKlasa": "19",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "BADANIA NAUKOWE I PRACE ROZWOJOWE W DZIEDZINIE POZOSTAŁYCH NAUK PRZYRODNICZYCH I TECHNICZNYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "72",
+                  "kodKlasa": "11",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "BADANIA NAUKOWE I PRACE ROZWOJOWE W DZIEDZINIE BIOTECHNOLOGII"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "26",
+                  "kodKlasa": "11",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "PRODUKCJA ELEMENTÓW ELEKTRONICZNYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "26",
+                  "kodKlasa": "12",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "PRODUKCJA ELEKTRONICZNYCH OBWODÓW DRUKOWANYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "26",
+                  "kodKlasa": "20",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "PRODUKCJA KOMPUTERÓW I URZĄDZEŃ PERYFERYJNYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "26",
+                  "kodKlasa": "30",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "PRODUKCJA SPRZĘTU (TELE)KOMUNIKACYJNEGO"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "26",
+                  "kodKlasa": "40",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "PRODUKCJA ELEKTRONICZNEGO SPRZĘTU POWSZECHNEGO UŻYTKU"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "28",
+                  "kodKlasa": "23",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "PRODUKCJA MASZYN I SPRZĘTU BIUROWEGO, Z WYŁĄCZENIEM KOMPUTERÓW I URZĄDZEŃ PERYFERYJNYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "33",
+                  "kodKlasa": "12",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "NAPRAWA I KONSERWACJA MASZYN"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "33",
+                  "kodKlasa": "13",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "NAPRAWA I KONSERWACJA URZĄDZEŃ ELEKTRONICZNYCH I OPTYCZNYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "33",
+                  "kodKlasa": "14",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "NAPRAWA I KONSERWACJA URZĄDZEŃ ELEKTRYCZNYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "33",
+                  "kodKlasa": "20",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "INSTALOWANIE MASZYN PRZEMYSŁOWYCH, SPRZĘTU I WYPOSAŻENIA"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "46",
+                  "kodKlasa": "51",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "SPRZEDAŻ HURTOWA KOMPUTERÓW, URZĄDZEŃ PERYFERYJNYCH I OPROGRAMOWANIA"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "46",
+                  "kodKlasa": "52",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "SPRZEDAŻ HURTOWA SPRZĘTU ELEKTRONICZNEGO I TELEKOMUNIKACYJNEGO ORAZ CZĘŚCI DO NIEGO"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "47",
+                  "kodKlasa": "41",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "SPRZEDAŻ DETALICZNA KOMPUTERÓW, URZĄDZEŃ PERYFERYJNYCH I OPROGRAMOWANIA PROWADZONA W WYSPECJALIZOWANYCH SKLEPACH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "47",
+                  "kodKlasa": "42",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "SPRZEDAŻ DETALICZNA SPRZĘTU TELEKOMUNIKACYJNEGO PROWADZONA W WYSPECJALIZOWANYCH SKLEPACH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "47",
+                  "kodKlasa": "91",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "SPRZEDAŻ DETALICZNA PROWADZONA PRZEZ DOMY SPRZEDAŻY WYSYŁKOWEJ LUB INTERNET"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "49",
+                  "kodKlasa": "41",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "TRANSPORT DROGOWY TOWARÓW"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "52",
+                  "kodKlasa": "10",
+                  "kodPodklasa": "B",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "MAGAZYNOWANIE I PRZECHOWYWANIE POZOSTAŁYCH TOWARÓW"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "64",
+                  "kodKlasa": "91",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "LEASING FINANSOWY"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "77",
+                  "kodKlasa": "33",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "WYNAJEM I DZIERŻAWA MASZYN I URZĄDZEŃ BIUROWYCH, WŁĄCZAJĄC KOMPUTERY"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "85",
+                  "kodKlasa": "60",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "DZIAŁALNOŚĆ WSPOMAGAJĄCA EDUKACJĘ"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "82",
+                  "kodKlasa": "99",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "9",
+                  "nrWpisuWykr": "17",
+                  "opis": "POZOSTAŁA DZIAŁALNOŚĆ WSPOMAGAJĄCA PROWADZENIE DZIAŁALNOŚCI GOSPODARCZEJ, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "80",
+                  "kodKlasa": "10",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "14",
+                  "nrWpisuWykr": "17",
+                  "opis": "DZIAŁALNOŚĆ OCHRONIARSKA, Z WYŁĄCZENIEM OBSŁUGI SYSTEMÓW BEZPIECZEŃSTWA"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "80",
+                  "kodKlasa": "20",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "14",
+                  "nrWpisuWykr": "17",
+                  "opis": "DZIAŁALNOŚĆ OCHRONIARSKA W ZAKRESIE OBSŁUGI SYSTEMÓW BEZPIECZEŃSTWA"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "85",
+                  "kodKlasa": "59",
+                  "kodPodklasa": "B",
+                  "nrWpisuWprow": "15",
+                  "nrWpisuWykr": "17",
+                  "opis": "POZOSTAŁE POZASZKOLNE FORMY EDUKACJI, GDZIE INDZIEJ NIESKLASYFIKOWANE"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "62",
+                  "kodKlasa": "02",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "17",
+                  "opis": "DZIAŁALNOŚĆ ZWIĄZANA Z DORADZTWEM W ZAKRESIE INFORMATYKI"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "62",
+                  "kodKlasa": "03",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "17",
+                  "opis": "DZIAŁALNOŚĆ ZWIĄZANA Z ZARZĄDZANIEM URZĄDZENIAMI INFORMATYCZNYMI"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "62",
+                  "kodKlasa": "09",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "17",
+                  "opis": "POZOSTAŁA DZIAŁALNOŚĆ USŁUGOWA W ZAKRESIE TECHNOLOGII INFORMATYCZNYCH I KOMPUTEROWYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "63",
+                  "kodKlasa": "11",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "17",
+                  "opis": "PRZETWARZANIE DANYCH; ZARZĄDZANIE STRONAMI INTERNETOWYMI (HOSTING) I PODOBNA DZIAŁALNOŚĆ"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "95",
+                  "kodKlasa": "11",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "17",
+                  "opis": "NAPRAWA I KONSERWACJA KOMPUTERÓW I URZĄDZEŃ PERYFERYJNYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "95",
+                  "kodKlasa": "12",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "17",
+                  "opis": "NAPRAWA I KONSERWACJA SPRZĘTU (TELE)KOMUNIKACYJNEGO"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "61",
+                  "kodKlasa": "10",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "17",
+                  "opis": "DZIAŁALNOŚĆ W ZAKRESIE TELEKOMUNIKACJI PRZEWODOWEJ"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "61",
+                  "kodKlasa": "20",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "17",
+                  "opis": "DZIAŁALNOŚĆ W ZAKRESIE TELEKOMUNIKACJI BEZPRZEWODOWEJ, Z WYŁĄCZENIEM TELEKOMUNIKACJI SATELITARNEJ"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "80",
+                  "kodKlasa": "20",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "17",
+                  "opis": "DZIAŁALNOŚĆ OCHRONIARSKA W ZAKRESIE OBSŁUGI SYSTEMÓW BEZPIECZEŃSTWA"
+                }
+              ]
+            }
+          ],
+          "przedmiotPrzewazajacejDzialalnosci": [
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "62",
+                  "kodKlasa": "01",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "17",
+                  "opis": "DZIAŁALNOŚĆ ZWIĄZANA Z OPROGRAMOWANIEM"
+                }
+              ]
+            }
+          ]
+        },
+        "wzmiankiOZlozonychDokumentach": {
+          "wzmiankaOZlozeniuOpiniiBieglegoRewidentaSprawozdaniaZBadania": [
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "4",
+                  "zaOkresOdDo": "05.05.2008 - 31.12.2008"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "6",
+                  "zaOkresOdDo": "01.01.2009 - 31.12.2009"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "7",
+                  "zaOkresOdDo": "01.01.2010 R. - 31.12.2010 R."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "10",
+                  "zaOkresOdDo": "01.01.2011 R. - 31.12.2011 R."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "11",
+                  "zaOkresOdDo": "01.01.2012 - 31.12.2012"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "13",
+                  "zaOkresOdDo": "OD 01.01.2013 DO 31.12.2013"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "17",
+                  "zaOkresOdDo": "OD 01.01.2014 DO 31.12.2014"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "19",
+                  "zaOkresOdDo": "OD 01.01.2015 DO 31.12.2015"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "21",
+                  "zaOkresOdDo": "OD 01.01.2016 DO 31.12.2016"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "23",
+                  "zaOkresOdDo": "OD 01.01.2017 DO 31.12.2017"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "27",
+                  "zaOkresOdDo": "OD 01.01.2018 DO 31.12.2018"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "33",
+                  "zaOkresOdDo": "OD 01.01.2019 DO 31.12.2019"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "37",
+                  "zaOkresOdDo": "OD 01.01.2020 DO 31.12.2020"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "42",
+                  "zaOkresOdDo": "OD 01.01.2021 DO 31.12.2021"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "48",
+                  "zaOkresOdDo": "OD 01.01.2022 DO 31.12.2022"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "54",
+                  "zaOkresOdDo": "OD 01.01.2023 DO 31.12.2023"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "61",
+                  "zaOkresOdDo": "OD 01.01.2024 DO 31.12.2024"
+                }
+              ]
+            }
+          ],
+          "wzmiankaOZlozeniuRocznegoSprawozdaniaFinansowego": [
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "05.06.2009",
+                  "nrWpisuWprow": "4",
+                  "zaOkresOdDo": "05.05.2008 - 31.12.2008"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "12.07.2010",
+                  "nrWpisuWprow": "6",
+                  "zaOkresOdDo": "01.01.2009 - 31.12.2009"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "07.07.2011",
+                  "nrWpisuWprow": "7",
+                  "zaOkresOdDo": "01.01.2010 R. - 31.12.2010 R."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "22.05.2012",
+                  "nrWpisuWprow": "10",
+                  "zaOkresOdDo": "01.01.2011 R. - 31.12.2011 R."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "07.06.2013",
+                  "nrWpisuWprow": "11",
+                  "zaOkresOdDo": "01.01.2012 - 31.12.2012"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "03.07.2014",
+                  "nrWpisuWprow": "13",
+                  "zaOkresOdDo": "OD 01.01.2013 DO 31.12.2013"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "07.07.2015",
+                  "nrWpisuWprow": "17",
+                  "zaOkresOdDo": "OD 01.01.2014 DO 31.12.2014"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "27.06.2016",
+                  "nrWpisuWprow": "19",
+                  "zaOkresOdDo": "OD 01.01.2015 DO 31.12.2015"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "06.07.2017",
+                  "nrWpisuWprow": "21",
+                  "zaOkresOdDo": "OD 01.01.2016 DO 31.12.2016"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "04.07.2018",
+                  "nrWpisuWprow": "22",
+                  "zaOkresOdDo": "OD 01.01.2017 DO 31.12.2017"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "13.06.2019",
+                  "nrWpisuWprow": "26",
+                  "zaOkresOdDo": "OD 01.01.2018 DO 31.12.2018"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "09.06.2020",
+                  "nrWpisuWprow": "32",
+                  "zaOkresOdDo": "OD 01.01.2019 DO 31.12.2019"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "13.07.2021",
+                  "nrWpisuWprow": "36",
+                  "zaOkresOdDo": "OD 01.01.2020 DO 31.12.2020"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "12.07.2022",
+                  "nrWpisuWprow": "41",
+                  "zaOkresOdDo": "OD 01.01.2021 DO 31.12.2021"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "12.07.2023",
+                  "nrWpisuWprow": "47",
+                  "zaOkresOdDo": "OD 01.01.2022 DO 31.12.2022"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "16.07.2024",
+                  "nrWpisuWprow": "53",
+                  "zaOkresOdDo": "OD 01.01.2023 DO 31.12.2023"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "11.07.2025",
+                  "nrWpisuWprow": "60",
+                  "zaOkresOdDo": "OD 01.01.2024 DO 31.12.2024"
+                }
+              ]
+            }
+          ],
+          "wzmiankaOZlozeniuSprawozdaniaZDzialalnosci": [
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "4",
+                  "zaOkresOdDo": "05.05.2008 - 31.12.2008"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "6",
+                  "zaOkresOdDo": "01.01.2009 - 31.12.2009"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "7",
+                  "zaOkresOdDo": "01.01.2010 R. - 31.12.2010 R."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "10",
+                  "zaOkresOdDo": "01.01.2011 R. - 31.12.2011 R."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "11",
+                  "zaOkresOdDo": "01.01.2012 - 31.12.2012"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "13",
+                  "zaOkresOdDo": "OD 01.01.2013 DO 31.12.2013"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "17",
+                  "zaOkresOdDo": "OD 01.01.2014 DO 31.12.2014"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "19",
+                  "zaOkresOdDo": "OD 01.01.2015 DO 31.12.2015"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "21",
+                  "zaOkresOdDo": "OD 01.01.2016 DO 31.12.2016"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "25",
+                  "zaOkresOdDo": "OD 01.01.2017 DO 31.12.2017"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "29",
+                  "zaOkresOdDo": "OD 01.01.2018 DO 31.12.2018"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "35",
+                  "zaOkresOdDo": "OD 01.01.2019 DO 31.12.2019"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "39",
+                  "zaOkresOdDo": "OD 01.01.2020 DO 31.12.2020"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "44",
+                  "zaOkresOdDo": "OD 01.01.2021 DO 31.12.2021"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "50",
+                  "zaOkresOdDo": "OD 01.01.2022 DO 31.12.2022"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "56",
+                  "zaOkresOdDo": "OD 01.01.2023 DO 31.12.2023"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "63",
+                  "zaOkresOdDo": "OD 01.01.2024 DO 31.12.2024"
+                }
+              ]
+            }
+          ],
+          "wzmiankaOZlozeniuUchwalyPostanowieniaOZatwierdzeniuRocznegoSprawozdaniaFinansowego": [
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "4",
+                  "zaOkresOdDo": "05.05.2008 - 31.12.2008"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "6",
+                  "zaOkresOdDo": "01.01.2009 - 31.12.2009"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "7",
+                  "zaOkresOdDo": "01.01.2010 R. - 31.12.2010 R."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "10",
+                  "zaOkresOdDo": "01.01.2011 R. - 31.12.2011 R."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "11",
+                  "zaOkresOdDo": "01.01.2012 - 31.12.2012"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "13",
+                  "zaOkresOdDo": "OD 01.01.2013 DO 31.12.2013"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "17",
+                  "zaOkresOdDo": "OD 01.01.2014 DO 31.12.2014"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "19",
+                  "zaOkresOdDo": "OD 01.01.2015 DO 31.12.2015"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "21",
+                  "zaOkresOdDo": "OD 01.01.2016 DO 31.12.2016"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "24",
+                  "zaOkresOdDo": "OD 01.01.2017 DO 31.12.2017"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "28",
+                  "zaOkresOdDo": "OD 01.01.2018 DO 31.12.2018"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "34",
+                  "zaOkresOdDo": "OD 01.01.2019 DO 31.12.2019"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "38",
+                  "zaOkresOdDo": "OD 01.01.2020 DO 31.12.2020"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "43",
+                  "zaOkresOdDo": "OD 01.01.2021 DO 31.12.2021"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "49",
+                  "zaOkresOdDo": "OD 01.01.2022 DO 31.12.2022"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "55",
+                  "zaOkresOdDo": "OD 01.01.2023 DO 31.12.2023"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "62",
+                  "zaOkresOdDo": "OD 01.01.2024 DO 31.12.2024"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "dzial4": {},
+      "dzial5": {},
+      "dzial6": {
+        "polaczeniePodzialPrzeksztalcenie": [
+          {
+            "okreslenieOkolicznosci": [
+              {
+                "nrWpisuWprow": "64",
+                "okreslenieOkolicznosci": "PRZEJĘCIE CZĘŚCI MAJĄTKU INNEJ SPÓŁKI W WYNIKU PODZIAŁU"
+              }
+            ],
+            "opisPolaczeniaPodzialuPrzeksztalcenia": [
+              {
+                "nrWpisuWprow": "64",
+                "opisPolaczeniaPodzialuPrzeksztalcenia": "PODZIAŁ W TRYBIE ART. 529 § 1 PKT 5 KSH SPÓŁKI COMARCH SPÓŁKA AKCYJNA Z SIEDZIBĄ W KRAKOWIE (\"SPÓŁKA DZIELONA\"), TJ. PRZEZ WYODRĘBNIENIE CZĘŚCI MAJĄTKU SPÓŁKI DZIELONEJ I PRZENIESIENIE WYODRĘBNIANEJ CZĘŚCI MAJĄTKU NA SPÓŁKĘ COMARCH POLSKA S.A. Z SIEDZIBĄ W KRAKOWIE (\"SPÓŁKA PRZEJMUJĄCA\"), Z PODWYŻSZENIEM KAPITAŁU ZAKŁADOWEGO SPÓŁKI PRZEJMUJĄCEJ I BEZ OBNIŻENIA KAPITAŁU ZAKŁADOWEGO SPÓŁKI DZIELONEJ.\nUCHWAŁA NADZWYCZAJNEGO WALNEGO ZGROMADZENIA AKCJONARIUSZY SPÓŁKI DZIELONEJ O PODZIALE ZOSTAŁA PODJĘTA W DNIU 14 LISTOPADA 2025 ROKU, ZAWARTA W PROTOKOLE NOTARIALNYM NR REPERTORIUM: A 11704/2025, SPORZĄDZONYM PRZEZ NOTARIUSZA MARCINA ŁASKIEGO, NOTARIUSZA W WARSZAWIE (KANCELARIA NOTARIALNA PAWEŁ CUPRIAK, MARCIN ŁASKI I PARTNERZY, NOTARIUSZE SPÓŁKA PARTNERSKA, UL. GRZYBOWSKA 2 LOK. 26B, 00-131 WARSZAWA).\nUCHWAŁA NADZWYCZAJNEGO WALNEGO ZGROMADZENIA AKCJONARIUSZY SPÓŁKI PRZEJMUJĄCEJ O PODZIALE ZOSTAŁA PODJĘTA W DNIU 14 LISTOPADA 2025 ROKU, ZAWARTA W PROTOKOLE NOTARIALNYM NR REPERTORIUM: A 11708/2025, SPORZĄDZONYM PRZEZ NOTARIUSZA MARCINA ŁASKIEGO, NOTARIUSZA W WARSZAWIE (KANCELARIA NOTARIALNA PAWEŁ CUPRIAK, MARCIN ŁASKI I PARTNERZY, NOTARIUSZE SPÓŁKA PARTNERSKA, UL. GRZYBOWSKA 2 LOK. 26B, 00-131 WARSZAWA)., 14.11.2025, WALNE ZGROMADZENIE AKCJONARIUSZY"
+              }
+            ],
+            "podmiotyPowstalePrzejmujace": [
+              {
+                "Identyfikator": [
+                  {
+                    "nrWpisuWprow": "64",
+                    "nrWpisuWykr": "66",
+                    "regon": "35052737700000"
+                  }
+                ],
+                "krajNazwaRejestru": [
+                  {
+                    "krajNazwaRejestru": "POLSKA,KRAJOWY REJESTR SĄDOWY",
+                    "nrWpisuWprow": "64",
+                    "nrWpisuWykr": "66"
+                  }
+                ],
+                "nazwa": [
+                  {
+                    "nazwa": "COMARCH,SPÓŁKA AKCYJNA",
+                    "nrWpisuWprow": "64",
+                    "nrWpisuWykr": "66"
+                  }
+                ],
+                "nazwaSaduProwadzacegoRejestr": [],
+                "numerWRejestrzeAlboEwidencji": [
+                  {
+                    "nrWpisuWprow": "64",
+                    "nrWpisuWykr": "66",
+                    "numerWRejestrzeAlboEwidencji": "0000057567"
+                  }
+                ]
+              }
+            ],
+            "podmiotyPrzejmowane": [
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "66",
+                    "regon": "350527377"
+                  }
+                ],
+                "krajNazwaRejestru": [
+                  {
+                    "krajNazwaRejestru": "POLSKA,KRAJOWY REJESTR SĄDOWY",
+                    "nrWpisuWprow": "66"
+                  }
+                ],
+                "nazwa": [
+                  {
+                    "nazwa": "COMARCH SPÓŁKA AKCYJNA,SPÓŁKA AKCYJNA",
+                    "nrWpisuWprow": "66"
+                  }
+                ],
+                "nazwaSaduProwadzacegoRejestr": [],
+                "numerWRejestrzeAlboEwidencji": [
+                  {
+                    "nrWpisuWprow": "66",
+                    "numerWRejestrzeAlboEwidencji": "0000057567"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "rozwiazanieUniewaznienie": {
+          "okreslenieOkolicznosci": []
+        }
+      }
+    },
+    "naglowekP": {
+      "dataCzasOdpisu": "05.08.2026 15:23:39",
+      "numerKRS": "0000307263",
+      "rejestr": "RejP",
+      "stanPozycji": 1,
+      "stanZDnia": "05.03.2026",
+      "wpis": [
+        {
+          "dataWpisu": "09.06.2008",
+          "numerWpisu": 1,
+          "opis": "REJESTRACJA W KRAJOWYM REJESTRZE SĄDOWYM",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/9696/08/564"
+        },
+        {
+          "dataWpisu": "27.10.2008",
+          "numerWpisu": 2,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/19599/08/673"
+        },
+        {
+          "dataWpisu": "29.10.2008",
+          "numerWpisu": 3,
+          "opis": "SPROSTOWANIE WPISU",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/20951/08/953"
+        },
+        {
+          "dataWpisu": "10.06.2009",
+          "numerWpisu": 4,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/9820/09/116"
+        },
+        {
+          "dataWpisu": "19.08.2009",
+          "numerWpisu": 5,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/16188/09/337"
+        },
+        {
+          "dataWpisu": "30.07.2010",
+          "numerWpisu": 6,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/15589/10/45"
+        },
+        {
+          "dataWpisu": "08.09.2011",
+          "numerWpisu": 7,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/14340/11/882"
+        },
+        {
+          "dataWpisu": "07.12.2011",
+          "numerWpisu": 8,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/24697/11/604"
+        },
+        {
+          "dataWpisu": "16.03.2012",
+          "numerWpisu": 9,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/3840/12/312"
+        },
+        {
+          "dataWpisu": "02.07.2012",
+          "numerWpisu": 10,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/10576/12/172"
+        },
+        {
+          "dataWpisu": "13.06.2013",
+          "numerWpisu": 11,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/13054/13/439"
+        },
+        {
+          "dataWpisu": "13.03.2014",
+          "numerWpisu": 12,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/4627/14/352"
+        },
+        {
+          "dataWpisu": "16.09.2014",
+          "numerWpisu": 13,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/16078/14/901"
+        },
+        {
+          "dataWpisu": "17.11.2014",
+          "numerWpisu": 14,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/27793/14/323"
+        },
+        {
+          "dataWpisu": "20.11.2014",
+          "numerWpisu": 15,
+          "opis": "SPROSTOWANIE WPISU",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/29405/14/75"
+        },
+        {
+          "dataWpisu": "16.02.2015",
+          "numerWpisu": 16,
+          "opis": "SPROSTOWANIE WPISU",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/3262/15/159"
+        },
+        {
+          "dataWpisu": "10.07.2015",
+          "numerWpisu": 17,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/18003/15/794"
+        },
+        {
+          "dataWpisu": "14.12.2015",
+          "numerWpisu": 18,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/34800/15/129"
+        },
+        {
+          "dataWpisu": "13.09.2016",
+          "numerWpisu": 19,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/20922/16/386"
+        },
+        {
+          "dataWpisu": "09.11.2016",
+          "numerWpisu": 20,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/39256/16/892"
+        },
+        {
+          "dataWpisu": "13.07.2017",
+          "numerWpisu": 21,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/22527/17/132"
+        },
+        {
+          "dataWpisu": "04.07.2018",
+          "numerWpisu": 22,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/285727/18/732"
+        },
+        {
+          "dataWpisu": "04.07.2018",
+          "numerWpisu": 23,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/285728/18/133"
+        },
+        {
+          "dataWpisu": "04.07.2018",
+          "numerWpisu": 24,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/285729/18/534"
+        },
+        {
+          "dataWpisu": "04.07.2018",
+          "numerWpisu": 25,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/285730/18/246"
+        },
+        {
+          "dataWpisu": "13.06.2019",
+          "numerWpisu": 26,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/122474/19/761"
+        },
+        {
+          "dataWpisu": "13.06.2019",
+          "numerWpisu": 27,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/122474/19/162"
+        },
+        {
+          "dataWpisu": "13.06.2019",
+          "numerWpisu": 28,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/122474/19/563"
+        },
+        {
+          "dataWpisu": "13.06.2019",
+          "numerWpisu": 29,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/122474/19/964"
+        },
+        {
+          "dataWpisu": "13.06.2019",
+          "numerWpisu": 30,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/13204/19/54"
+        },
+        {
+          "dataWpisu": "22.01.2020",
+          "numerWpisu": 31,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA-ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO  REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/2516/20/376"
+        },
+        {
+          "dataWpisu": "09.06.2020",
+          "numerWpisu": 32,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/206191/20/146"
+        },
+        {
+          "dataWpisu": "09.06.2020",
+          "numerWpisu": 33,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/206191/20/547"
+        },
+        {
+          "dataWpisu": "09.06.2020",
+          "numerWpisu": 34,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/206191/20/948"
+        },
+        {
+          "dataWpisu": "09.06.2020",
+          "numerWpisu": 35,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/206191/20/349"
+        },
+        {
+          "dataWpisu": "13.07.2021",
+          "numerWpisu": 36,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/315298/21/235"
+        },
+        {
+          "dataWpisu": "13.07.2021",
+          "numerWpisu": 37,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/315298/21/636"
+        },
+        {
+          "dataWpisu": "13.07.2021",
+          "numerWpisu": 38,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/315298/21/37"
+        },
+        {
+          "dataWpisu": "13.07.2021",
+          "numerWpisu": 39,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/315298/21/438"
+        },
+        {
+          "dataWpisu": "14.04.2022",
+          "numerWpisu": 40,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/11548/22/83"
+        },
+        {
+          "dataWpisu": "12.07.2022",
+          "numerWpisu": 41,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/404992/22/229"
+        },
+        {
+          "dataWpisu": "12.07.2022",
+          "numerWpisu": 42,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/404992/22/630"
+        },
+        {
+          "dataWpisu": "12.07.2022",
+          "numerWpisu": 43,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/404992/22/31"
+        },
+        {
+          "dataWpisu": "12.07.2022",
+          "numerWpisu": 44,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/404992/22/432"
+        },
+        {
+          "dataWpisu": "15.12.2022",
+          "numerWpisu": 45,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/34258/22/328"
+        },
+        {
+          "dataWpisu": "12.05.2023",
+          "numerWpisu": 46,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/16245/23/935"
+        },
+        {
+          "dataWpisu": "12.07.2023",
+          "numerWpisu": 47,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/532748/23/808"
+        },
+        {
+          "dataWpisu": "12.07.2023",
+          "numerWpisu": 48,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/532748/23/209"
+        },
+        {
+          "dataWpisu": "12.07.2023",
+          "numerWpisu": 49,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/532748/23/610"
+        },
+        {
+          "dataWpisu": "12.07.2023",
+          "numerWpisu": 50,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/532748/23/11"
+        },
+        {
+          "dataWpisu": "24.08.2023",
+          "numerWpisu": 51,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/28096/23/888"
+        },
+        {
+          "dataWpisu": "28.02.2024",
+          "numerWpisu": 52,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/5465/24/704"
+        },
+        {
+          "dataWpisu": "16.07.2024",
+          "numerWpisu": 53,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/664755/24/71"
+        },
+        {
+          "dataWpisu": "16.07.2024",
+          "numerWpisu": 54,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/664755/24/472"
+        },
+        {
+          "dataWpisu": "16.07.2024",
+          "numerWpisu": 55,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/664755/24/873"
+        },
+        {
+          "dataWpisu": "16.07.2024",
+          "numerWpisu": 56,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/664755/24/274"
+        },
+        {
+          "dataWpisu": "27.09.2024",
+          "numerWpisu": 57,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/25190/24/373"
+        },
+        {
+          "dataWpisu": "20.12.2024",
+          "numerWpisu": 58,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/37966/24/773"
+        },
+        {
+          "dataWpisu": "10.04.2025",
+          "numerWpisu": 59,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/37966/24/773/ADE"
+        },
+        {
+          "dataWpisu": "11.07.2025",
+          "numerWpisu": 60,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/770906/25/779"
+        },
+        {
+          "dataWpisu": "11.07.2025",
+          "numerWpisu": 61,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/770906/25/180"
+        },
+        {
+          "dataWpisu": "11.07.2025",
+          "numerWpisu": 62,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/770906/25/581"
+        },
+        {
+          "dataWpisu": "11.07.2025",
+          "numerWpisu": 63,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/770907/25/293"
+        },
+        {
+          "dataWpisu": "01.12.2025",
+          "numerWpisu": 64,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/41486/25/494"
+        },
+        {
+          "dataWpisu": "15.12.2025",
+          "numerWpisu": 65,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/44137/25/200"
+        },
+        {
+          "dataWpisu": "22.12.2025",
+          "numerWpisu": 66,
+          "opis": "SPROSTOWANIE WPISU",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/43525/25/410"
+        },
+        {
+          "dataWpisu": "30.01.2026",
+          "numerWpisu": 67,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA KRAKOWA ŚRÓDMIEŚCIA W KRAKOWIE, XI WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "KR.XI NS-REJ.KRS/2544/26/555"
+        },
+        {
+          "dataWpisu": "05.02.2026",
+          "numerWpisu": 68,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M.ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/7833/26/491"
+        },
+        {
+          "dataWpisu": "05.03.2026",
+          "numerWpisu": 69,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M.ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/10788/26/510"
+        }
+      ]
+    },
+    "rodzaj": "Pełny"
+  }
+}
