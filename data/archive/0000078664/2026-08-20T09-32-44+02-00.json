@@ -1,0 +1,2967 @@
+{
+  "odpis": {
+    "dane": {
+      "dzial1": {
+        "danePodmiotu": {
+          "czyProwadziDzialalnoscZInnymiPodmiotami": [
+            {
+              "czyProwadziDzialalnoscZInnymiPodmiotami": false,
+              "nrWpisuWprow": "1"
+            }
+          ],
+          "daneOWczesniejszejRejestracji": [
+            {
+              "nazwaPoprzedniegoRejestru": "RHB",
+              "nrWpisuWprow": "1",
+              "numerWPoprzednimRejestrze": "51268",
+              "sadProwadzacyRejestr": "SĄD REJONOWY DLA M. ST. WARSZAWY SĄD GOSPODARCZY XVI  WYDZIAŁ GOSPODARCZY-REJESTROWY"
+            }
+          ],
+          "formaPrawna": [
+            {
+              "formaPrawna": "SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+              "nrWpisuWprow": "1"
+            }
+          ],
+          "identyfikatory": [
+            {
+              "identyfikatory": {
+                "regon": "01274470200000"
+              },
+              "nrWpisuWprow": "1",
+              "nrWpisuWykr": "12"
+            },
+            {
+              "identyfikatory": {
+                "nip": "5262076745",
+                "regon": "01274470200000"
+              },
+              "nrWpisuWprow": "12"
+            }
+          ],
+          "nazwa": [
+            {
+              "nazwa": "AMS MANAGEMENT SYSTEMS POLAND SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+              "nrWpisuWprow": "1",
+              "nrWpisuWykr": "8"
+            },
+            {
+              "nazwa": "CGI INFORMATION SYSTEMS AND MANAGEMENT CONSULTANTS (POLSKA) SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+              "nrWpisuWprow": "8"
+            }
+          ]
+        },
+        "kapital": {
+          "wysokoscKapitaluZakladowego": [
+            {
+              "nrWpisuWprow": "1",
+              "nrWpisuWykr": "5",
+              "waluta": "PLN",
+              "wartosc": "4000,00"
+            },
+            {
+              "nrWpisuWprow": "5",
+              "nrWpisuWykr": "71",
+              "waluta": "PLN",
+              "wartosc": "50000,00"
+            },
+            {
+              "nrWpisuWprow": "71",
+              "waluta": "PLN",
+              "wartosc": "60000,00"
+            }
+          ]
+        },
+        "pozostaleInformacje": {
+          "informacjaOCzasieNaJakiZostalUtworzonyPodmiot": [
+            {
+              "czasNaJakiUtworzonyZostalPodmiot": "NIEOZNACZONY",
+              "nrWpisuWprow": "1"
+            }
+          ],
+          "informacjaOLiczbieUdzialow": [
+            {
+              "informacjaOLiczbieUdzialow": "WIĘKSZĄ LICZBĘ UDZIAŁÓW",
+              "nrWpisuWprow": "1"
+            }
+          ],
+          "informacjaOPismieDoOgloszen": []
+        },
+        "siedzibaIAdres": {
+          "adres": [
+            {
+              "kodPocztowy": "00-121",
+              "kraj": "POLSKA",
+              "miejscowosc": "WARSZAWA",
+              "nrDomu": "39",
+              "nrWpisuWprow": "1",
+              "nrWpisuWykr": "23",
+              "poczta": "WARSZAWA",
+              "ulica": "SIENNA"
+            },
+            {
+              "kodPocztowy": "00-103",
+              "kraj": "POLSKA",
+              "miejscowosc": "WARSZAWA",
+              "nrDomu": "16",
+              "nrWpisuWprow": "23",
+              "nrWpisuWykr": "59",
+              "poczta": "WARSZAWA",
+              "ulica": "UL. KRÓLEWSKA"
+            },
+            {
+              "kodPocztowy": "00-499",
+              "kraj": "POLSKA",
+              "miejscowosc": "WARSZAWA",
+              "nrDomu": "10/14",
+              "nrWpisuWprow": "59",
+              "poczta": "WARSZAWA",
+              "ulica": "PLAC TRZECH KRZYŻY"
+            }
+          ],
+          "adresDoDoreczenElektronicznychWpisanyDoBAE": [
+            {
+              "adresDoDoreczenElektronicznychWpisanyDoBAE": "AE:PL-97320-41234-IJHJA-28",
+              "nrWpisuWprow": "69"
+            }
+          ],
+          "adresPocztyElektronicznej": [],
+          "adresStronyInternetowej": [],
+          "siedziba": [
+            {
+              "gmina": "WARSZAWA-CENTRUM",
+              "kraj": "POLSKA",
+              "miejscowosc": "WARSZAWA",
+              "nrWpisuWprow": "1",
+              "nrWpisuWykr": "23",
+              "powiat": "WARSZAWSKI",
+              "wojewodztwo": "MAZOWIECKIE"
+            },
+            {
+              "gmina": "WARSZAWA",
+              "kraj": "POLSKA",
+              "miejscowosc": "WARSZAWA",
+              "nrWpisuWprow": "23",
+              "powiat": "WARSZAWA",
+              "wojewodztwo": "MAZOWIECKIE"
+            }
+          ]
+        },
+        "umowaStatut": {
+          "informacjaOZawarciuZmianieUmowyStatutu": [
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "1",
+                  "zawarcieZmianaUmowyStatutu": "AKT NOTARIALNY Z 31.07.1997R.; NOTARIUSZ JADWIGA ZACHARZEWSKA; KANCELARIA NOTARIALNA UL. JASNA 26, WARSZAWA; REP. A-3345/97"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "5",
+                  "zawarcieZmianaUmowyStatutu": "AKT NOTARIALNY SPORZĄDZONY 26 SIERPNIA 2002R., REP.A NR 22310/2002; MARIUSZ BIAŁECKI ASESOR NOTARIALNY ZASTĘPCA ROBERTA BŁASZCZAKA; KANCELARIA NOTARIALNA W WARSZAWIE PRZY UL.DŁUGIEJ 31\nPAR.2.1 - ZMIENIONY,\nPAR.2.9 - ZMIENIONY,\nPAR.2.2 - ZMIENIONY,\nPAR.6 ZMIANA PODPUNKTÓW\nPAR.6 PODPUNKT 5 ZMIENIONY\nPAR.5.17 - DODANY"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "8",
+                  "zawarcieZmianaUmowyStatutu": "AKT NOTARIALNY Z DNIA 19 STYCZNIA 2005 ROKU, REP. A NR 248/2005, NOTARIUSZ W WARSZAWIE MAŁGORZATA BRYLEWSKA-IWAŃCZYK Z KANCELARII NOTARIALNEJ PRZY UL. ELEKTORALNEJ 11 M. 7, ZMIENIONO PAR. 1.1, 2.9, 4.2 ORAZ 7.1"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "45",
+                  "zawarcieZmianaUmowyStatutu": "AKT NOTARIALNY Z DNIA 15 WRZEŚNIA 2021 ROKU, REP. A NUMER 10958/2021, AGNIESZKA LISOWSKA NOTARIUSZ W WARSZAWIE, PROWADZĄCA KANCELARIĘ NOTARIALNĄ ARTUR KOZAK NOTARIUSZ AGNIESZKA LISOWSKA NOTARIUSZ SPÓŁKA CYWILNA, PRZY ALEI JANA PAWŁA II 61 LOK. 4, WARSZAWA\n\nZMIANA PAR. 1.6, PAR. 5.1, PAR. 5.10, PAR. 5.13, PAR. 5.16, PAR. 6.3, PAR. 9.2 AKTU ZAŁOŻYCIELSKIEGO SPÓŁKI I PRZYJĘCIE TEKSTU JEDNOLITEGO AKTU ZAŁOŻYCIELSKIEGO SPÓŁKI"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "70",
+                  "zawarcieZmianaUmowyStatutu": "AKT NOTARIALNY Z DNIA 29 MAJA 2025 R., REP. A NR 5271/2025, SPORZĄDZONY PRZEZ PAWŁA SAWICKIEGO  NOTARIUSZA W WARSZAWIE, PROWADZĄCEGO KANCELARIĘ NOTARIALNĄ W WARSZAWIE PRZY UL. ŁUCKIEJ 20/23, 00-845 WARSZAWA - ZMIENIONO § 1 UST. 6  ORAZ DODANO § 8.3 I § 8.4 ORAZ PRZYJĘTO NOWY TEKST JEDNOLITY AKTU ZAŁOŻYCIELSKIEGO"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "71",
+                  "zawarcieZmianaUmowyStatutu": "AKT NOTARIALNY Z DNIA 17 GRUDNIA 2025 R., REP. A NR 14922/2025, SPORZĄDZONY PRZEZ ALEKSANDRĘ PODGÓRSKĄ ZASTĘPCE NOTARIALNEGO PAWŁA SAWICKIEGO NOTARIUSZA W WARSZAWIE, PROWADZĄCEGO KANCELARIĘ NOTARIALNĄ W WARSZAWIE PRZY UL. ŁUCKIEJ 20/23, 00-845 WARSZAWA - ZMIENIONO § 2 ORAZ PRZYJĘTO NOWY TEKST JEDNOLITY AKTU ZAŁOŻYCIELSKIEGO"
+                }
+              ]
+            }
+          ]
+        },
+        "wspolnicySpzoo": [
+          {
+            "czyPosiadaCaloscUdzialow": [
+              {
+                "czyPosiadaCaloscUdzialow": true,
+                "nrWpisuWprow": "1",
+                "nrWpisuWykr": "8"
+              }
+            ],
+            "nazwa": [
+              {
+                "nazwa": "AMERICAM MANAGEMENT SYSTEMS, INC.",
+                "nrWpisuWprow": "1",
+                "nrWpisuWykr": "2"
+              },
+              {
+                "nazwa": "AMERICAN MANAGEMENT SYSTEMS, INC.",
+                "nrWpisuWprow": "2",
+                "nrWpisuWykr": "8"
+              }
+            ],
+            "posiadaneUdzialy": [
+              {
+                "nrWpisuWprow": "1",
+                "nrWpisuWykr": "5",
+                "posiadaneUdzialy": "80 UDZIAŁÓW O ŁĄCZNEJ WYSOKOŚCI 4.000 ZŁ"
+              },
+              {
+                "nrWpisuWprow": "5",
+                "nrWpisuWykr": "8",
+                "posiadaneUdzialy": "80 UDZIAŁÓW O ŁĄCZNEJ WYSOKOŚCI 50.000 ZŁ"
+              }
+            ]
+          },
+          {
+            "czyPosiadaCaloscUdzialow": [
+              {
+                "czyPosiadaCaloscUdzialow": true,
+                "nrWpisuWprow": "8",
+                "nrWpisuWykr": "71"
+              },
+              {
+                "czyPosiadaCaloscUdzialow": true,
+                "nrWpisuWprow": "71"
+              }
+            ],
+            "nazwa": [
+              {
+                "nazwa": "INFORMATION MANAGEMENT RESOURCES UK HOLDING COMPANY LIMITED",
+                "nrWpisuWprow": "8",
+                "nrWpisuWykr": "13"
+              },
+              {
+                "nazwa": "CGI GROUP HOLDINGS EUROPE LIMITED",
+                "nrWpisuWprow": "13"
+              }
+            ],
+            "posiadaneUdzialy": [
+              {
+                "nrWpisuWprow": "8",
+                "nrWpisuWykr": "71",
+                "posiadaneUdzialy": "80 (OSIEMDZIESIĄT) UDZIAŁÓW O ŁĄCZNEJ WARTOŚCI 50000,00 ZŁ (PIĘĆDZIESIĄT TYSIĘCY)"
+              },
+              {
+                "nrWpisuWprow": "71",
+                "posiadaneUdzialy": "96 (DZIEWIĘĆDZIESIĄT SZEŚĆ) UDZIAŁÓW O ŁĄCZNEJ WARTOŚCI 60.000,00 ZŁ (SZEŚĆDZIESIĄT TYSIĘCY ZŁOTYCH)"
+              }
+            ]
+          }
+        ]
+      },
+      "dzial2": {
+        "prokurenci": [
+          {
+            "imiona": [
+              {
+                "imiona": {
+                  "imie": "T******"
+                },
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "22"
+              }
+            ],
+            "nazwisko": [
+              {
+                "nazwisko": {
+                  "nazwiskoICzlon": "H*******"
+                },
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "22"
+              }
+            ],
+            "rodzajProkury": [
+              {
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "22",
+                "rodzajProkury": "SAMODZIELNA"
+              }
+            ]
+          },
+          {
+            "identyfikator": [
+              {
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "27",
+                "pesel": "7**********"
+              }
+            ],
+            "imiona": [
+              {
+                "imiona": {
+                  "imie": "D******"
+                },
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "27"
+              }
+            ],
+            "nazwisko": [
+              {
+                "nazwisko": {
+                  "nazwiskoICzlon": "G*****"
+                },
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "27"
+              }
+            ],
+            "rodzajProkury": [
+              {
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "27",
+                "rodzajProkury": "SAMODZIELNA"
+              }
+            ]
+          },
+          {
+            "imiona": [
+              {
+                "imiona": {
+                  "imie": "K****"
+                },
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "13"
+              }
+            ],
+            "nazwisko": [
+              {
+                "nazwisko": {
+                  "nazwiskoICzlon": "O********"
+                },
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "13"
+              }
+            ],
+            "rodzajProkury": [
+              {
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "13",
+                "rodzajProkury": "SAMODZIELNA"
+              }
+            ]
+          },
+          {
+            "imiona": [
+              {
+                "imiona": {
+                  "imie": "F****"
+                },
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "36"
+              }
+            ],
+            "nazwisko": [
+              {
+                "nazwisko": {
+                  "nazwiskoICzlon": "M*******"
+                },
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "36"
+              }
+            ],
+            "rodzajProkury": [
+              {
+                "nrWpisuWprow": "9",
+                "nrWpisuWykr": "36",
+                "rodzajProkury": "SAMODZIELNA"
+              }
+            ]
+          },
+          {
+            "imiona": [
+              {
+                "imiona": {
+                  "imie": "S*****"
+                },
+                "nrWpisuWprow": "10",
+                "nrWpisuWykr": "27"
+              }
+            ],
+            "nazwisko": [
+              {
+                "nazwisko": {
+                  "nazwiskoICzlon": "S*****"
+                },
+                "nrWpisuWprow": "10",
+                "nrWpisuWykr": "27"
+              }
+            ],
+            "rodzajProkury": [
+              {
+                "nrWpisuWprow": "10",
+                "nrWpisuWykr": "27",
+                "rodzajProkury": "SAMODZIELNA"
+              }
+            ]
+          },
+          {
+            "identyfikator": [
+              {
+                "nrWpisuWprow": "27",
+                "nrWpisuWykr": "30",
+                "pesel": "7**********"
+              }
+            ],
+            "imiona": [
+              {
+                "imiona": {
+                  "imie": "B*********"
+                },
+                "nrWpisuWprow": "27",
+                "nrWpisuWykr": "30"
+              }
+            ],
+            "nazwisko": [
+              {
+                "nazwisko": {
+                  "nazwiskoICzlon": "N************"
+                },
+                "nrWpisuWprow": "27",
+                "nrWpisuWykr": "30"
+              }
+            ],
+            "rodzajProkury": [
+              {
+                "nrWpisuWprow": "27",
+                "nrWpisuWykr": "30",
+                "rodzajProkury": "PROKURA SAMOISTNA"
+              }
+            ]
+          }
+        ],
+        "reprezentacja": [
+          {
+            "nazwaOrganu": [
+              {
+                "nazwaOrganu": "ZARZĄD",
+                "nrWpisuWprow": "1"
+              }
+            ],
+            "sklad": [
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "2"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "2"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "R***",
+                      "imieDrugie": "C******"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "2"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "K***"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "2"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "6"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "6"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "J**",
+                      "imieDrugie": "A*****"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "5"
+                  },
+                  {
+                    "imiona": {
+                      "imie": "J****",
+                      "imieDrugie": "A*****"
+                    },
+                    "nrWpisuWprow": "5",
+                    "nrWpisuWykr": "6"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "S*********"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "6"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "5"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "5"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "F****",
+                      "imieDrugie": "A*"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "5"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "N******"
+                    },
+                    "nrWpisuWprow": "1",
+                    "nrWpisuWykr": "5"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "5",
+                    "nrWpisuWykr": "6"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "5",
+                    "nrWpisuWykr": "6"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "J***",
+                      "imieDrugie": "S*******"
+                    },
+                    "nrWpisuWprow": "5",
+                    "nrWpisuWykr": "6"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "B*******"
+                    },
+                    "nrWpisuWprow": "5",
+                    "nrWpisuWykr": "6"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "5",
+                    "nrWpisuWykr": "6"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "5",
+                    "nrWpisuWykr": "6"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "D****"
+                    },
+                    "nrWpisuWprow": "5",
+                    "nrWpisuWykr": "6"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "Y****"
+                    },
+                    "nrWpisuWprow": "5",
+                    "nrWpisuWykr": "6"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "5",
+                    "nrWpisuWykr": "7"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "5",
+                    "nrWpisuWykr": "7"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "J****",
+                      "imieDrugie": "C******"
+                    },
+                    "nrWpisuWprow": "5",
+                    "nrWpisuWykr": "7"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "R*****"
+                    },
+                    "nrWpisuWprow": "5",
+                    "nrWpisuWykr": "7"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "6",
+                    "nrWpisuWykr": "7"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "6",
+                    "nrWpisuWykr": "7"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "G****"
+                    },
+                    "nrWpisuWprow": "6",
+                    "nrWpisuWykr": "7"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "G********"
+                    },
+                    "nrWpisuWprow": "6",
+                    "nrWpisuWykr": "7"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "6",
+                    "nrWpisuWykr": "7"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "6",
+                    "nrWpisuWykr": "7"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "N*****",
+                      "imieDrugie": "S*****"
+                    },
+                    "nrWpisuWprow": "6",
+                    "nrWpisuWykr": "7"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "T*****"
+                    },
+                    "nrWpisuWprow": "6",
+                    "nrWpisuWykr": "7"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "12"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "12"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "S****"
+                    },
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "12"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "G****"
+                    },
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "12"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "12"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "12"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "A****"
+                    },
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "12"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "I*****"
+                    },
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "12"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "12"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "12"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "P****"
+                    },
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "12"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "D***"
+                    },
+                    "nrWpisuWprow": "7",
+                    "nrWpisuWykr": "12"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "21"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "21"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "M******",
+                      "imieDrugie": "E*****"
+                    },
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "21"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "R****"
+                    },
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "21"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "21"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "21"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "F****"
+                    },
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "21"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "M*******"
+                    },
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "21"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "22"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "22"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "T******"
+                    },
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "22"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "H*******"
+                    },
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "22"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "15"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "15"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "J*****"
+                    },
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "15"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "S*****"
+                    },
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "15"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "20"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "20"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "R*****",
+                      "imieDrugie": "D****"
+                    },
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "20"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "A*******"
+                    },
+                    "nrWpisuWprow": "12",
+                    "nrWpisuWykr": "20"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "17",
+                    "nrWpisuWykr": "21"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "17",
+                    "nrWpisuWykr": "21"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "T******",
+                      "imieDrugie": "W*****"
+                    },
+                    "nrWpisuWprow": "17",
+                    "nrWpisuWykr": "21"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "G******"
+                    },
+                    "nrWpisuWprow": "17",
+                    "nrWpisuWykr": "21"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "20",
+                    "nrWpisuWykr": "60"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "20",
+                    "nrWpisuWykr": "60"
+                  }
+                ],
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "49",
+                    "nrWpisuWykr": "60",
+                    "pesel": "6**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "F*******"
+                    },
+                    "nrWpisuWprow": "20",
+                    "nrWpisuWykr": "60"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "B********"
+                    },
+                    "nrWpisuWprow": "20",
+                    "nrWpisuWykr": "60"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "21",
+                    "nrWpisuWykr": "30"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "21",
+                    "nrWpisuWykr": "30"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "O******",
+                      "imieDrugie": "D********"
+                    },
+                    "nrWpisuWprow": "21",
+                    "nrWpisuWykr": "30"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "S********"
+                    },
+                    "nrWpisuWprow": "21",
+                    "nrWpisuWykr": "30"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "21",
+                    "nrWpisuWykr": "24"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "21",
+                    "nrWpisuWykr": "24"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "J***",
+                      "imieDrugie": "P****"
+                    },
+                    "nrWpisuWprow": "21",
+                    "nrWpisuWykr": "24"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "A*****",
+                      "nazwiskoIICzlon": "B*******"
+                    },
+                    "nrWpisuWprow": "21",
+                    "nrWpisuWykr": "24"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "30"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "30"
+                  }
+                ],
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "30",
+                    "pesel": "7**********"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "B*********"
+                    },
+                    "nrWpisuWprow": "30"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "N************"
+                    },
+                    "nrWpisuWprow": "30"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "30",
+                    "nrWpisuWykr": "31"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "30",
+                    "nrWpisuWykr": "31"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "A**",
+                      "imieDrugie": "C*******"
+                    },
+                    "nrWpisuWprow": "30",
+                    "nrWpisuWykr": "31"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "D********",
+                      "nazwiskoIICzlon": "B*********"
+                    },
+                    "nrWpisuWprow": "30",
+                    "nrWpisuWykr": "31"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "31"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "31"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "A**",
+                      "imieDrugie": "K********"
+                    },
+                    "nrWpisuWprow": "31"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "J******"
+                    },
+                    "nrWpisuWprow": "31"
+                  }
+                ]
+              },
+              {
+                "czyZawieszona": [
+                  {
+                    "czyZawieszona": false,
+                    "nrWpisuWprow": "60"
+                  }
+                ],
+                "dataZawieszeniaDo": [],
+                "funkcjaWOrganie": [
+                  {
+                    "funkcjaWOrganie": "CZŁONEK ZARZĄDU",
+                    "nrWpisuWprow": "60"
+                  }
+                ],
+                "identyfikator": [
+                  {
+                    "dataUrodzenia": "07.09.1970",
+                    "nrWpisuWprow": "60"
+                  }
+                ],
+                "imiona": [
+                  {
+                    "imiona": {
+                      "imie": "S****"
+                    },
+                    "nrWpisuWprow": "60"
+                  }
+                ],
+                "nazwisko": [
+                  {
+                    "nazwisko": {
+                      "nazwiskoICzlon": "P*****"
+                    },
+                    "nrWpisuWprow": "60"
+                  }
+                ]
+              }
+            ],
+            "sposobReprezentacji": [
+              {
+                "nrWpisuWprow": "1",
+                "nrWpisuWykr": "5",
+                "sposobReprezentacji": "W PRZYPADKU GDY ZARZĄD JEST WIELOOSOBOWY, DO SKŁADANIA OŚWIADCZEŃ I PODPISYWANIA W IMIENIU SPÓŁKI UPOWAŻNIENI SĄ DWAJ CZŁONKOWIE ZARZĄDU ŁĄCZNIE"
+              },
+              {
+                "nrWpisuWprow": "5",
+                "sposobReprezentacji": "KAŻDY CZŁONEK ZARZĄDU JEDNOOSOBOWO"
+              }
+            ]
+          }
+        ]
+      },
+      "dzial3": {
+        "informacjaODniuKonczacymRokObrotowy": {
+          "dzienKonczacyPierwszyRokObrotowy": [
+            {
+              "dzienKonczacyPierwszyRokObrotowy": "31.12.2000",
+              "nrWpisuWprow": "29"
+            }
+          ]
+        },
+        "przedmiotDzialalnosci": {
+          "przedmiotPozostalejDzialalnosci": [
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "72",
+                  "kodKlasa": "20",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "21",
+                  "opis": "TWORZENIE, DOKONYWANIE OPRACOWAŃ I LICENCJONOWANIE OPROGRAMOWANIA KOMPUTEROWEGO"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "72",
+                  "kodKlasa": "10",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "21",
+                  "opis": "USŁUGI KONSULTINGOWE W ZAKRESIE ZARZĄDZANIA I DORADZTWA INFORMATYCZNEGO"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "72",
+                  "kodKlasa": "60",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "1",
+                  "nrWpisuWykr": "21",
+                  "opis": "WSZELKA INNA DZIAŁALNOŚĆ GOSPODARCZA POMOCNA LUB ZWIĄZANA Z POWYŻSZĄ"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "62",
+                  "kodKlasa": "02",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "21",
+                  "nrWpisuWykr": "70",
+                  "opis": "DZIAŁALNOŚĆ ZWIĄZANA Z DORADZTWEM W ZAKRESIE INFORMATYKI"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "62",
+                  "kodKlasa": "09",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "21",
+                  "nrWpisuWykr": "70",
+                  "opis": "POZOSTAŁA DZIAŁALNOŚĆ USŁUGOWA W ZAKRESIE TECHNOLOGII INFORMATYCZNYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "78",
+                  "kodKlasa": "10",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "45",
+                  "nrWpisuWykr": "70",
+                  "opis": "DZIAŁALNOŚĆ ZWIĄZANA Z WYSZUKIWANIEM MIEJSC PRACY I POZYSKIWANIEM PRACOWNIKÓW"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "78",
+                  "kodKlasa": "20",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "45",
+                  "nrWpisuWykr": "70",
+                  "opis": "DZIAŁALNOŚĆ AGENCJI PRACY TYMCZASOWEJ"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "78",
+                  "kodKlasa": "30",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "45",
+                  "nrWpisuWykr": "70",
+                  "opis": "POZOSTAŁA DZIAŁALNOŚĆ ZWIĄZANA Z UDOSTĘPNIANIEM PRACOWNIKÓW"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "62",
+                  "kodKlasa": "20",
+                  "kodPodklasa": "B",
+                  "nrWpisuWprow": "70",
+                  "opis": "POZOSTAŁA DZIAŁALNOŚĆ ZWIĄZANA Z DORADZTWEM W ZAKRESIE INFORMATYKI ORAZ ZARZĄDZANIEM URZĄDZENIAMI INFORMATYCZNYMI"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "62",
+                  "kodKlasa": "90",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "70",
+                  "opis": "POZOSTAŁA DZIAŁALNOŚĆ USŁUGOWA W ZAKRESIE TECHNOLOGII INFORMATYCZNYCH I KOMPUTEROWYCH"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "78",
+                  "kodKlasa": "10",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "70",
+                  "opis": "DZIAŁALNOŚĆ ZWIĄZANA Z WYSZUKIWANIEM MIEJSC PRACY I POZYSKIWANIEM PRACOWNIKÓW"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "78",
+                  "kodKlasa": "20",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "70",
+                  "opis": "DZIAŁALNOŚĆ AGENCJI PRACY TYMCZASOWEJ I POZOSTAŁA DZIAŁALNOŚĆ ZWIĄZANA Z UDOSTĘPNIANIEM PRACOWNIKÓW"
+                }
+              ]
+            }
+          ],
+          "przedmiotPrzewazajacejDzialalnosci": [
+            {
+              "pozycja": [
+                {
+                  "kodDzial": "62",
+                  "kodKlasa": "01",
+                  "kodPodklasa": "Z",
+                  "nrWpisuWprow": "21",
+                  "nrWpisuWykr": "70",
+                  "opis": "DZIAŁALNOŚĆ ZWIĄZANA Z OPROGRAMOWANIEM"
+                },
+                {
+                  "kodDzial": "62",
+                  "kodKlasa": "10",
+                  "kodPodklasa": "B",
+                  "nrWpisuWprow": "70",
+                  "opis": "POZOSTAŁA DZIAŁALNOŚĆ W ZAKRESIE PROGRAMOWANIA"
+                }
+              ]
+            }
+          ]
+        },
+        "wzmiankiOZlozonychDokumentach": {
+          "wzmiankaOZlozeniuOpiniiBieglegoRewidentaSprawozdaniaZBadania": [
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "3",
+                  "zaOkresOdDo": "1 STYCZNIA 2000 - 31 GRUDNIA 2000"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "4",
+                  "zaOkresOdDo": "OD 1 STYCZNIA 2001 DO 31 GRUDNIA 2001"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "6",
+                  "zaOkresOdDo": "1 STYCZEŃ 2002 - 31 GRUDZIEŃ 2002"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "12",
+                  "zaOkresOdDo": "1 STYCZNIA 2004 - 31 GRUDNIA 2004"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "13",
+                  "zaOkresOdDo": "01.01.2005 - 30.09.2006"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "14",
+                  "zaOkresOdDo": "01.10.2006 - 30.09.2007"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "15",
+                  "zaOkresOdDo": "01.10.2008 - 30.09.2009"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "16",
+                  "zaOkresOdDo": "01.10.2007 R. - 30.09.2008 R."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "17",
+                  "zaOkresOdDo": "01.10.2009 - 30.09.2010"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "18",
+                  "zaOkresOdDo": "01.10.2010 - 30.09.2011"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "19",
+                  "zaOkresOdDo": "OD 01.10.2011 DO 30.09.2012"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "20",
+                  "zaOkresOdDo": "OD 01.10.2012 DO 30.09.2013"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "21",
+                  "zaOkresOdDo": "OD 01.10.2013 DO 30.09.2014"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "26",
+                  "zaOkresOdDo": "OD 01.10.2014 DO 30.09.2015"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "28",
+                  "zaOkresOdDo": "OD 01.10.2015 DO 01.10.2016"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "33",
+                  "zaOkresOdDo": "OD 01.10.2016 DO 30.09.2017"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "38",
+                  "zaOkresOdDo": "OD 01.10.2017 DO 30.09.2018"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "42",
+                  "zaOkresOdDo": "OD 01.10.2018 DO 30.09.2019"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "47",
+                  "zaOkresOdDo": "OD 01.10.2019 DO 30.09.2020"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "51",
+                  "zaOkresOdDo": "OD 01.10.2020 DO 30.09.2021"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "55",
+                  "zaOkresOdDo": "OD 01.10.2021 DO 30.09.2022"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "62",
+                  "zaOkresOdDo": "OD 01.10.2022 DO 30.09.2023"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "66",
+                  "zaOkresOdDo": "OD 01.10.2023 DO 30.09.2024"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "73",
+                  "zaOkresOdDo": "OD 01.10.2024 DO 30.09.2025"
+                }
+              ]
+            }
+          ],
+          "wzmiankaOZlozeniuRocznegoSprawozdaniaFinansowego": [
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "13.03.2002",
+                  "nrWpisuWprow": "3",
+                  "zaOkresOdDo": "1 STYCZNIA 2000 - 31 GRUDNIA 2000"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "25.09.2002",
+                  "nrWpisuWprow": "4",
+                  "zaOkresOdDo": "OD 1 STYCZNIA 2001 DO 31 GRUDNIA 2001"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "20.11.2003",
+                  "nrWpisuWprow": "6",
+                  "zaOkresOdDo": "1 STYCZEŃ 2002 - 31 GRUDZIEŃ 2002"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "16.05.2006",
+                  "nrWpisuWprow": "11",
+                  "zaOkresOdDo": "1 STYCZNIA 2003 - 31 GRUDNIA 2003"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "08.02.2008",
+                  "nrWpisuWprow": "12",
+                  "zaOkresOdDo": "1 STYCZNIA 2004 - 31 GRUDNIA 2004"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "28.07.2008",
+                  "nrWpisuWprow": "13",
+                  "zaOkresOdDo": "01.01.2005 - 30.09.2006"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "18.01.2010",
+                  "nrWpisuWprow": "14",
+                  "zaOkresOdDo": "01.10.2006 - 30.09.2007"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "28.06.2011",
+                  "nrWpisuWprow": "15",
+                  "zaOkresOdDo": "01.10.2008 - 30.09.2009"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "07.09.2011",
+                  "nrWpisuWprow": "16",
+                  "zaOkresOdDo": "01.10.2007 R. - 30.09.2008 R."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "11.04.2012",
+                  "nrWpisuWprow": "17",
+                  "zaOkresOdDo": "01.10.2009 - 30.09.2010"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "27.12.2012",
+                  "nrWpisuWprow": "18",
+                  "zaOkresOdDo": "01.10.2010 - 30.09.2011"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "02.04.2014",
+                  "nrWpisuWprow": "19",
+                  "zaOkresOdDo": "OD 01.10.2011 DO 30.09.2012"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "04.11.2014",
+                  "nrWpisuWprow": "20",
+                  "zaOkresOdDo": "OD 01.10.2012 DO 30.09.2013"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "16.10.2015",
+                  "nrWpisuWprow": "21",
+                  "zaOkresOdDo": "OD 01.10.2013 DO 30.09.2014"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "08.12.2016",
+                  "nrWpisuWprow": "26",
+                  "zaOkresOdDo": "OD 01.10.2014 DO 30.09.2015"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "30.10.2018",
+                  "nrWpisuWprow": "28",
+                  "zaOkresOdDo": "OD 01.10.2015 DO 01.10.2016"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "24.11.2020",
+                  "nrWpisuWprow": "32",
+                  "zaOkresOdDo": "OD 01.10.2016 DO 30.09.2017"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "01.04.2021",
+                  "nrWpisuWprow": "37",
+                  "zaOkresOdDo": "OD 01.10.2017 DO 30.09.2018"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "25.08.2021",
+                  "nrWpisuWprow": "41",
+                  "zaOkresOdDo": "OD 01.10.2018 DO 30.09.2019"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "25.11.2021",
+                  "nrWpisuWprow": "46",
+                  "zaOkresOdDo": "OD 01.10.2019 DO 30.09.2020"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "19.08.2022",
+                  "nrWpisuWprow": "50",
+                  "zaOkresOdDo": "OD 01.10.2020 DO 30.09.2021"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "21.03.2023",
+                  "nrWpisuWprow": "54",
+                  "zaOkresOdDo": "OD 01.10.2021 DO 30.09.2022"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "23.05.2024",
+                  "nrWpisuWprow": "61",
+                  "zaOkresOdDo": "OD 01.10.2022 DO 30.09.2023"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "17.04.2025",
+                  "nrWpisuWprow": "65",
+                  "zaOkresOdDo": "OD 01.10.2023 DO 30.09.2024"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "dataZlozenia": "17.04.2026",
+                  "nrWpisuWprow": "72",
+                  "zaOkresOdDo": "OD 01.10.2024 DO 30.09.2025"
+                }
+              ]
+            }
+          ],
+          "wzmiankaOZlozeniuSprawozdaniaZDzialalnosci": [
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "3",
+                  "zaOkresOdDo": "1 STYCZNIA 2000 - 31 GRUDNIA 2000"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "4",
+                  "zaOkresOdDo": "OD 1 STYCZNIA 2001 DO 31 GRUDNIA 2001"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "6",
+                  "zaOkresOdDo": "1 STYCZEŃ 2002 - 31 GRUDZIEŃ 2002"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "11",
+                  "zaOkresOdDo": "1 STYCZNIA 2003 - 31 GRUDNIA 2003"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "12",
+                  "zaOkresOdDo": "1 STYCZNIA 2004 - 31 GRUDNIA 2004"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "13",
+                  "zaOkresOdDo": "01.01.2005 - 30.09.2006"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "14",
+                  "zaOkresOdDo": "01.10.2006 - 30.09.2007"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "15",
+                  "zaOkresOdDo": "01.10.2008 - 30.09.2009"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "16",
+                  "zaOkresOdDo": "01.10.2007 R. - 30.09.2008 R."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "17",
+                  "zaOkresOdDo": "01.10.2009 - 30.09.2010"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "18",
+                  "zaOkresOdDo": "01.10.2010 - 30.09.2011"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "19",
+                  "zaOkresOdDo": "OD 01.10.2011 DO 30.09.2012"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "20",
+                  "zaOkresOdDo": "OD 01.10.2012 DO 30.09.2013"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "21",
+                  "zaOkresOdDo": "OD 01.10.2013 DO 30.09.2014"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "26",
+                  "zaOkresOdDo": "OD 01.10.2014 DO 30.09.2015"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "28",
+                  "zaOkresOdDo": "OD 01.10.2015 DO 01.10.2016"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "35",
+                  "zaOkresOdDo": "OD 01.10.2016 DO 30.09.2017"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "40",
+                  "zaOkresOdDo": "OD 01.10.2017 DO 30.09.2018"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "44",
+                  "zaOkresOdDo": "OD 01.10.2018 DO 30.09.2019"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "48",
+                  "zaOkresOdDo": "OD 01.10.2019 DO 30.09.2020"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "53",
+                  "zaOkresOdDo": "OD 01.10.2020 DO 30.09.2021"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "57",
+                  "zaOkresOdDo": "OD 01.10.2021 DO 30.09.2022"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "64",
+                  "zaOkresOdDo": "OD 01.10.2022 DO 30.09.2023"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "68",
+                  "zaOkresOdDo": "OD 01.10.2023 DO 30.09.2024"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "75",
+                  "zaOkresOdDo": "OD 01.10.2024 DO 30.09.2025"
+                }
+              ]
+            }
+          ],
+          "wzmiankaOZlozeniuUchwalyPostanowieniaOZatwierdzeniuRocznegoSprawozdaniaFinansowego": [
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "3",
+                  "zaOkresOdDo": "1 STYCZNIA 2000 - 31 GRUDNIA 2000"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "4",
+                  "zaOkresOdDo": "OD 1 STYCZNIA 2001 DO 31 GRUDNIA 2001"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "6",
+                  "zaOkresOdDo": "1 STYCZEŃ 2002 - 31 GRUDZIEŃ 2002"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "11",
+                  "zaOkresOdDo": "1 STYCZNIA 2003 - 31 GRUDNIA 2003"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "12",
+                  "zaOkresOdDo": "1 STYCZNIA 2004 - 31 GRUDNIA 2004"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "13",
+                  "zaOkresOdDo": "01.01.2005 - 30.09.2006"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "14",
+                  "zaOkresOdDo": "01.10.2006 - 30.09.2007"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "15",
+                  "zaOkresOdDo": "01.10.2008 - 30.09.2009"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "16",
+                  "zaOkresOdDo": "01.10.2007 R. - 30.09.2008 R."
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "17",
+                  "zaOkresOdDo": "01.10.2009 - 30.09.2010"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "18",
+                  "zaOkresOdDo": "01.10.2010 - 30.09.2011"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "19",
+                  "zaOkresOdDo": "OD 01.10.2011 DO 30.09.2012"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "20",
+                  "zaOkresOdDo": "OD 01.10.2012 DO 30.09.2013"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "21",
+                  "zaOkresOdDo": "OD 01.10.2013 DO 30.09.2014"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "26",
+                  "zaOkresOdDo": "OD 01.10.2014 DO 30.09.2015"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "28",
+                  "zaOkresOdDo": "OD 01.10.2015 DO 01.10.2016"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "34",
+                  "zaOkresOdDo": "OD 01.10.2016 DO 30.09.2017"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "39",
+                  "zaOkresOdDo": "OD 01.10.2017 DO 30.09.2018"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "43",
+                  "zaOkresOdDo": "OD 01.10.2018 DO 30.09.2019"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "52",
+                  "zaOkresOdDo": "OD 01.10.2020 DO 30.09.2021"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "56",
+                  "zaOkresOdDo": "OD 01.10.2021 DO 30.09.2022"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "63",
+                  "zaOkresOdDo": "OD 01.10.2022 DO 30.09.2023"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "67",
+                  "zaOkresOdDo": "OD 01.10.2023 DO 30.09.2024"
+                }
+              ]
+            },
+            {
+              "pozycja": [
+                {
+                  "nrWpisuWprow": "74",
+                  "zaOkresOdDo": "OD 01.10.2024 DO 30.09.2025"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "dzial4": {},
+      "dzial5": {},
+      "dzial6": {
+        "polaczeniePodzialPrzeksztalcenie": [
+          {
+            "okreslenieOkolicznosci": [
+              {
+                "nrWpisuWprow": "25",
+                "okreslenieOkolicznosci": "PRZEJĘCIE INNEJ SPÓŁKI"
+              }
+            ],
+            "opisPolaczeniaPodzialuPrzeksztalcenia": [
+              {
+                "nrWpisuWprow": "25",
+                "opisPolaczeniaPodzialuPrzeksztalcenia": "POŁĄCZENIE POPRZEZ PRZEJĘCIE W TRYBIE ART. 492 § 1 PKT 1 KSH INNEJ SPÓŁKI, TJ. LOGICACMG SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ Z SIEDZIBĄ W WARSZAWIE (ADRES: UL. HRUBIESZOWSKA 2, 01-209 WARSZAWA) - REGON 017271036, NIP 5252210159 - WPISANEJ DO REJESTRU PRZEDSIĘBIORCÓW KRAJOWEGO REJESTRU SĄDOWEGO PROWADZONEGO PRZEZ SĄD REJONOWY DLA M. ST. WARSZAWY, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO, POD NUMEREM KRS: 000007375.\n\nPODSTAWĄ POŁĄCZENIA JEST UCHWAŁA NR 1 NADZWYCZAJNEGO ZGROMADZENIA WSPÓLNIKÓW SPÓŁKI POD FIRMĄ: LOGICACMG SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ Z SIEDZIBĄ W WARSZAWIE Z DNIA 08 SIERPNIA 2016 ROKU W SPRAWIE: POŁĄCZENIA SPÓŁKI PRZEJMOWANEJ, ZAPROTOKOŁOWANA PRZEZ DOMINIKA PIOTROWSKIEGO, NOTARIUSZA W WARSZAWIE, PROWADZĄCEGO KANCELARIĘ NOTARIALNĄ PRZY UL. NOWOLIPKI 27B LOK. 3, 01-010 WARSZAWA, POD NR REP. A - 7718/2016."
+              }
+            ],
+            "podmiotyPrzejmowane": [
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "25",
+                    "regon": "01727103600000"
+                  }
+                ],
+                "krajNazwaRejestru": [
+                  {
+                    "krajNazwaRejestru": "KRAJOWY REJESTR SĄDOWY",
+                    "nrWpisuWprow": "25"
+                  }
+                ],
+                "nazwa": [
+                  {
+                    "nazwa": "LOGICACMG SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ,------",
+                    "nrWpisuWprow": "25"
+                  }
+                ],
+                "nazwaSaduProwadzacegoRejestr": [],
+                "numerWRejestrzeAlboEwidencji": []
+              }
+            ]
+          },
+          {
+            "okreslenieOkolicznosci": [
+              {
+                "nrWpisuWprow": "58",
+                "okreslenieOkolicznosci": "PRZEJĘCIE INNEJ SPÓŁKI"
+              }
+            ],
+            "opisPolaczeniaPodzialuPrzeksztalcenia": [
+              {
+                "nrWpisuWprow": "58",
+                "opisPolaczeniaPodzialuPrzeksztalcenia": "POŁĄCZENIE SPÓŁKI CGI INFORMATION SYSTEMS AND MANAGEMENT CONSULTANTS (POLSKA) SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ (KRS: 0000078664), JAKO SPÓŁKI PRZEJMUJĄCEJ, ZE SPÓŁKĄ AFFECTO POLAND SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ (KRS: 0000286327), JAKO SPÓŁKĄ PRZEJMOWANĄ, POPRZEZ PRZENIESIENIE CAŁEGO MAJĄTKU SPÓŁKI PRZEJMOWANEJ NA SPÓŁKĘ PRZEJMUJĄCĄ W TRYBIE ART. 492 § 1 PKT 1 K.S.H. W ZW. Z ART. 516 § 6 K.S.H. (TJ. W TRYBIE UPROSZCZONYM) NA WARUNKACH OKREŚLONYCH W PLANIE POŁĄCZENIA Z DNIA 24 KWIETNIA 2023 ROKU, UCHWALONE UCHWAŁĄ NADZWYCZAJNEGO ZGROMADZENIA WSPÓLNIKÓW SPÓŁKI PRZEJMOWANEJ Z DNIA 13 CZERWCA 2023 ROKU, ZAPROTOKOŁOWANĄ PRZEZ NOTARIUSZA GRZEGORZA ROGALĘ, KANCELARIA NOTARIALNA W WARSZAWIE, REP. A. NR 8449/2023 ORAZ UCHWAŁĄ NADZWYCZAJNEGO ZGROMADZENIA WSPÓLNIKÓW SPÓŁKI PRZEJMUJĄCEJ Z DNIA 13 CZERWCA 2023 ROKU, ZAPROTOKOŁOWANĄ PRZEZ NOTARIUSZA GRZEGORZA ROGALĘ, KANCELARIA NOTARIALNA W WARSZAWIE, REP. A. NR 8444/2023., 13.06.2023, ZGROMADZENIE WSPÓLNIKÓW"
+              }
+            ],
+            "podmiotyPrzejmowane": [
+              {
+                "identyfikator": [
+                  {
+                    "nrWpisuWprow": "58",
+                    "regon": "141033390"
+                  }
+                ],
+                "krajNazwaRejestru": [
+                  {
+                    "krajNazwaRejestru": "POLSKA,KRAJOWY REJESTR SĄDOWY",
+                    "nrWpisuWprow": "58"
+                  }
+                ],
+                "nazwa": [
+                  {
+                    "nazwa": "AFFECTO POLAND SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ,SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+                    "nrWpisuWprow": "58"
+                  }
+                ],
+                "nazwaSaduProwadzacegoRejestr": [],
+                "numerWRejestrzeAlboEwidencji": [
+                  {
+                    "nrWpisuWprow": "58",
+                    "numerWRejestrzeAlboEwidencji": "0000286327"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "rozwiazanieUniewaznienie": {
+          "okreslenieOkolicznosci": []
+        }
+      }
+    },
+    "naglowekP": {
+      "dataCzasOdpisu": "20.08.2026 09:32:44",
+      "numerKRS": "0000078664",
+      "rejestr": "RejP",
+      "stanPozycji": 1,
+      "stanZDnia": "17.04.2026",
+      "wpis": [
+        {
+          "dataWpisu": "08.01.2002",
+          "numerWpisu": 1,
+          "opis": "REJESTRACJA W KRAJOWYM REJESTRZE SĄDOWYM",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XIX WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XIX NS-REJ.KRS/10567/01/248"
+        },
+        {
+          "dataWpisu": "15.02.2002",
+          "numerWpisu": 2,
+          "opis": "INNY WPIS",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XIX WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XIX NS-REJ.KRS/501/02/912"
+        },
+        {
+          "dataWpisu": "25.03.2002",
+          "numerWpisu": 3,
+          "opis": "INNY WPIS",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XIX WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XIX NS-REJ.KRS/3092/02/910"
+        },
+        {
+          "dataWpisu": "04.10.2002",
+          "numerWpisu": 4,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XIX WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XIX NS-REJ.KRS/14480/02/269"
+        },
+        {
+          "dataWpisu": "16.12.2002",
+          "numerWpisu": 5,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XIX WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XIX NS-REJ.KRS/19511/02/879"
+        },
+        {
+          "dataWpisu": "25.11.2003",
+          "numerWpisu": 6,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XIX WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XIX NS-REJ.KRS/22296/03/662"
+        },
+        {
+          "dataWpisu": "25.08.2004",
+          "numerWpisu": 7,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XIX WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XIX NS-REJ.KRS/18501/04/493"
+        },
+        {
+          "dataWpisu": "24.02.2005",
+          "numerWpisu": 8,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XIX WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XIX NS-REJ.KRS/3472/05/681"
+        },
+        {
+          "dataWpisu": "12.07.2005",
+          "numerWpisu": 9,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XIX WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XIX NS-REJ.KRS/14935/05/183"
+        },
+        {
+          "dataWpisu": "25.04.2006",
+          "numerWpisu": 10,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/7839/06/895"
+        },
+        {
+          "dataWpisu": "29.06.2006",
+          "numerWpisu": 11,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/10927/06/383"
+        },
+        {
+          "dataWpisu": "20.02.2008",
+          "numerWpisu": 12,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/3325/08/187"
+        },
+        {
+          "dataWpisu": "12.08.2008",
+          "numerWpisu": 13,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/22794/08/380"
+        },
+        {
+          "dataWpisu": "22.01.2010",
+          "numerWpisu": 14,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/1589/10/754"
+        },
+        {
+          "dataWpisu": "06.07.2011",
+          "numerWpisu": 15,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/18862/11/115"
+        },
+        {
+          "dataWpisu": "29.09.2011",
+          "numerWpisu": 16,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/30376/11/981"
+        },
+        {
+          "dataWpisu": "19.04.2012",
+          "numerWpisu": 17,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/12427/12/9"
+        },
+        {
+          "dataWpisu": "18.01.2013",
+          "numerWpisu": 18,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/54786/12/7"
+        },
+        {
+          "dataWpisu": "24.04.2014",
+          "numerWpisu": 19,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/15954/14/493"
+        },
+        {
+          "dataWpisu": "10.12.2014",
+          "numerWpisu": 20,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/65269/14/147"
+        },
+        {
+          "dataWpisu": "14.12.2015",
+          "numerWpisu": 21,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/77830/15/333"
+        },
+        {
+          "dataWpisu": "11.02.2016",
+          "numerWpisu": 22,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/2866/16/301"
+        },
+        {
+          "dataWpisu": "22.08.2016",
+          "numerWpisu": 23,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/45956/16/322"
+        },
+        {
+          "dataWpisu": "04.10.2016",
+          "numerWpisu": 24,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/65758/16/936"
+        },
+        {
+          "dataWpisu": "12.10.2016",
+          "numerWpisu": 25,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/62730/16/873"
+        },
+        {
+          "dataWpisu": "27.01.2017",
+          "numerWpisu": 26,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/85072/16/479"
+        },
+        {
+          "dataWpisu": "08.11.2017",
+          "numerWpisu": 27,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/76998/17/503"
+        },
+        {
+          "dataWpisu": "14.11.2018",
+          "numerWpisu": 28,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/74916/18/994"
+        },
+        {
+          "dataWpisu": "22.05.2019",
+          "numerWpisu": 29,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/32869/19/534"
+        },
+        {
+          "dataWpisu": "28.05.2020",
+          "numerWpisu": 30,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/28728/20/141"
+        },
+        {
+          "dataWpisu": "21.10.2020",
+          "numerWpisu": 31,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/52262/20/109"
+        },
+        {
+          "dataWpisu": "24.11.2020",
+          "numerWpisu": 32,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/270522/20/898"
+        },
+        {
+          "dataWpisu": "24.11.2020",
+          "numerWpisu": 33,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/270522/20/299"
+        },
+        {
+          "dataWpisu": "24.11.2020",
+          "numerWpisu": 34,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/270522/20/700"
+        },
+        {
+          "dataWpisu": "24.11.2020",
+          "numerWpisu": 35,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/270523/20/412"
+        },
+        {
+          "dataWpisu": "11.02.2021",
+          "numerWpisu": 36,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M. ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/7423/21/751"
+        },
+        {
+          "dataWpisu": "01.04.2021",
+          "numerWpisu": 37,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/284322/21/55"
+        },
+        {
+          "dataWpisu": "01.04.2021",
+          "numerWpisu": 38,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/284322/21/456"
+        },
+        {
+          "dataWpisu": "01.04.2021",
+          "numerWpisu": 39,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/284322/21/857"
+        },
+        {
+          "dataWpisu": "01.04.2021",
+          "numerWpisu": 40,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/284322/21/258"
+        },
+        {
+          "dataWpisu": "25.08.2021",
+          "numerWpisu": 41,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/325448/21/942"
+        },
+        {
+          "dataWpisu": "25.08.2021",
+          "numerWpisu": 42,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/325448/21/343"
+        },
+        {
+          "dataWpisu": "25.08.2021",
+          "numerWpisu": 43,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/325448/21/744"
+        },
+        {
+          "dataWpisu": "25.08.2021",
+          "numerWpisu": 44,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/325448/21/145"
+        },
+        {
+          "dataWpisu": "13.10.2021",
+          "numerWpisu": 45,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M.ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/56532/21/736"
+        },
+        {
+          "dataWpisu": "25.11.2021",
+          "numerWpisu": 46,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/362401/21/550"
+        },
+        {
+          "dataWpisu": "25.11.2021",
+          "numerWpisu": 47,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/362401/21/951"
+        },
+        {
+          "dataWpisu": "25.11.2021",
+          "numerWpisu": 48,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/362401/21/352"
+        },
+        {
+          "dataWpisu": "01.07.2022",
+          "numerWpisu": 49,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M.ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/37051/22/532"
+        },
+        {
+          "dataWpisu": "19.08.2022",
+          "numerWpisu": 50,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/414912/22/90"
+        },
+        {
+          "dataWpisu": "19.08.2022",
+          "numerWpisu": 51,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/414912/22/491"
+        },
+        {
+          "dataWpisu": "19.08.2022",
+          "numerWpisu": 52,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/414912/22/892"
+        },
+        {
+          "dataWpisu": "19.08.2022",
+          "numerWpisu": 53,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/414912/22/293"
+        },
+        {
+          "dataWpisu": "21.03.2023",
+          "numerWpisu": 54,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/473503/23/843"
+        },
+        {
+          "dataWpisu": "21.03.2023",
+          "numerWpisu": 55,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/473503/23/244"
+        },
+        {
+          "dataWpisu": "21.03.2023",
+          "numerWpisu": 56,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/473503/23/645"
+        },
+        {
+          "dataWpisu": "21.03.2023",
+          "numerWpisu": 57,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/473503/23/46"
+        },
+        {
+          "dataWpisu": "31.08.2023",
+          "numerWpisu": 58,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M.ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/38365/23/834"
+        },
+        {
+          "dataWpisu": "04.09.2023",
+          "numerWpisu": 59,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M.ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/45251/23/602"
+        },
+        {
+          "dataWpisu": "30.11.2023",
+          "numerWpisu": 60,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M.ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/67674/23/7"
+        },
+        {
+          "dataWpisu": "23.05.2024",
+          "numerWpisu": 61,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/605585/24/423"
+        },
+        {
+          "dataWpisu": "23.05.2024",
+          "numerWpisu": 62,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/605585/24/824"
+        },
+        {
+          "dataWpisu": "23.05.2024",
+          "numerWpisu": 63,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/605585/24/225"
+        },
+        {
+          "dataWpisu": "23.05.2024",
+          "numerWpisu": 64,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/605585/24/626"
+        },
+        {
+          "dataWpisu": "17.04.2025",
+          "numerWpisu": 65,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/712830/25/679"
+        },
+        {
+          "dataWpisu": "17.04.2025",
+          "numerWpisu": 66,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/712830/25/80"
+        },
+        {
+          "dataWpisu": "17.04.2025",
+          "numerWpisu": 67,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/712830/25/481"
+        },
+        {
+          "dataWpisu": "17.04.2025",
+          "numerWpisu": 68,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/712831/25/193"
+        },
+        {
+          "dataWpisu": "23.04.2025",
+          "numerWpisu": 69,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/67674/23/7/ADE"
+        },
+        {
+          "dataWpisu": "04.07.2025",
+          "numerWpisu": 70,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M.ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/37850/25/948"
+        },
+        {
+          "dataWpisu": "10.01.2026",
+          "numerWpisu": 71,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SĄD REJONOWY DLA M.ST. WARSZAWY W WARSZAWIE, XII WYDZIAŁ GOSPODARCZY KRAJOWEGO REJESTRU SĄDOWEGO",
+          "sygnaturaAktSprawyDotyczacejWpisu": "WA.XII NS-REJ.KRS/1085/26/664"
+        },
+        {
+          "dataWpisu": "17.04.2026",
+          "numerWpisu": 72,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/812607/26/986"
+        },
+        {
+          "dataWpisu": "17.04.2026",
+          "numerWpisu": 73,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/812608/26/901"
+        },
+        {
+          "dataWpisu": "17.04.2026",
+          "numerWpisu": 74,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/812608/26/500"
+        },
+        {
+          "dataWpisu": "17.04.2026",
+          "numerWpisu": 75,
+          "opis": "ZMIANA DANYCH W REJESTRZE",
+          "oznaczenieSaduDokonujacegoWpisu": "SYSTEM",
+          "sygnaturaAktSprawyDotyczacejWpisu": "RDF/812608/26/302"
+        }
+      ]
+    },
+    "rodzaj": "Pełny"
+  }
+}
