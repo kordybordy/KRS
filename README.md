@@ -202,7 +202,7 @@ Według dokumentacji sprawdzonej 15 września 2026 r. plan Free obejmuje 3 skrzy
 | `KRS_EMAIL_SMTP_PORT` | `587` |
 | `KRS_EMAIL_USERNAME` | Adres utworzonej skrzynki `…@agentmail.to` |
 | `KRS_EMAIL_FROM` | Ten sam adres skrzynki AgentMail |
-| `KRS_EMAIL_PASSWORD` | Klucz API AgentMail |
+| `AGENTMAIL` | Klucz API AgentMail (można także użyć `KRS_EMAIL_PASSWORD`, który ma pierwszeństwo) |
 | `KRS_EMAIL_TO` | Docelowe adresy odbiorców oddzielone przecinkiem |
 
 STARTTLS i weryfikacja certyfikatu są włączone domyślnie. Nie umieszczaj klucza API ani listy odbiorców w plikach repozytorium. Klucz API wpisz bezpośrednio w GitHub Secrets.

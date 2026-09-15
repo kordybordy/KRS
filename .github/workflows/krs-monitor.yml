@@ -45,7 +45,7 @@ jobs:
           KRS_EMAIL_SMTP_HOST: ${{ secrets.KRS_EMAIL_SMTP_HOST }}
           KRS_EMAIL_SMTP_PORT: ${{ secrets.KRS_EMAIL_SMTP_PORT }}
           KRS_EMAIL_USERNAME: ${{ secrets.KRS_EMAIL_USERNAME }}
-          KRS_EMAIL_PASSWORD: ${{ secrets.KRS_EMAIL_PASSWORD }}
+          KRS_EMAIL_PASSWORD: ${{ secrets.KRS_EMAIL_PASSWORD || secrets.AGENTMAIL }}
           KRS_EMAIL_FROM: ${{ secrets.KRS_EMAIL_FROM }}
           KRS_EMAIL_TO: ${{ secrets.KRS_EMAIL_TO }}
           KRS_EMAIL_USE_TLS: ${{ secrets.KRS_EMAIL_USE_TLS }}
