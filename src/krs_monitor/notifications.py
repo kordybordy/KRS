@@ -169,7 +169,7 @@ def _send_to_all_recipients(server: smtplib.SMTP, message: EmailMessage) -> None
     refused = server.send_message(message)
     if refused:
         raise RuntimeError(
-            f"SMTP refused recipient(s): {', '.join(refused)}. "
+            f"SMTP refused {len(refused)} recipient(s). "
             "Other recipients may already have received this message; no retry was attempted."
         )
 
@@ -194,11 +194,18 @@ def main(argv: Sequence[str] | None = None) -> int:
         report_dir = find_report_dir(args.reports_dir, args.report_date)
         message = build_email_message(config, report_dir)
         send_email(config, message)
-    except Exception:
-        logger.exception("Failed to send KRS email notification")
+    except Exception as exc:
+        smtp_code = getattr(exc, "smtp_code", None)
+        status = f", SMTP status {smtp_code}" if isinstance(smtp_code, int) else ""
+        logger.error(
+            "Failed to send KRS email notification (%s%s). "
+            "Some recipients may already have received this message; no retry was attempted.",
+            type(exc).__name__,
+            status,
+        )
         return 1
 
-    logger.info("Sent KRS email notification to %s", ", ".join(config.recipients))
+    logger.info("Sent KRS email notification to %s recipient(s)", len(config.recipients))
     return 0
 
 

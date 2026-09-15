@@ -152,13 +152,13 @@ def test_report_attachments_preserve_original_polish_and_bom_bytes(tmp_path: Pat
 
 
 @pytest.mark.parametrize("use_ssl", [False, True])
-@pytest.mark.parametrize("refuse_one_recipient", [False, True])
+@pytest.mark.parametrize("refusal_mode", ["none", "one", "all"])
 def test_main_sends_unchanged_weekly_report_over_verified_smtp(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
     caplog: pytest.LogCaptureFixture,
     use_ssl: bool,
-    refuse_one_recipient: bool,
+    refusal_mode: str,
 ) -> None:
     report_dir = tmp_path / "2026-09-17"
     _write_report(
@@ -200,7 +200,11 @@ def test_main_sends_unchanged_weekly_report_over_verified_smtp(
         def send_message(self, message):
             sent.append(message)
             events.append("send")
-            return {"second@example.com": (550, b"Mailbox unavailable")} if refuse_one_recipient else {}
+            if refusal_mode == "all":
+                raise notifications.smtplib.SMTPRecipientsRefused(
+                    {recipient: (550, b"Mailbox unavailable") for recipient in config.recipients}
+                )
+            return {"second@example.com": (550, b"Mailbox unavailable")} if refusal_mode == "one" else {}
 
     monkeypatch.setattr(notifications, "load_email_config_from_env", lambda: config)
     monkeypatch.setattr(notifications.smtplib, "SMTP", FakeSMTP)
@@ -208,7 +212,7 @@ def test_main_sends_unchanged_weekly_report_over_verified_smtp(
 
     exit_code = notifications.main(["--reports-dir", str(tmp_path), "--report-date", report_dir.name])
 
-    assert exit_code == (1 if refuse_one_recipient else 0)
+    assert exit_code == (0 if refusal_mode == "none" else 1)
     assert len(sent) == 1
     assert sent[0]["Subject"] == "[KRS Monitor] 2026-09-17 - no changes"
     assert "No changed values were reported." in sent[0].get_content()
@@ -216,7 +220,9 @@ def test_main_sends_unchanged_weekly_report_over_verified_smtp(
     assert len(contexts) == 1
     assert contexts[0].verify_mode == ssl.CERT_REQUIRED
     assert contexts[0].check_hostname is True
-    if refuse_one_recipient:
-        assert "SMTP refused recipient(s): second@example.com" in caplog.text
+    for recipient in config.recipients:
+        assert recipient not in caplog.text
+    if refusal_mode != "none":
+        assert "Failed to send KRS email notification" in caplog.text
         assert "no retry was attempted" in caplog.text
         assert "Sent KRS email notification" not in caplog.text
