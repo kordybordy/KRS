@@ -2,7 +2,7 @@
 
 Projekt automatycznie monitoruje zmiany w danych KRS dla dwóch spółek CGI. Raz w tygodniu pobiera pełny odpis KRS, zapisuje snapshot, porównuje go z poprzednią wersją i generuje raport zmian w Markdown, JSON oraz CSV z pełną tabelą porównania wartości.
 
-Obecna wersja może opcjonalnie tworzyć issue na GitHubie z krótkim podsumowaniem zmian, bez używania osobnych danych logowania do poczty. Wyniki są też zapisywane w repozytorium, commitowane przez GitHub Actions i publikowane jako artifacts.
+Monitor może wysyłać cotygodniowy e-mail z wynikiem, zmienionymi wartościami na początku wiadomości oraz załączonym raportem i plikiem CSV. Wiadomość jest wysyłana również wtedy, gdy nie ma zmian. Nadawcą może być osobna skrzynka AgentMail, bez połączenia z prywatnym kontem Gmail. Opcjonalne issue na GitHubie nadal powstaje tylko przy wykryciu zmian. Wyniki są też zapisywane w repozytorium, commitowane przez GitHub Actions i publikowane jako artifacts.
 
 ## Monitorowane spółki
 
@@ -100,7 +100,7 @@ Dostępne triggery:
 - `workflow_dispatch` — ręczne uruchomienie.
 - `schedule` — dwa crony w UTC dobrane do miesięcy czasu zimowego i letniego: `0 8 * 1,2,3,11,12 4` oraz `0 7 * 4,5,6,7,8,9,10 4`.
 
-GitHub Actions używa czasu UTC i nie obsługuje natywnie stref czasowych w cronach. Workflow nie używa już osobnego guardu, więc zaplanowany run nie kończy się pustym skipem. Harmonogram przybliża czwartek `09:00` czasu `Europe/Warsaw`; w tygodniach zmiany czasu run może wypaść godzinę wcześniej albo później.
+Ten workflow używa wpisów harmonogramu w UTC. Nie używa osobnego guardu, więc zaplanowany run nie kończy się pustym skipem. Harmonogram przybliża czwartek `09:00` czasu `Europe/Warsaw`; w tygodniach zmiany czasu run może wypaść godzinę wcześniej albo później.
 
 Workflow:
 
@@ -109,6 +109,7 @@ Workflow:
 3. Instaluje zależności z `requirements.txt`.
 4. Uruchamia `pytest`.
 5. Uruchamia `python -m krs_monitor.main`.
+   Następnie wywołuje moduł powiadomień SMTP dla daty raportu z tego konkretnego uruchomienia. Przy skonfigurowanej poczcie wysyła wynik co tydzień, także bez zmian. Błędy pobrania danych są oznaczane w wiadomości; błąd wysyłki powoduje niepowodzenie workflow.
 6. Dopisuje najnowsze `summary.txt` do GitHub Actions job summary.
 7. Uploaduje katalog `reports/` jako artifact `krs-report`.
 8. Commituje zmienione pliki `data/latest`, `data/archive` i `reports`.
@@ -163,7 +164,7 @@ Adres e-mail nie wystarczy do wymuszenia powiadomienia przez GitHub issue. GitHu
 
 ## Powiadomienia SMTP
 
-Opcjonalny moduł SMTP nadal jest dostępny, jeżeli kiedyś będzie potrzebna bezpośrednia wysyłka e-maili. Wymaga jednak danych logowania lub tokenu dostawcy poczty. Jeżeli sekrety nie są ustawione, workflow nie używa SMTP.
+Workflow wywołuje moduł SMTP po wygenerowaniu raportu. Wymaga danych logowania lub tokenu dostawcy poczty. Jeżeli sekrety nie są ustawione, moduł pomija wysyłkę. Niepełna konfiguracja lub błąd wysyłki powoduje niepowodzenie workflow.
 
 W GitHub repository settings dodaj sekrety:
 
@@ -186,3 +187,28 @@ KRS_EMAIL_MAX_DETAILS
 ```
 
 Domyślnie używany jest port `587` i STARTTLS. Dla SMTP over SSL ustaw `KRS_EMAIL_USE_SSL=true` oraz `KRS_EMAIL_USE_TLS=false`.
+
+### Osobny bezpłatny nadawca: AgentMail
+
+Według dokumentacji sprawdzonej 15 września 2026 r. plan Free obejmuje 3 skrzynki w domenie `agentmail.to`, 3000 wiadomości miesięcznie i 100 dziennie, bez karty płatniczej. Konto wymaga jednorazowej rejestracji i weryfikacji; nie wymaga hasła do Gmaila ani dostępu do prywatnej skrzynki. Wiadomości w planie Free mają stopkę „Sent via AgentMail”.
+
+1. Utwórz konto w [AgentMail Console](https://console.agentmail.to/) i osobną skrzynkę nadawczą.
+2. Utwórz klucz API AgentMail.
+3. W `Settings → Secrets and variables → Actions → Secrets` ustaw:
+
+| Sekret | Wartość |
+| --- | --- |
+| `KRS_EMAIL_SMTP_HOST` | `smtp.agentmail.to` |
+| `KRS_EMAIL_SMTP_PORT` | `587` |
+| `KRS_EMAIL_USERNAME` | Adres utworzonej skrzynki `…@agentmail.to` |
+| `KRS_EMAIL_FROM` | Ten sam adres skrzynki AgentMail |
+| `KRS_EMAIL_PASSWORD` | Klucz API AgentMail |
+| `KRS_EMAIL_TO` | Docelowe adresy odbiorców oddzielone przecinkiem |
+
+STARTTLS i weryfikacja certyfikatu są włączone domyślnie. Nie umieszczaj klucza API ani listy odbiorców w plikach repozytorium. Klucz API wpisz bezpośrednio w GitHub Secrets.
+
+4. Po włączeniu zmian na domyślnej gałęzi uruchom `Actions → KRS Monitor → Run workflow` i sprawdź odbiór pierwszej wiadomości. Kolejne uruchomienia korzystają z istniejącego tygodniowego harmonogramu; GitHub może opóźnić start względem wskazanej godziny.
+
+E-mail zawiera podsumowanie i maksymalnie `KRS_EMAIL_MAX_DETAILS` zmian, a pełne dane są w załącznikach `report.md` i `comparison.csv`. CSV jest dołączany bez zmiany bajtów, z zachowaniem UTF-8 BOM dla polskich znaków w Excelu. Limit wiadomości SMTP AgentMail to 10 MB. Ręczne ponowienie workflow może wysłać kolejną wiadomość; po niejednoznacznym błędzie wysyłki sprawdź odbiór przed ponowieniem.
+
+Źródła: [cennik](https://www.agentmail.to/pricing), [utworzenie skrzynki](https://docs.agentmail.to/quickstart), [konfiguracja SMTP](https://docs.agentmail.to/imap-smtp), [stopka planu Free](https://docs.agentmail.to/messages).

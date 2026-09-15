@@ -35,6 +35,9 @@ def main() -> int:
     summary = paths["summary"].read_text(encoding="utf-8")
     print(summary, end="")
     logger.info("Generated reports in %s", paths["report_dir"])
+    if github_output := os.getenv("GITHUB_OUTPUT"):
+        with Path(github_output).open("a", encoding="utf-8") as output:
+            output.write(f"report_date={run_started_at.date().isoformat()}\n")
     return 0
 
 

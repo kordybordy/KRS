@@ -37,7 +37,25 @@ jobs:
         run: pytest
 
       - name: Run KRS monitor
+        id: report
         run: python -m krs_monitor.main
+
+      - name: Send weekly report email
+        env:
+          KRS_EMAIL_SMTP_HOST: ${{ secrets.KRS_EMAIL_SMTP_HOST }}
+          KRS_EMAIL_SMTP_PORT: ${{ secrets.KRS_EMAIL_SMTP_PORT }}
+          KRS_EMAIL_USERNAME: ${{ secrets.KRS_EMAIL_USERNAME }}
+          KRS_EMAIL_PASSWORD: ${{ secrets.KRS_EMAIL_PASSWORD }}
+          KRS_EMAIL_FROM: ${{ secrets.KRS_EMAIL_FROM }}
+          KRS_EMAIL_TO: ${{ secrets.KRS_EMAIL_TO }}
+          KRS_EMAIL_USE_TLS: ${{ secrets.KRS_EMAIL_USE_TLS }}
+          KRS_EMAIL_USE_SSL: ${{ secrets.KRS_EMAIL_USE_SSL }}
+          KRS_EMAIL_SUBJECT_PREFIX: ${{ secrets.KRS_EMAIL_SUBJECT_PREFIX }}
+          KRS_EMAIL_MAX_DETAILS: ${{ secrets.KRS_EMAIL_MAX_DETAILS }}
+          REPORT_DATE: ${{ steps.report.outputs.report_date }}
+        run: |
+          test -n "$REPORT_DATE"
+          python -m krs_monitor.notifications --report-date "$REPORT_DATE"
 
       - name: Add report summary to job summary
         if: always()
