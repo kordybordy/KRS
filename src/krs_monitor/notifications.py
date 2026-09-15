@@ -7,8 +7,10 @@ import json
 import logging
 import os
 import smtplib
+import ssl
 from dataclasses import dataclass
 from email.message import EmailMessage
+from email.utils import formatdate, make_msgid, parseaddr
 from pathlib import Path
 from typing import Any, Mapping, Sequence
 
@@ -104,20 +106,37 @@ def find_report_dir(reports_dir: Path, report_date: str | None = None) -> Path:
 
 
 def build_email_message(config: EmailConfig, report_dir: Path) -> EmailMessage:
-    """Build a plain-text email from a generated report directory."""
+    """Build a plain-text email with available report files attached unchanged."""
 
     report_data = json.loads((report_dir / "report.json").read_text(encoding="utf-8"))
     summary = (report_dir / "summary.txt").read_text(encoding="utf-8").strip()
     report_date = str(report_data.get("date") or report_dir.name)
-    has_changes = _has_changes(report_data)
+    attachments = [
+        (filename, subtype, (report_dir / filename).read_bytes())
+        for filename, subtype in (("report.md", "markdown"), ("comparison.csv", "csv"))
+        if (report_dir / filename).is_file()
+    ]
 
     message = EmailMessage()
     message["From"] = config.sender
     message["To"] = ", ".join(config.recipients)
-    message["Subject"] = (
-        f"[{config.subject_prefix}] {report_date} - {'changes detected' if has_changes else 'no changes'}"
+    message["Subject"] = f"[{config.subject_prefix}] {report_date} - {_report_status(report_data)}"
+    message["Date"] = formatdate(localtime=True)
+    sender_address = parseaddr(config.sender)[1]
+    sender_domain = sender_address.rsplit("@", 1)[1] if "@" in sender_address else None
+    message["Message-ID"] = make_msgid(domain=sender_domain)
+    message.set_content(
+        _build_body(report_data, summary, report_dir, config.max_details, [item[0] for item in attachments])
     )
-    message.set_content(_build_body(report_data, summary, report_dir, config.max_details))
+    for filename, subtype, content in attachments:
+        message.add_attachment(
+            content,
+            maintype="text",
+            subtype=subtype,
+            filename=filename,
+            params={"charset": "utf-8"},
+            cte="base64",
+        )
     return message
 
 
@@ -125,18 +144,34 @@ def send_email(config: EmailConfig, message: EmailMessage) -> None:
     """Send an email message using SMTP."""
 
     if config.use_ssl:
-        with smtplib.SMTP_SSL(config.smtp_host, config.smtp_port, timeout=config.timeout_seconds) as server:
+        with smtplib.SMTP_SSL(
+            config.smtp_host,
+            config.smtp_port,
+            timeout=config.timeout_seconds,
+            context=ssl.create_default_context(),
+        ) as server:
             _login_if_configured(server, config)
-            server.send_message(message)
+            _send_to_all_recipients(server, message)
         return
 
     with smtplib.SMTP(config.smtp_host, config.smtp_port, timeout=config.timeout_seconds) as server:
         if config.use_tls:
             server.ehlo()
-            server.starttls()
+            server.starttls(context=ssl.create_default_context())
             server.ehlo()
         _login_if_configured(server, config)
-        server.send_message(message)
+        _send_to_all_recipients(server, message)
+
+
+def _send_to_all_recipients(server: smtplib.SMTP, message: EmailMessage) -> None:
+    """Fail on partial acceptance without retrying recipients already accepted."""
+
+    refused = server.send_message(message)
+    if refused:
+        raise RuntimeError(
+            f"SMTP refused {len(refused)} recipient(s). "
+            "Other recipients may already have received this message; no retry was attempted."
+        )
 
 
 def main(argv: Sequence[str] | None = None) -> int:
@@ -159,37 +194,70 @@ def main(argv: Sequence[str] | None = None) -> int:
         report_dir = find_report_dir(args.reports_dir, args.report_date)
         message = build_email_message(config, report_dir)
         send_email(config, message)
-    except Exception:
-        logger.exception("Failed to send KRS email notification")
+    except Exception as exc:
+        smtp_code = getattr(exc, "smtp_code", None)
+        status = f", SMTP status {smtp_code}" if isinstance(smtp_code, int) else ""
+        logger.error(
+            "Failed to send KRS email notification (%s%s). "
+            "Some recipients may already have received this message; no retry was attempted.",
+            type(exc).__name__,
+            status,
+        )
         return 1
 
-    logger.info("Sent KRS email notification to %s", ", ".join(config.recipients))
+    logger.info("Sent KRS email notification to %s recipient(s)", len(config.recipients))
     return 0
 
 
-def _build_body(report_data: dict[str, Any], summary: str, report_dir: Path, max_details: int) -> str:
+def _build_body(
+    report_data: dict[str, Any],
+    summary: str,
+    report_dir: Path,
+    max_details: int,
+    attachments: Sequence[str] = (),
+) -> str:
     lines = [
-        f"KRS monitoring summary for {report_data.get('date', report_dir.name)}",
-        "",
-        summary or "No summary lines were generated.",
+        f"KRS monitoring result for {report_data.get('date', report_dir.name)}",
         "",
     ]
 
+    results = report_data.get("results", [])
+    errors = [result for result in results if result.get("status") == "error"]
     detail_lines = _changed_detail_lines(report_data, max_details)
     if detail_lines:
         lines.extend(["Changed values:", "", *detail_lines, ""])
+    elif errors or not results:
+        lines.extend(["Changes could not be fully checked.", ""])
     else:
         lines.extend(["No changed values were reported.", ""])
 
-    lines.extend(
-        [
-            "Report files:",
-            f"- {report_dir.as_posix()}/report.md",
-            f"- {report_dir.as_posix()}/comparison.csv",
-            "",
-        ]
-    )
+    if not results or len(errors) == len(results):
+        lines.extend(["Monitoring failed. No company could be checked successfully.", ""])
+    elif errors:
+        lines.extend(["Partial failure. Changes may be missing for companies that could not be checked.", ""])
+    if errors:
+        lines.extend(["Errors:", ""])
+        lines.extend(
+            f"- {result.get('name', 'Unknown entity')} (KRS {result.get('krs', 'unknown')}): "
+            f"{result.get('error', 'Unknown error')}"
+            for result in errors
+        )
+        lines.append("")
+
+    lines.extend(["Summary:", "", summary or "No summary lines were generated.", ""])
+    if attachments:
+        lines.extend(["Attached reports:", *[f"- {filename}" for filename in attachments], ""])
     return "\n".join(lines)
+
+
+def _report_status(report_data: dict[str, Any]) -> str:
+    results = report_data.get("results", [])
+    error_count = sum(result.get("status") == "error" for result in results)
+    if not results or error_count == len(results):
+        return "monitoring failed"
+    if error_count:
+        return "partial failure; changes detected" if _has_changes(report_data) else "partial failure"
+    return "changes detected" if _has_changes(report_data) else "no changes"
 
 
 def _changed_detail_lines(report_data: dict[str, Any], max_details: int) -> list[str]:
