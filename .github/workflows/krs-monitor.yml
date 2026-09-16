@@ -3,17 +3,37 @@ name: KRS Monitor
 on:
   workflow_dispatch:
   schedule:
-    # GitHub cron uses UTC. These entries approximate Thursday 09:00 Europe/Warsaw
-    # without weekly skipped runs. DST transition weeks may run one hour off.
-    - cron: "0 8 * 1,2,3,11,12 4"
-    - cron: "0 7 * 4,5,6,7,8,9,10 4"
+    # The schedule job admits every other Thursday, starting 2026-10-01.
+    - cron: "0 9 * * 4"
+      timezone: "Europe/Warsaw"
 
 permissions:
   contents: write
   issues: write
 
 jobs:
+  schedule:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      should_run: ${{ steps.schedule.outputs.should_run }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check fortnightly schedule
+        id: schedule
+        env:
+          PYTHONPATH: src
+        run: python -m krs_monitor.schedule
+
   monitor:
+    needs: schedule
+    if: needs.schedule.outputs.should_run == 'true'
     runs-on: ubuntu-latest
     env:
       PYTHONPATH: src
@@ -40,7 +60,7 @@ jobs:
         id: report
         run: python -m krs_monitor.main
 
-      - name: Send weekly report email
+      - name: Send fortnightly report email
         env:
           KRS_EMAIL_SMTP_HOST: ${{ secrets.KRS_EMAIL_SMTP_HOST }}
           KRS_EMAIL_SMTP_PORT: ${{ secrets.KRS_EMAIL_SMTP_PORT }}
@@ -88,7 +108,7 @@ jobs:
             echo "No changes to commit."
           else
             report_date="$(TZ=Europe/Warsaw date +%F)"
-            git commit -m "krs-monitor: weekly report ${report_date}"
+            git commit -m "krs-monitor: fortnightly report ${report_date}"
             git push
           fi
 

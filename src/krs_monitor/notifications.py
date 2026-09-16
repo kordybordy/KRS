@@ -9,10 +9,12 @@ import os
 import smtplib
 import ssl
 from dataclasses import dataclass
+from datetime import date
 from email.message import EmailMessage
 from email.utils import formatdate, make_msgid, parseaddr
 from pathlib import Path
 from typing import Any, Mapping, Sequence
+from urllib.parse import quote
 
 from krs_monitor.config import REPORTS_DIR
 
@@ -244,10 +246,102 @@ def _build_body(
         )
         lines.append("")
 
+    lines.extend([*_last_change_lines(report_data, report_dir), ""])
     lines.extend(["Summary:", "", summary or "No summary lines were generated.", ""])
     if attachments:
         lines.extend(["Attached reports:", *[f"- {filename}" for filename in attachments], ""])
     return "\n".join(lines)
+
+
+def _last_change_lines(report_data: dict[str, Any], report_dir: Path) -> list[str]:
+    """Find the newest real change without claiming unreadable history is unchanged."""
+
+    try:
+        current_date = date.fromisoformat(str(report_data.get("date") or report_dir.name))
+    except ValueError:
+        logger.warning("Cannot determine report history cutoff: invalid current report date.")
+        return ["Ostatni raport ze zmianami: nie można ustalić daty bieżącego raportu."]
+
+    if _has_changes(report_data):
+        return _last_change_reference(current_date, report_dir.name)
+
+    try:
+        candidates = []
+        for candidate in report_dir.parent.iterdir():
+            try:
+                candidate_date = date.fromisoformat(candidate.name)
+            except ValueError:
+                continue
+            if candidate_date < current_date and candidate.is_dir():
+                candidates.append((candidate_date, candidate))
+    except OSError as exc:
+        logger.warning("Cannot list report history (%s).", type(exc).__name__)
+        return ["Ostatni raport ze zmianami: nie można potwierdzić — historia jest niedostępna."]
+
+    incomplete = False
+    for candidate_date, candidate in sorted(candidates, reverse=True):
+        try:
+            historical = json.loads((candidate / "report.json").read_text(encoding="utf-8"))
+            _validate_historical_report(historical, candidate_date)
+        except (OSError, UnicodeError, ValueError, TypeError) as exc:
+            logger.warning(
+                "Cannot inspect report history at reports/%s/report.json (%s).",
+                candidate_date.isoformat(),
+                type(exc).__name__,
+            )
+            incomplete = True
+            continue
+        if _has_changes(historical):
+            if incomplete:
+                return [
+                    "Ostatni raport ze zmianami: nie można potwierdzić — część historii jest niedostępna.",
+                    *_last_change_reference(candidate_date, candidate.name, confirmed_only=True),
+                ]
+            return _last_change_reference(candidate_date, candidate.name)
+
+    if incomplete:
+        return ["Ostatni raport ze zmianami: nie można potwierdzić — część historii jest niedostępna."]
+    return ["Ostatni raport ze zmianami: nie znaleziono w dostępnej historii."]
+
+
+def _validate_historical_report(report_data: Any, expected_date: date) -> None:
+    """Reject incomplete or malformed history instead of silently hiding changes."""
+
+    if not isinstance(report_data, dict) or report_data.get("date") != expected_date.isoformat():
+        raise ValueError("Invalid historical report date")
+    results = report_data.get("results")
+    if not isinstance(results, list):
+        raise ValueError("Invalid historical report results")
+    for result in results:
+        if not isinstance(result, dict) or result.get("status") not in {"ok", "error"}:
+            raise ValueError("Invalid historical result")
+        if result["status"] == "error":
+            continue
+        diff = result.get("diff")
+        if not isinstance(diff, dict):
+            raise ValueError("Invalid historical comparison")
+        if not isinstance(diff.get("baseline", False), bool):
+            raise ValueError("Invalid historical baseline flag")
+        if diff.get("baseline") is True:
+            continue
+        differences = diff.get("differences")
+        if not isinstance(differences, list) or any(
+            not isinstance(item, dict)
+            or not isinstance(item.get("path"), str)
+            or item.get("type") not in {"added", "removed", "changed"}
+            for item in differences
+        ):
+            raise ValueError("Invalid historical differences")
+
+
+def _last_change_reference(report_date: date, directory_name: str, *, confirmed_only: bool = False) -> list[str]:
+    label = "Ostatni potwierdzony raport ze zmianami" if confirmed_only else "Ostatni raport ze zmianami"
+    report_path = f"reports/{quote(directory_name, safe='')}/report.md"
+    repository = os.getenv("GITHUB_REPOSITORY", "").strip()
+    if repository:
+        server = os.getenv("GITHUB_SERVER_URL", "https://github.com").rstrip("/")
+        report_path = f"{server}/{repository}/blob/main/{report_path}"
+    return [f"{label}: {report_date.isoformat()}", f"Raport: {report_path}"]
 
 
 def _report_status(report_data: dict[str, Any]) -> str:
@@ -266,6 +360,8 @@ def _changed_detail_lines(report_data: dict[str, Any], max_details: int) -> list
     omitted = 0
 
     for result in report_data.get("results", []):
+        if result.get("status") == "error" or result.get("diff", {}).get("baseline"):
+            continue
         differences = result.get("diff", {}).get("differences", [])
         if not differences:
             continue
@@ -306,7 +402,12 @@ def _short_value(value: Any, limit: int = 240) -> str:
 
 
 def _has_changes(report_data: dict[str, Any]) -> bool:
-    return any(result.get("diff", {}).get("differences") for result in report_data.get("results", []))
+    return any(
+        result.get("status") != "error"
+        and not result.get("diff", {}).get("baseline")
+        and result.get("diff", {}).get("differences")
+        for result in report_data.get("results", [])
+    )
 
 
 def _login_if_configured(server: smtplib.SMTP, config: EmailConfig) -> None:
