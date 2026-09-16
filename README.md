@@ -1,8 +1,8 @@
 # KRS Monitor CGI
 
-Projekt automatycznie monitoruje zmiany w danych KRS dla dwóch spółek CGI. Raz w tygodniu pobiera pełny odpis KRS, zapisuje snapshot, porównuje go z poprzednią wersją i generuje raport zmian w Markdown, JSON oraz CSV z pełną tabelą porównania wartości.
+Projekt automatycznie monitoruje zmiany w danych KRS dla dwóch spółek CGI. Co dwa tygodnie, w czwartek o 09:00 czasu Europe/Warsaw, pobiera pełny odpis KRS, zapisuje snapshot, porównuje go z poprzednią wersją i generuje raport zmian w Markdown, JSON oraz CSV z pełną tabelą porównania wartości. Pierwsza wysyłka w tym harmonogramie przypada 1 października 2026 r.
 
-Monitor może wysyłać cotygodniowy e-mail z wynikiem, zmienionymi wartościami na początku wiadomości oraz załączonym raportem i plikiem CSV. Wiadomość jest wysyłana również wtedy, gdy nie ma zmian. Nadawcą może być osobna skrzynka AgentMail, bez połączenia z prywatnym kontem Gmail. Opcjonalne issue na GitHubie nadal powstaje tylko przy wykryciu zmian. Wyniki są też zapisywane w repozytorium, commitowane przez GitHub Actions i publikowane jako artifacts.
+Monitor wysyła co dwa tygodnie e-mail z wynikiem, zmienionymi wartościami na początku wiadomości oraz załączonym raportem i plikiem CSV. Wiadomość jest wysyłana również wtedy, gdy nie ma zmian, i wskazuje datę oraz odnośnik do ostatniego raportu, w którym wykryto zmiany. Nadawcą może być osobna skrzynka AgentMail, bez połączenia z prywatnym kontem Gmail. Opcjonalne issue na GitHubie nadal powstaje tylko przy wykryciu zmian. Wyniki są też zapisywane w repozytorium, commitowane przez GitHub Actions i publikowane jako artifacts.
 
 ## Monitorowane spółki
 
@@ -97,10 +97,10 @@ Workflow znajduje się w `.github/workflows/krs-monitor.yml`.
 
 Dostępne triggery:
 
-- `workflow_dispatch` — ręczne uruchomienie.
-- `schedule` — dwa crony w UTC dobrane do miesięcy czasu zimowego i letniego: `0 8 * 1,2,3,11,12 4` oraz `0 7 * 4,5,6,7,8,9,10 4`.
+- `workflow_dispatch` — ręczne uruchomienie respektujące ten sam harmonogram.
+- `schedule` — sprawdzenie w każdy czwartek o 09:00 w strefie `Europe/Warsaw`; osobny etap dopuszcza raportowanie wyłącznie co 14 dni od 1 października 2026 r.
 
-Ten workflow używa wpisów harmonogramu w UTC. Nie używa osobnego guardu, więc zaplanowany run nie kończy się pustym skipem. Harmonogram przybliża czwartek `09:00` czasu `Europe/Warsaw`; w tygodniach zmiany czasu run może wypaść godzinę wcześniej albo później.
+Strefa `Europe/Warsaw` zachowuje godzinę 09:00 także po zmianie czasu letniego i zimowego. GitHub może opóźnić uruchomienie względem zaplanowanej godziny. W tygodniach pomijanych kończy się wyłącznie sprawdzenie daty: główne zadanie nie pobiera danych, nie aktualizuje snapshotów, nie wysyła poczty ani nie tworzy issue. Pozwala to porównywać dane z poprzednim raportem wysłanym w dwutygodniowym cyklu.
 
 Workflow:
 
@@ -109,7 +109,7 @@ Workflow:
 3. Instaluje zależności z `requirements.txt`.
 4. Uruchamia `pytest`.
 5. Uruchamia `python -m krs_monitor.main`.
-   Następnie wywołuje moduł powiadomień SMTP dla daty raportu z tego konkretnego uruchomienia. Przy skonfigurowanej poczcie wysyła wynik co tydzień, także bez zmian. Błędy pobrania danych są oznaczane w wiadomości; błąd wysyłki powoduje niepowodzenie workflow.
+   Następnie wywołuje moduł powiadomień SMTP dla daty raportu z tego konkretnego uruchomienia. Przy skonfigurowanej poczcie wysyła wynik co dwa tygodnie, także bez zmian. Wiadomość zawiera ostatni raport ze zmianami znaleziony w historii do bieżącej daty włącznie; raport bazowy nie jest traktowany jako wykrycie zmian. Błędy pobrania danych są oznaczane w wiadomości; błąd wysyłki powoduje niepowodzenie workflow.
 6. Dopisuje najnowsze `summary.txt` do GitHub Actions job summary.
 7. Uploaduje katalog `reports/` jako artifact `krs-report`.
 8. Commituje zmienione pliki `data/latest`, `data/archive` i `reports`.
@@ -118,7 +118,7 @@ Workflow:
 Commit ma format:
 
 ```text
-krs-monitor: weekly report YYYY-MM-DD
+krs-monitor: fortnightly report YYYY-MM-DD
 ```
 
 Jeżeli nie ma zmian, workflow wypisuje:
@@ -129,19 +129,19 @@ No changes to commit.
 
 i nie kończy się błędem.
 
-## Zmiana częstotliwości na dwutygodniową
+## Terminy raportowania
 
-Najprościej zostawić tygodniowy cron i dodać w Pythonie guard oparty o numer tygodnia ISO, np. na początku `main()`:
+Moduł `src/krs_monitor/schedule.py` dopuszcza daty oddalone o wielokrotność 14 dni od `2026-10-01`, nie wcześniej niż o 09:00 czasu polskiego. Ten sposób liczenia zachowuje rytm także na przełomie roku z 53 tygodniami ISO.
 
-```python
-from datetime import date
+| Data | Wysyłka |
+| --- | --- |
+| 17.09.2026 | Pominięta — wcześniej wysłano próbę |
+| 24.09.2026 | Pominięta |
+| 01.10.2026, 09:00 | Pierwszy raport w nowym cyklu |
+| 15.10.2026, 09:00 | Kolejny raport |
+| 29.10.2026, 09:00 | Kolejny raport, już w czasie zimowym |
 
-if date.today().isocalendar().week % 2 != 0:
-    print("Skipping this week due to biweekly schedule.")
-    return 0
-```
-
-W takim wariancie workflow uruchamia się co tydzień, ale właściwe monitorowanie działa tylko w wybrane tygodnie parzyste lub nieparzyste.
+Harmonogram można sprawdzić bez pobierania danych i bez wysyłania wiadomości: `PYTHONPATH=src python -m krs_monitor.schedule`.
 
 ## Powiadomienia przez GitHub
 
@@ -207,7 +207,7 @@ Według dokumentacji sprawdzonej 15 września 2026 r. plan Free obejmuje 3 skrzy
 
 STARTTLS i weryfikacja certyfikatu są włączone domyślnie. Nie umieszczaj klucza API ani listy odbiorców w plikach repozytorium. Klucz API wpisz bezpośrednio w GitHub Secrets.
 
-4. Po włączeniu zmian na domyślnej gałęzi uruchom `Actions → KRS Monitor → Run workflow` i sprawdź odbiór pierwszej wiadomości. Kolejne uruchomienia korzystają z istniejącego tygodniowego harmonogramu; GitHub może opóźnić start względem wskazanej godziny.
+4. `Actions → KRS Monitor → Run workflow` respektuje harmonogram: poza wyznaczonym czwartkiem od 09:00 wykona wyłącznie sprawdzenie terminu. Regularne wysyłki korzystają z dwutygodniowego cyklu opisanego powyżej; GitHub może opóźnić start względem wskazanej godziny.
 
 E-mail zawiera podsumowanie i maksymalnie `KRS_EMAIL_MAX_DETAILS` zmian, a pełne dane są w załącznikach `report.md` i `comparison.csv`. CSV jest dołączany bez zmiany bajtów, z zachowaniem UTF-8 BOM dla polskich znaków w Excelu. Limit wiadomości SMTP AgentMail to 10 MB. Ręczne ponowienie workflow może wysłać kolejną wiadomość; po niejednoznacznym błędzie wysyłki sprawdź odbiór przed ponowieniem.
 

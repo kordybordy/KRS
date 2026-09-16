@@ -87,9 +87,154 @@ def test_build_email_message_contains_summary_and_changed_details(tmp_path: Path
     assert "- root.dane.nazwa: changed from `Old` to `New`" in body
     assert body.index("Changed values:") < body.index("Summary:")
     assert "Attached reports:" not in body
-    assert "report.md" not in body
+    assert "Ostatni raport ze zmianami: 2026-07-06" in body
     assert "comparison.csv" not in body
     assert not list(message.iter_attachments())
+
+
+def test_email_references_latest_real_change_before_current_report(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    _write_report(tmp_path / "2026-08-20")
+    _write_report(tmp_path / "2026-08-27")
+    _write_report(
+        tmp_path / "2026-09-03",
+        results=[{"status": "ok", "diff": {"baseline": True, "differences": [{"path": "initial"}]}}],
+    )
+    _write_report(
+        tmp_path / "2026-09-10",
+        results=[{"status": "error", "diff": {"differences": [{"path": "unreliable"}]}}],
+    )
+    report_dir = tmp_path / "2026-09-15"
+    _write_report(report_dir, results=[{"status": "ok", "diff": {"differences": []}}])
+    _write_report(tmp_path / "2026-09-24")
+    monkeypatch.setenv("GITHUB_REPOSITORY", "kordybordy/KRS")
+    monkeypatch.delenv("GITHUB_SERVER_URL", raising=False)
+    config = notifications.EmailConfig("smtp.example.com", 587, "monitor@example.com", ["owner@example.com"])
+
+    body = build_email_message(config, report_dir).get_content()
+
+    assert "Ostatni raport ze zmianami: 2026-08-27" in body
+    assert "Raport: https://github.com/kordybordy/KRS/blob/main/reports/2026-08-27/report.md" in body
+    assert "2026-09-24" not in body
+    assert body.index("No changed values were reported.") < body.index("Ostatni raport ze zmianami:")
+    assert body.index("Ostatni raport ze zmianami:") < body.index("Summary:")
+
+
+def test_current_changed_report_is_the_latest_reference(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    _write_report(tmp_path / "2026-08-27")
+    report_dir = tmp_path / "2026-09-15"
+    _write_report(report_dir)
+    monkeypatch.setenv("GITHUB_SERVER_URL", "https://github.example.com/")
+    monkeypatch.setenv("GITHUB_REPOSITORY", "team/KRS")
+    config = notifications.EmailConfig("smtp.example.com", 587, "monitor@example.com", ["owner@example.com"])
+
+    body = build_email_message(config, report_dir).get_content()
+
+    assert "Ostatni raport ze zmianami: 2026-09-15" in body
+    assert "https://github.example.com/team/KRS/blob/main/reports/2026-09-15/report.md" in body
+    assert "2026-08-27" not in body
+    assert body.index("Changed values:") < body.index("Ostatni raport ze zmianami:")
+
+
+def test_local_email_reference_uses_relative_report_path(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    report_dir = tmp_path / "2026-09-15"
+    _write_report(report_dir)
+    monkeypatch.delenv("GITHUB_REPOSITORY", raising=False)
+    config = notifications.EmailConfig("smtp.example.com", 587, "monitor@example.com", ["owner@example.com"])
+
+    body = build_email_message(config, report_dir).get_content()
+
+    assert "Raport: reports/2026-09-15/report.md" in body
+    assert str(tmp_path) not in body
+
+
+@pytest.mark.parametrize("baseline", [False, True])
+def test_email_states_when_history_has_no_report_with_real_changes(tmp_path: Path, baseline: bool) -> None:
+    report_dir = tmp_path / "2026-09-15"
+    _write_report(
+        report_dir,
+        results=[{"status": "ok", "diff": {"baseline": baseline, "differences": [{"path": "initial"}] if baseline else []}}],
+    )
+    config = notifications.EmailConfig("smtp.example.com", 587, "monitor@example.com", ["owner@example.com"])
+
+    message = build_email_message(config, report_dir)
+    body = message.get_content()
+
+    assert "Ostatni raport ze zmianami: nie znaleziono w dostępnej historii." in body
+    assert "Changed values:" not in body
+    assert message["Subject"].endswith("no changes")
+
+
+@pytest.mark.parametrize(
+    "historical_contents",
+    [
+        "not-json-private-content",
+        "[]",
+        '{"date": "2026-09-10", "results": null}',
+        '{"date": "2099-01-01", "results": []}',
+        '{"date": "2026-09-10", "results": [{"status": "ok", "diff": {"differences": "invalid"}}]}',
+    ],
+)
+def test_malformed_history_qualifies_last_known_change_without_blocking_email(
+    tmp_path: Path, historical_contents: str, caplog: pytest.LogCaptureFixture
+) -> None:
+    _write_report(tmp_path / "2026-08-27")
+    malformed_dir = tmp_path / "2026-09-10"
+    _write_report(malformed_dir)
+    (malformed_dir / "report.json").write_text(historical_contents, encoding="utf-8")
+    report_dir = tmp_path / "2026-09-15"
+    _write_report(report_dir, results=[{"status": "ok", "diff": {"differences": []}}])
+    config = notifications.EmailConfig("smtp.example.com", 587, "monitor@example.com", ["owner@example.com"])
+
+    body = build_email_message(config, report_dir).get_content()
+
+    assert "Ostatni raport ze zmianami: nie można potwierdzić" in body
+    assert "Ostatni potwierdzony raport ze zmianami: 2026-08-27" in body
+    assert "reports/2026-08-27/report.md" in body
+    assert "reports/2026-09-10/report.json" in caplog.text
+    assert "not-json-private-content" not in caplog.text
+    assert str(tmp_path) not in caplog.text
+
+
+def test_unreadable_history_does_not_claim_there_were_no_changes(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, caplog: pytest.LogCaptureFixture
+) -> None:
+    historical_dir = tmp_path / "2026-09-10"
+    _write_report(historical_dir)
+    report_dir = tmp_path / "2026-09-15"
+    _write_report(report_dir, results=[{"status": "ok", "diff": {"differences": []}}])
+    original_read_text = Path.read_text
+
+    def read_text(path: Path, *args, **kwargs):
+        if path == historical_dir / "report.json":
+            raise PermissionError("private filesystem detail")
+        return original_read_text(path, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "read_text", read_text)
+    config = notifications.EmailConfig("smtp.example.com", 587, "monitor@example.com", ["owner@example.com"])
+
+    body = build_email_message(config, report_dir).get_content()
+
+    assert "Ostatni raport ze zmianami: nie można potwierdzić" in body
+    assert "nie znaleziono" not in body
+    assert "PermissionError" in caplog.text
+    assert "private filesystem detail" not in caplog.text
+
+
+def test_unreadable_history_older_than_last_change_does_not_make_reference_uncertain(tmp_path: Path) -> None:
+    (tmp_path / "2026-08-20").mkdir()
+    _write_report(tmp_path / "2026-08-27")
+    report_dir = tmp_path / "2026-09-15"
+    _write_report(report_dir, results=[{"status": "ok", "diff": {"differences": []}}])
+    config = notifications.EmailConfig("smtp.example.com", 587, "monitor@example.com", ["owner@example.com"])
+
+    body = build_email_message(config, report_dir).get_content()
+
+    assert "Ostatni raport ze zmianami: 2026-08-27" in body
+    assert "nie można potwierdzić" not in body
 
 
 @pytest.mark.parametrize(
